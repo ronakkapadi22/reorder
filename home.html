@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titos</title>
+</head>
+
+<body>
+    <section id="header" class="w-full flex items-center justify-between py-4 px-[26px] h-[80px]">
+        <div class="flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20" viewBox="0 0 16 20" fill="#E7286D">
+                <path
+                    d="M13.5884 3.16602C10.5051 0.0826807 5.50509 0.0826807 2.42176 3.16602C-0.661582 6.24935 -0.661582 11.3327 2.42176 14.416L8.00511 19.9993L13.5884 14.3327C16.6717 11.3327 16.6717 6.24935 13.5884 3.16602ZM8.00511 10.416C7.08841 10.416 6.33841 9.666 6.33841 8.7493C6.33841 7.83268 7.08841 7.08268 8.00511 7.08268C8.92171 7.08268 9.67171 7.83268 9.67171 8.7493C9.67171 9.666 8.92171 10.416 8.00511 10.416Z"
+                    fill="#E7286D" />
+            </svg>
+            <p class="ml-4 text-[#333] font-semibold text-base">Titos Bistro</p>
+        </div>
+        <div class="relative hidden md:block">
+            <input placeholder="Search Item"
+                class="xs:min-w-full w-full placeholder:text-[#464646] sm:min-w-[298px] lg:min-w-[466px] border border-[#B8B8B8] placeholder:text-base placeholder:font-[400] outline-none px-3 py-4 rounded-[100px] pl-12"
+                type="text" />
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 absolute top-1/2 -translate-y-1/2 left-4" width="24"
+                height="24" viewBox="0 0 24 24" fill="none">
+                <path
+                    d="M21 21L17.5001 17.5M20 11.5C20 16.1944 16.1944 20 11.5 20C6.80558 20 3 16.1944 3 11.5C3 6.80558 6.80558 3 11.5 3C16.1944 3 20 6.80558 20 11.5Z"
+                    stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </div>
+        <div class="flex items-center">
+            <p class="hidden md:block text-[#333] font-semibold text-base mr-5 lg:mr-12">Sign in/Sign up</p>
+            <svg xmlns="http://www.w3.org/2000/svg" class="block md:hidden cursor-pointer" width="25" height="24"
+                viewBox="0 0 25 24" fill="none">
+                <path
+                    d="M21.995 21L18.4951 17.5M20.995 11.5C20.995 16.1944 17.1894 20 12.495 20C7.80057 20 3.995 16.1944 3.995 11.5C3.995 6.80558 7.80057 3 12.495 3C17.1894 3 20.995 6.80558 20.995 11.5Z"
+                    stroke="#464646" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="block md:hidden mx-6 cursor-pointer" width="27" height="26"
+                viewBox="0 0 27 26" fill="none">
+                <path
+                    d="M22.6616 22.75C22.6616 21.2381 22.6616 20.4822 22.475 19.8671C22.0549 18.4822 20.9711 17.3984 19.5862 16.9783C18.9711 16.7917 18.2152 16.7917 16.7033 16.7917H11.2866C9.77478 16.7917 9.01885 16.7917 8.40374 16.9783C7.0188 17.3984 5.93502 18.4822 5.5149 19.8671C5.32831 20.4822 5.32831 21.2381 5.32831 22.75M18.87 8.125C18.87 10.8174 16.6874 13 13.995 13C11.3026 13 9.11997 10.8174 9.11997 8.125C9.11997 5.43261 11.3026 3.25 13.995 3.25C16.6874 3.25 18.87 5.43261 18.87 8.125Z"
+                    stroke="#464646" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <div class="relative cursor-pointer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="#21A453">
+                    <path
+                        d="M22.9091 7.63636V0H5.09091V7.63636H0V20.3636C0 24.5636 3.43636 28 7.63636 28H20.3636C24.5635 28 27.9999 24.5636 27.9999 20.3636V7.63636H22.9091ZM8.90909 3.81818H19.0909V7.63636H8.90909V3.81818Z"
+                        fill="#21A453" />
+                </svg>
+                <span class="absolute top-1/2 left-1/2 -translate-y-[40%] -translate-x-1/2 text-white">0</span>
+            </div>
+        </div>
+    </section>
+    <section id="banner" class="w-full">
+        <img alt="banner" class="w-full"
+            src="https://s3-alpha-sig.figma.com/img/761d/dea3/c7f0a38625b6bd3f06f4e5886c46071a?Expires=1693180800&Signature=WHn7IMb2GsF1Rf9m67Su~AC5wejt5bzGNE9FuTpBD1C-pd0j8~nve-XcknHoAnf03gjy~X21HvOA~cbdLsg4Q8Vgy-PysT0nXCRS9BwUJvvBH~mEqpZQC~FKnguD5hcwGAB9ufauW712~q8x9qgsvHFMsAd9WR84FtGJ~Lu-Vr7bkNjv4UOC0W-3u3Forv3O68EZlwZCoZKx3euYqTVTpgiFbuHHtlXCnTb0ocDKdDlL59wry0SmOC~7vgV1XopCg8PuYICAS5DcmEmuBSZ7-sCUrjQacnRcfI9-VfDB3He4DRViL5MBBIOS6zd5kSjQ-KOL5nC6S~6JV2aosDFKEw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" />
+    </section>
+    <section id="location" class="w-full flex flex-col md:flex-row justify-between items-center p-6 lg:px-20 lg:py-8">
+        <div class="w-full md:w-4/5">
+            <h1 class="font-semibold text-[#181B37] text-2xl lg:text-4xl mb-3 lg:mb-6">Titos Bistro</h1>
+            <p class="text-md text-[#545454]">Titos bistro description Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Aliquam est leo, dapibus in imperdiet non, porta non odio. Maecenas mollis, augue ut
+                egestas congue, justo lorem fermentum libero, vitae euismod augue urna at dui.</p>
+        </div>
+        <div class="w-full md:w-1/5">
+            <p class="font-bold text-left mt-5 md:m-0 md:text-right text-sm text-[#037ABC]">
+                View Location
+            </p>
+        </div>
+    </section>
+    <section id="items" class="px-6 py-12 bg-[#F7F9FE]">
+        <div class="w-full mb-[60px]">
+            <div class="p-5 rounded-lg text-lg bg-[#E8EEF6] mb-8 text-[#0F133C] font-medium">ENTRÉE</div>
+            <div class="grid grid-cols-12 gap-4">
+                <div class="col-span-6 lg:col-span-4">
+                    <div class="w-full bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
+                        <img alt="item_image" class="rounded-lg w-full sm:w-[130px] h-[160px] md:h-auto" src="https://s3-alpha-sig.figma.com/img/d702/ea44/c3bb97292e294c204cad2d45be838488?Expires=1693180800&Signature=M9TrulF7mv1GbebF~XcjS5Yrws4RFBf2MxAR28zgkrfnI8yL-pOkrrwuluo0cd9znWMcK2kwZ-eVvzy~2dT8mHOdlBPTSCsK6Lo6f9L4dzwpNpe1ygg5Bku29G~nxpK2Qg9Oy-nGkCoT7uNZHg~c-IQ64xgvjQ20kk1hpJWL7xO4yjnLBSHOgzyBFbZ6EfkvubbOfFzCUSt4QomsSx7NK6oHq6cfbX-3Zlh3XKNbGmBQ1FdlFs2IY-9kArPqC8fhKElSvKWZXmxrs1HlGAdsCHaRfeD2h4FYU-~9dr7a73vb1JX4y8D5J41zpa-Z1BCxqjseC0zyy5PAbV4bdK2hzA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" />
+                        <div class="max-w-full w-full mt-0 flex flex-col sm:ml-4">
+                            <h5 class="text-[#000] mb-2 sm:mb-3 mt-2 sm:mt-0 text-lg font-bold" >Baby Back Ribs</h5>
+                            <p class="text-[#545454] text-[14px] font-medium">Oven baked salmon on a bed ofcaramelized onions</p>
+                            <div class="flex justify-between items-center mt-7">
+                                <span class="text-[#00598B] text-lg font-bold" >$25.99</span>
+                                <div class="w-8 h-8 bg-[#037ABC] rounded-[50%] flex justify-center items-center" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="26" viewBox="0 0 24 26" fill="none">
+                                        <path d="M12.0001 3.94903V22.051M3.51477 13H20.4853" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                      </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-6 lg:col-span-4">
+                    <div class="w-full bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
+                        <img alt="item_image" class="rounded-lg w-full sm:w-[130px] h-[160px] md:h-auto" src="https://s3-alpha-sig.figma.com/img/d702/ea44/c3bb97292e294c204cad2d45be838488?Expires=1693180800&Signature=M9TrulF7mv1GbebF~XcjS5Yrws4RFBf2MxAR28zgkrfnI8yL-pOkrrwuluo0cd9znWMcK2kwZ-eVvzy~2dT8mHOdlBPTSCsK6Lo6f9L4dzwpNpe1ygg5Bku29G~nxpK2Qg9Oy-nGkCoT7uNZHg~c-IQ64xgvjQ20kk1hpJWL7xO4yjnLBSHOgzyBFbZ6EfkvubbOfFzCUSt4QomsSx7NK6oHq6cfbX-3Zlh3XKNbGmBQ1FdlFs2IY-9kArPqC8fhKElSvKWZXmxrs1HlGAdsCHaRfeD2h4FYU-~9dr7a73vb1JX4y8D5J41zpa-Z1BCxqjseC0zyy5PAbV4bdK2hzA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" />
+                        <div class="max-w-full w-full mt-0 flex flex-col sm:ml-4">
+                            <h5 class="text-[#000] mb-2 sm:mb-3 mt-2 sm:mt-0 text-lg font-bold" >Baby Back Ribs</h5>
+                            <p class="text-[#545454] text-[14px] font-medium">Oven baked salmon on a bed ofcaramelized onions</p>
+                            <div class="flex justify-between items-center mt-7">
+                                <span class="text-[#00598B] text-lg font-bold" >$25.99</span>
+                                <div class="w-8 h-8 bg-[#037ABC] rounded-[50%] flex justify-center items-center" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="26" viewBox="0 0 24 26" fill="none">
+                                        <path d="M12.0001 3.94903V22.051M3.51477 13H20.4853" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                      </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-6 lg:col-span-4">
+                    <div class="w-full bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
+                        <img alt="item_image" class="rounded-lg w-full sm:w-[130px] h-[160px] md:h-auto" src="https://s3-alpha-sig.figma.com/img/d702/ea44/c3bb97292e294c204cad2d45be838488?Expires=1693180800&Signature=M9TrulF7mv1GbebF~XcjS5Yrws4RFBf2MxAR28zgkrfnI8yL-pOkrrwuluo0cd9znWMcK2kwZ-eVvzy~2dT8mHOdlBPTSCsK6Lo6f9L4dzwpNpe1ygg5Bku29G~nxpK2Qg9Oy-nGkCoT7uNZHg~c-IQ64xgvjQ20kk1hpJWL7xO4yjnLBSHOgzyBFbZ6EfkvubbOfFzCUSt4QomsSx7NK6oHq6cfbX-3Zlh3XKNbGmBQ1FdlFs2IY-9kArPqC8fhKElSvKWZXmxrs1HlGAdsCHaRfeD2h4FYU-~9dr7a73vb1JX4y8D5J41zpa-Z1BCxqjseC0zyy5PAbV4bdK2hzA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" />
+                        <div class="max-w-full w-full mt-0 flex flex-col sm:ml-4">
+                            <h5 class="text-[#000] mb-2 sm:mb-3 mt-2 sm:mt-0 text-lg font-bold" >Baby Back Ribs</h5>
+                            <p class="text-[#545454] text-[14px] font-medium">Oven baked salmon on a bed ofcaramelized onions</p>
+                            <div class="flex justify-between items-center mt-7">
+                                <span class="text-[#00598B] text-lg font-bold" >$25.99</span>
+                                <div class="w-8 h-8 bg-[#037ABC] rounded-[50%] flex justify-center items-center" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="26" viewBox="0 0 24 26" fill="none">
+                                        <path d="M12.0001 3.94903V22.051M3.51477 13H20.4853" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                      </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-6 lg:col-span-4">
+                    <div class="w-full bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
+                        <img alt="item_image" class="rounded-lg w-full sm:w-[130px] h-[160px] md:h-auto" src="https://s3-alpha-sig.figma.com/img/d702/ea44/c3bb97292e294c204cad2d45be838488?Expires=1693180800&Signature=M9TrulF7mv1GbebF~XcjS5Yrws4RFBf2MxAR28zgkrfnI8yL-pOkrrwuluo0cd9znWMcK2kwZ-eVvzy~2dT8mHOdlBPTSCsK6Lo6f9L4dzwpNpe1ygg5Bku29G~nxpK2Qg9Oy-nGkCoT7uNZHg~c-IQ64xgvjQ20kk1hpJWL7xO4yjnLBSHOgzyBFbZ6EfkvubbOfFzCUSt4QomsSx7NK6oHq6cfbX-3Zlh3XKNbGmBQ1FdlFs2IY-9kArPqC8fhKElSvKWZXmxrs1HlGAdsCHaRfeD2h4FYU-~9dr7a73vb1JX4y8D5J41zpa-Z1BCxqjseC0zyy5PAbV4bdK2hzA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" />
+                        <div class="max-w-full w-full mt-0 flex flex-col sm:ml-4">
+                            <h5 class="text-[#000] mb-2 sm:mb-3 mt-2 sm:mt-0 text-lg font-bold" >Baby Back Ribs</h5>
+                            <p class="text-[#545454] text-[14px] font-medium">Oven baked salmon on a bed ofcaramelized onions</p>
+                            <div class="flex justify-between items-center mt-7">
+                                <span class="text-[#00598B] text-lg font-bold" >$25.99</span>
+                                <div class="w-8 h-8 bg-[#037ABC] rounded-[50%] flex justify-center items-center" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="26" viewBox="0 0 24 26" fill="none">
+                                        <path d="M12.0001 3.94903V22.051M3.51477 13H20.4853" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                      </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w-full mb-[60px]">
+            <div class="p-5 rounded-lg text-lg bg-[#E8EEF6] mb-8 text-[#0F133C] font-medium">DESSERT</div>
+            <div class="grid grid-cols-12 gap-4">
+                <div class="col-span-6 lg:col-span-4">
+                    <div class="w-full bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
+                        <img alt="item_image" class="rounded-lg w-full sm:w-[130px] h-[160px] md:h-auto" src="https://s3-alpha-sig.figma.com/img/d702/ea44/c3bb97292e294c204cad2d45be838488?Expires=1693180800&Signature=M9TrulF7mv1GbebF~XcjS5Yrws4RFBf2MxAR28zgkrfnI8yL-pOkrrwuluo0cd9znWMcK2kwZ-eVvzy~2dT8mHOdlBPTSCsK6Lo6f9L4dzwpNpe1ygg5Bku29G~nxpK2Qg9Oy-nGkCoT7uNZHg~c-IQ64xgvjQ20kk1hpJWL7xO4yjnLBSHOgzyBFbZ6EfkvubbOfFzCUSt4QomsSx7NK6oHq6cfbX-3Zlh3XKNbGmBQ1FdlFs2IY-9kArPqC8fhKElSvKWZXmxrs1HlGAdsCHaRfeD2h4FYU-~9dr7a73vb1JX4y8D5J41zpa-Z1BCxqjseC0zyy5PAbV4bdK2hzA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" />
+                        <div class="max-w-full w-full mt-0 flex flex-col sm:ml-4">
+                            <h5 class="text-[#000] mb-2 sm:mb-3 mt-2 sm:mt-0 text-lg font-bold" >Baby Back Ribs</h5>
+                            <p class="text-[#545454] text-[14px] font-medium">Oven baked salmon on a bed ofcaramelized onions</p>
+                            <div class="flex justify-between items-center mt-7">
+                                <span class="text-[#00598B] text-lg font-bold" >$25.99</span>
+                                <div class="w-8 h-8 bg-[#037ABC] rounded-[50%] flex justify-center items-center" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="26" viewBox="0 0 24 26" fill="none">
+                                        <path d="M12.0001 3.94903V22.051M3.51477 13H20.4853" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                      </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-6 lg:col-span-4">
+                    <div class="w-full bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
+                        <img alt="item_image" class="rounded-lg w-full sm:w-[130px] h-[160px] md:h-auto" src="https://s3-alpha-sig.figma.com/img/d702/ea44/c3bb97292e294c204cad2d45be838488?Expires=1693180800&Signature=M9TrulF7mv1GbebF~XcjS5Yrws4RFBf2MxAR28zgkrfnI8yL-pOkrrwuluo0cd9znWMcK2kwZ-eVvzy~2dT8mHOdlBPTSCsK6Lo6f9L4dzwpNpe1ygg5Bku29G~nxpK2Qg9Oy-nGkCoT7uNZHg~c-IQ64xgvjQ20kk1hpJWL7xO4yjnLBSHOgzyBFbZ6EfkvubbOfFzCUSt4QomsSx7NK6oHq6cfbX-3Zlh3XKNbGmBQ1FdlFs2IY-9kArPqC8fhKElSvKWZXmxrs1HlGAdsCHaRfeD2h4FYU-~9dr7a73vb1JX4y8D5J41zpa-Z1BCxqjseC0zyy5PAbV4bdK2hzA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" />
+                        <div class="max-w-full w-full mt-0 flex flex-col sm:ml-4">
+                            <h5 class="text-[#000] mb-2 sm:mb-3 mt-2 sm:mt-0 text-lg font-bold" >Baby Back Ribs</h5>
+                            <p class="text-[#545454] text-[14px] font-medium">Oven baked salmon on a bed ofcaramelized onions</p>
+                            <div class="flex justify-between items-center mt-7">
+                                <span class="text-[#00598B] text-lg font-bold" >$25.99</span>
+                                <div class="w-8 h-8 bg-[#037ABC] rounded-[50%] flex justify-center items-center" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="26" viewBox="0 0 24 26" fill="none">
+                                        <path d="M12.0001 3.94903V22.051M3.51477 13H20.4853" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                      </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-6 lg:col-span-4">
+                    <div class="w-full bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
+                        <img alt="item_image" class="rounded-lg w-full sm:w-[130px] h-[160px] md:h-auto" src="https://s3-alpha-sig.figma.com/img/d702/ea44/c3bb97292e294c204cad2d45be838488?Expires=1693180800&Signature=M9TrulF7mv1GbebF~XcjS5Yrws4RFBf2MxAR28zgkrfnI8yL-pOkrrwuluo0cd9znWMcK2kwZ-eVvzy~2dT8mHOdlBPTSCsK6Lo6f9L4dzwpNpe1ygg5Bku29G~nxpK2Qg9Oy-nGkCoT7uNZHg~c-IQ64xgvjQ20kk1hpJWL7xO4yjnLBSHOgzyBFbZ6EfkvubbOfFzCUSt4QomsSx7NK6oHq6cfbX-3Zlh3XKNbGmBQ1FdlFs2IY-9kArPqC8fhKElSvKWZXmxrs1HlGAdsCHaRfeD2h4FYU-~9dr7a73vb1JX4y8D5J41zpa-Z1BCxqjseC0zyy5PAbV4bdK2hzA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" />
+                        <div class="max-w-full w-full mt-0 flex flex-col sm:ml-4">
+                            <h5 class="text-[#000] mb-2 sm:mb-3 mt-2 sm:mt-0 text-lg font-bold" >Baby Back Ribs</h5>
+                            <p class="text-[#545454] text-[14px] font-medium">Oven baked salmon on a bed ofcaramelized onions</p>
+                            <div class="flex justify-between items-center mt-7">
+                                <span class="text-[#00598B] text-lg font-bold" >$25.99</span>
+                                <div class="w-8 h-8 bg-[#037ABC] rounded-[50%] flex justify-center items-center" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="26" viewBox="0 0 24 26" fill="none">
+                                        <path d="M12.0001 3.94903V22.051M3.51477 13H20.4853" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                      </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-6 lg:col-span-4">
+                    <div class="w-full bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
+                        <img alt="item_image" class="rounded-lg w-full sm:w-[130px] h-[160px] md:h-auto" src="https://s3-alpha-sig.figma.com/img/d702/ea44/c3bb97292e294c204cad2d45be838488?Expires=1693180800&Signature=M9TrulF7mv1GbebF~XcjS5Yrws4RFBf2MxAR28zgkrfnI8yL-pOkrrwuluo0cd9znWMcK2kwZ-eVvzy~2dT8mHOdlBPTSCsK6Lo6f9L4dzwpNpe1ygg5Bku29G~nxpK2Qg9Oy-nGkCoT7uNZHg~c-IQ64xgvjQ20kk1hpJWL7xO4yjnLBSHOgzyBFbZ6EfkvubbOfFzCUSt4QomsSx7NK6oHq6cfbX-3Zlh3XKNbGmBQ1FdlFs2IY-9kArPqC8fhKElSvKWZXmxrs1HlGAdsCHaRfeD2h4FYU-~9dr7a73vb1JX4y8D5J41zpa-Z1BCxqjseC0zyy5PAbV4bdK2hzA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" />
+                        <div class="max-w-full w-full mt-0 flex flex-col sm:ml-4">
+                            <h5 class="text-[#000] mb-2 sm:mb-3 mt-2 sm:mt-0 text-lg font-bold" >Baby Back Ribs</h5>
+                            <p class="text-[#545454] text-[14px] font-medium">Oven baked salmon on a bed ofcaramelized onions</p>
+                            <div class="flex justify-between items-center mt-7">
+                                <span class="text-[#00598B] text-lg font-bold" >$25.99</span>
+                                <div class="w-8 h-8 bg-[#037ABC] rounded-[50%] flex justify-center items-center" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="26" viewBox="0 0 24 26" fill="none">
+                                        <path d="M12.0001 3.94903V22.051M3.51477 13H20.4853" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                      </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w-full mb-[60px]">
+            <div class="p-5 rounded-lg text-lg bg-[#E8EEF6] mb-8 text-[#0F133C] font-medium">PIZZA</div>
+            <div class="grid grid-cols-12 gap-4">
+                <div class="col-span-6 lg:col-span-4">
+                    <div class="w-full bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
+                        <img alt="item_image" class="rounded-lg w-full sm:w-[130px] h-[160px] md:h-auto" src="https://s3-alpha-sig.figma.com/img/d702/ea44/c3bb97292e294c204cad2d45be838488?Expires=1693180800&Signature=M9TrulF7mv1GbebF~XcjS5Yrws4RFBf2MxAR28zgkrfnI8yL-pOkrrwuluo0cd9znWMcK2kwZ-eVvzy~2dT8mHOdlBPTSCsK6Lo6f9L4dzwpNpe1ygg5Bku29G~nxpK2Qg9Oy-nGkCoT7uNZHg~c-IQ64xgvjQ20kk1hpJWL7xO4yjnLBSHOgzyBFbZ6EfkvubbOfFzCUSt4QomsSx7NK6oHq6cfbX-3Zlh3XKNbGmBQ1FdlFs2IY-9kArPqC8fhKElSvKWZXmxrs1HlGAdsCHaRfeD2h4FYU-~9dr7a73vb1JX4y8D5J41zpa-Z1BCxqjseC0zyy5PAbV4bdK2hzA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" />
+                        <div class="max-w-full w-full mt-0 flex flex-col sm:ml-4">
+                            <h5 class="text-[#000] mb-2 sm:mb-3 mt-2 sm:mt-0 text-lg font-bold" >Baby Back Ribs</h5>
+                            <p class="text-[#545454] text-[14px] font-medium">Oven baked salmon on a bed ofcaramelized onions</p>
+                            <div class="flex justify-between items-center mt-7">
+                                <span class="text-[#00598B] text-lg font-bold" >$25.99</span>
+                                <div class="w-8 h-8 bg-[#037ABC] rounded-[50%] flex justify-center items-center" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="26" viewBox="0 0 24 26" fill="none">
+                                        <path d="M12.0001 3.94903V22.051M3.51477 13H20.4853" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                      </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-6 lg:col-span-4">
+                    <div class="w-full bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
+                        <img alt="item_image" class="rounded-lg w-full sm:w-[130px] h-[160px] md:h-auto" src="https://s3-alpha-sig.figma.com/img/d702/ea44/c3bb97292e294c204cad2d45be838488?Expires=1693180800&Signature=M9TrulF7mv1GbebF~XcjS5Yrws4RFBf2MxAR28zgkrfnI8yL-pOkrrwuluo0cd9znWMcK2kwZ-eVvzy~2dT8mHOdlBPTSCsK6Lo6f9L4dzwpNpe1ygg5Bku29G~nxpK2Qg9Oy-nGkCoT7uNZHg~c-IQ64xgvjQ20kk1hpJWL7xO4yjnLBSHOgzyBFbZ6EfkvubbOfFzCUSt4QomsSx7NK6oHq6cfbX-3Zlh3XKNbGmBQ1FdlFs2IY-9kArPqC8fhKElSvKWZXmxrs1HlGAdsCHaRfeD2h4FYU-~9dr7a73vb1JX4y8D5J41zpa-Z1BCxqjseC0zyy5PAbV4bdK2hzA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" />
+                        <div class="max-w-full w-full mt-0 flex flex-col sm:ml-4">
+                            <h5 class="text-[#000] mb-2 sm:mb-3 mt-2 sm:mt-0 text-lg font-bold" >Baby Back Ribs</h5>
+                            <p class="text-[#545454] text-[14px] font-medium">Oven baked salmon on a bed ofcaramelized onions</p>
+                            <div class="flex justify-between items-center mt-7">
+                                <span class="text-[#00598B] text-lg font-bold" >$25.99</span>
+                                <div class="w-8 h-8 bg-[#037ABC] rounded-[50%] flex justify-center items-center" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="26" viewBox="0 0 24 26" fill="none">
+                                        <path d="M12.0001 3.94903V22.051M3.51477 13H20.4853" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                      </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-6 lg:col-span-4">
+                    <div class="w-full bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
+                        <img alt="item_image" class="rounded-lg w-full sm:w-[130px] h-[160px] md:h-auto" src="https://s3-alpha-sig.figma.com/img/d702/ea44/c3bb97292e294c204cad2d45be838488?Expires=1693180800&Signature=M9TrulF7mv1GbebF~XcjS5Yrws4RFBf2MxAR28zgkrfnI8yL-pOkrrwuluo0cd9znWMcK2kwZ-eVvzy~2dT8mHOdlBPTSCsK6Lo6f9L4dzwpNpe1ygg5Bku29G~nxpK2Qg9Oy-nGkCoT7uNZHg~c-IQ64xgvjQ20kk1hpJWL7xO4yjnLBSHOgzyBFbZ6EfkvubbOfFzCUSt4QomsSx7NK6oHq6cfbX-3Zlh3XKNbGmBQ1FdlFs2IY-9kArPqC8fhKElSvKWZXmxrs1HlGAdsCHaRfeD2h4FYU-~9dr7a73vb1JX4y8D5J41zpa-Z1BCxqjseC0zyy5PAbV4bdK2hzA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" />
+                        <div class="max-w-full w-full mt-0 flex flex-col sm:ml-4">
+                            <h5 class="text-[#000] mb-2 sm:mb-3 mt-2 sm:mt-0 text-lg font-bold" >Baby Back Ribs</h5>
+                            <p class="text-[#545454] text-[14px] font-medium">Oven baked salmon on a bed ofcaramelized onions</p>
+                            <div class="flex justify-between items-center mt-7">
+                                <span class="text-[#00598B] text-lg font-bold" >$25.99</span>
+                                <div class="w-8 h-8 bg-[#037ABC] rounded-[50%] flex justify-center items-center" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="26" viewBox="0 0 24 26" fill="none">
+                                        <path d="M12.0001 3.94903V22.051M3.51477 13H20.4853" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                      </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-6 lg:col-span-4">
+                    <div class="w-full bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
+                        <img alt="item_image" class="rounded-lg w-full sm:w-[130px] h-[160px] md:h-auto" src="https://s3-alpha-sig.figma.com/img/d702/ea44/c3bb97292e294c204cad2d45be838488?Expires=1693180800&Signature=M9TrulF7mv1GbebF~XcjS5Yrws4RFBf2MxAR28zgkrfnI8yL-pOkrrwuluo0cd9znWMcK2kwZ-eVvzy~2dT8mHOdlBPTSCsK6Lo6f9L4dzwpNpe1ygg5Bku29G~nxpK2Qg9Oy-nGkCoT7uNZHg~c-IQ64xgvjQ20kk1hpJWL7xO4yjnLBSHOgzyBFbZ6EfkvubbOfFzCUSt4QomsSx7NK6oHq6cfbX-3Zlh3XKNbGmBQ1FdlFs2IY-9kArPqC8fhKElSvKWZXmxrs1HlGAdsCHaRfeD2h4FYU-~9dr7a73vb1JX4y8D5J41zpa-Z1BCxqjseC0zyy5PAbV4bdK2hzA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" />
+                        <div class="max-w-full w-full mt-0 flex flex-col sm:ml-4">
+                            <h5 class="text-[#000] mb-2 sm:mb-3 mt-2 sm:mt-0 text-lg font-bold" >Baby Back Ribs</h5>
+                            <p class="text-[#545454] text-[14px] font-medium">Oven baked salmon on a bed ofcaramelized onions</p>
+                            <div class="flex justify-between items-center mt-7">
+                                <span class="text-[#00598B] text-lg font-bold" >$25.99</span>
+                                <div class="w-8 h-8 bg-[#037ABC] rounded-[50%] flex justify-center items-center" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="26" viewBox="0 0 24 26" fill="none">
+                                        <path d="M12.0001 3.94903V22.051M3.51477 13H20.4853" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                      </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w-full mb-[60px]">
+            <div class="p-5 rounded-lg text-lg bg-[#E8EEF6] mb-8 text-[#0F133C] font-medium">TATER TOTS</div>
+            <div class="grid grid-cols-12 gap-4">
+                <div class="col-span-6 lg:col-span-4">
+                    <div class="w-full bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
+                        <img alt="item_image" class="rounded-lg w-full sm:w-[130px] h-[160px] md:h-auto" src="https://s3-alpha-sig.figma.com/img/d702/ea44/c3bb97292e294c204cad2d45be838488?Expires=1693180800&Signature=M9TrulF7mv1GbebF~XcjS5Yrws4RFBf2MxAR28zgkrfnI8yL-pOkrrwuluo0cd9znWMcK2kwZ-eVvzy~2dT8mHOdlBPTSCsK6Lo6f9L4dzwpNpe1ygg5Bku29G~nxpK2Qg9Oy-nGkCoT7uNZHg~c-IQ64xgvjQ20kk1hpJWL7xO4yjnLBSHOgzyBFbZ6EfkvubbOfFzCUSt4QomsSx7NK6oHq6cfbX-3Zlh3XKNbGmBQ1FdlFs2IY-9kArPqC8fhKElSvKWZXmxrs1HlGAdsCHaRfeD2h4FYU-~9dr7a73vb1JX4y8D5J41zpa-Z1BCxqjseC0zyy5PAbV4bdK2hzA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" />
+                        <div class="max-w-full w-full mt-0 flex flex-col sm:ml-4">
+                            <h5 class="text-[#000] mb-2 sm:mb-3 mt-2 sm:mt-0 text-lg font-bold" >Baby Back Ribs</h5>
+                            <p class="text-[#545454] text-[14px] font-medium">Oven baked salmon on a bed ofcaramelized onions</p>
+                            <div class="flex justify-between items-center mt-7">
+                                <span class="text-[#00598B] text-lg font-bold" >$25.99</span>
+                                <div class="w-8 h-8 bg-[#037ABC] rounded-[50%] flex justify-center items-center" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="26" viewBox="0 0 24 26" fill="none">
+                                        <path d="M12.0001 3.94903V22.051M3.51477 13H20.4853" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                      </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-6 lg:col-span-4">
+                    <div class="w-full bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
+                        <img alt="item_image" class="rounded-lg w-full sm:w-[130px] h-[160px] md:h-auto" src="https://s3-alpha-sig.figma.com/img/d702/ea44/c3bb97292e294c204cad2d45be838488?Expires=1693180800&Signature=M9TrulF7mv1GbebF~XcjS5Yrws4RFBf2MxAR28zgkrfnI8yL-pOkrrwuluo0cd9znWMcK2kwZ-eVvzy~2dT8mHOdlBPTSCsK6Lo6f9L4dzwpNpe1ygg5Bku29G~nxpK2Qg9Oy-nGkCoT7uNZHg~c-IQ64xgvjQ20kk1hpJWL7xO4yjnLBSHOgzyBFbZ6EfkvubbOfFzCUSt4QomsSx7NK6oHq6cfbX-3Zlh3XKNbGmBQ1FdlFs2IY-9kArPqC8fhKElSvKWZXmxrs1HlGAdsCHaRfeD2h4FYU-~9dr7a73vb1JX4y8D5J41zpa-Z1BCxqjseC0zyy5PAbV4bdK2hzA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" />
+                        <div class="max-w-full w-full mt-0 flex flex-col sm:ml-4">
+                            <h5 class="text-[#000] mb-2 sm:mb-3 mt-2 sm:mt-0 text-lg font-bold" >Baby Back Ribs</h5>
+                            <p class="text-[#545454] text-[14px] font-medium">Oven baked salmon on a bed ofcaramelized onions</p>
+                            <div class="flex justify-between items-center mt-7">
+                                <span class="text-[#00598B] text-lg font-bold" >$25.99</span>
+                                <div class="w-8 h-8 bg-[#037ABC] rounded-[50%] flex justify-center items-center" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="26" viewBox="0 0 24 26" fill="none">
+                                        <path d="M12.0001 3.94903V22.051M3.51477 13H20.4853" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                      </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-6 lg:col-span-4">
+                    <div class="w-full bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
+                        <img alt="item_image" class="rounded-lg w-full sm:w-[130px] h-[160px] md:h-auto" src="https://s3-alpha-sig.figma.com/img/d702/ea44/c3bb97292e294c204cad2d45be838488?Expires=1693180800&Signature=M9TrulF7mv1GbebF~XcjS5Yrws4RFBf2MxAR28zgkrfnI8yL-pOkrrwuluo0cd9znWMcK2kwZ-eVvzy~2dT8mHOdlBPTSCsK6Lo6f9L4dzwpNpe1ygg5Bku29G~nxpK2Qg9Oy-nGkCoT7uNZHg~c-IQ64xgvjQ20kk1hpJWL7xO4yjnLBSHOgzyBFbZ6EfkvubbOfFzCUSt4QomsSx7NK6oHq6cfbX-3Zlh3XKNbGmBQ1FdlFs2IY-9kArPqC8fhKElSvKWZXmxrs1HlGAdsCHaRfeD2h4FYU-~9dr7a73vb1JX4y8D5J41zpa-Z1BCxqjseC0zyy5PAbV4bdK2hzA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" />
+                        <div class="max-w-full w-full mt-0 flex flex-col sm:ml-4">
+                            <h5 class="text-[#000] mb-2 sm:mb-3 mt-2 sm:mt-0 text-lg font-bold" >Baby Back Ribs</h5>
+                            <p class="text-[#545454] text-[14px] font-medium">Oven baked salmon on a bed ofcaramelized onions</p>
+                            <div class="flex justify-between items-center mt-7">
+                                <span class="text-[#00598B] text-lg font-bold" >$25.99</span>
+                                <div class="w-8 h-8 bg-[#037ABC] rounded-[50%] flex justify-center items-center" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="26" viewBox="0 0 24 26" fill="none">
+                                        <path d="M12.0001 3.94903V22.051M3.51477 13H20.4853" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                      </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-6 lg:col-span-4">
+                    <div class="w-full bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
+                        <img alt="item_image" class="rounded-lg w-full sm:w-[130px] h-[160px] md:h-auto" src="https://s3-alpha-sig.figma.com/img/d702/ea44/c3bb97292e294c204cad2d45be838488?Expires=1693180800&Signature=M9TrulF7mv1GbebF~XcjS5Yrws4RFBf2MxAR28zgkrfnI8yL-pOkrrwuluo0cd9znWMcK2kwZ-eVvzy~2dT8mHOdlBPTSCsK6Lo6f9L4dzwpNpe1ygg5Bku29G~nxpK2Qg9Oy-nGkCoT7uNZHg~c-IQ64xgvjQ20kk1hpJWL7xO4yjnLBSHOgzyBFbZ6EfkvubbOfFzCUSt4QomsSx7NK6oHq6cfbX-3Zlh3XKNbGmBQ1FdlFs2IY-9kArPqC8fhKElSvKWZXmxrs1HlGAdsCHaRfeD2h4FYU-~9dr7a73vb1JX4y8D5J41zpa-Z1BCxqjseC0zyy5PAbV4bdK2hzA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" />
+                        <div class="max-w-full w-full mt-0 flex flex-col sm:ml-4">
+                            <h5 class="text-[#000] mb-2 sm:mb-3 mt-2 sm:mt-0 text-lg font-bold" >Baby Back Ribs</h5>
+                            <p class="text-[#545454] text-[14px] font-medium">Oven baked salmon on a bed ofcaramelized onions</p>
+                            <div class="flex justify-between items-center mt-7">
+                                <span class="text-[#00598B] text-lg font-bold" >$25.99</span>
+                                <div class="w-8 h-8 bg-[#037ABC] rounded-[50%] flex justify-center items-center" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="26" viewBox="0 0 24 26" fill="none">
+                                        <path d="M12.0001 3.94903V22.051M3.51477 13H20.4853" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                      </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w-full mb-[60px]">
+            <div class="p-5 rounded-lg text-lg bg-[#E8EEF6] mb-8 text-[#0F133C] font-medium">STARTERS</div>
+            <div class="grid grid-cols-12 gap-4">
+                <div class="col-span-6 lg:col-span-4">
+                    <div class="w-full bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
+                        <img alt="item_image" class="rounded-lg w-full sm:w-[130px] h-[160px] md:h-auto" src="https://s3-alpha-sig.figma.com/img/d702/ea44/c3bb97292e294c204cad2d45be838488?Expires=1693180800&Signature=M9TrulF7mv1GbebF~XcjS5Yrws4RFBf2MxAR28zgkrfnI8yL-pOkrrwuluo0cd9znWMcK2kwZ-eVvzy~2dT8mHOdlBPTSCsK6Lo6f9L4dzwpNpe1ygg5Bku29G~nxpK2Qg9Oy-nGkCoT7uNZHg~c-IQ64xgvjQ20kk1hpJWL7xO4yjnLBSHOgzyBFbZ6EfkvubbOfFzCUSt4QomsSx7NK6oHq6cfbX-3Zlh3XKNbGmBQ1FdlFs2IY-9kArPqC8fhKElSvKWZXmxrs1HlGAdsCHaRfeD2h4FYU-~9dr7a73vb1JX4y8D5J41zpa-Z1BCxqjseC0zyy5PAbV4bdK2hzA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" />
+                        <div class="max-w-full w-full mt-0 flex flex-col sm:ml-4">
+                            <h5 class="text-[#000] mb-2 sm:mb-3 mt-2 sm:mt-0 text-lg font-bold" >Baby Back Ribs</h5>
+                            <p class="text-[#545454] text-[14px] font-medium">Oven baked salmon on a bed ofcaramelized onions</p>
+                            <div class="flex justify-between items-center mt-7">
+                                <span class="text-[#00598B] text-lg font-bold" >$25.99</span>
+                                <div class="w-8 h-8 bg-[#037ABC] rounded-[50%] flex justify-center items-center" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="26" viewBox="0 0 24 26" fill="none">
+                                        <path d="M12.0001 3.94903V22.051M3.51477 13H20.4853" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                      </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-6 lg:col-span-4">
+                    <div class="w-full bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
+                        <img alt="item_image" class="rounded-lg w-full sm:w-[130px] h-[160px] md:h-auto" src="https://s3-alpha-sig.figma.com/img/d702/ea44/c3bb97292e294c204cad2d45be838488?Expires=1693180800&Signature=M9TrulF7mv1GbebF~XcjS5Yrws4RFBf2MxAR28zgkrfnI8yL-pOkrrwuluo0cd9znWMcK2kwZ-eVvzy~2dT8mHOdlBPTSCsK6Lo6f9L4dzwpNpe1ygg5Bku29G~nxpK2Qg9Oy-nGkCoT7uNZHg~c-IQ64xgvjQ20kk1hpJWL7xO4yjnLBSHOgzyBFbZ6EfkvubbOfFzCUSt4QomsSx7NK6oHq6cfbX-3Zlh3XKNbGmBQ1FdlFs2IY-9kArPqC8fhKElSvKWZXmxrs1HlGAdsCHaRfeD2h4FYU-~9dr7a73vb1JX4y8D5J41zpa-Z1BCxqjseC0zyy5PAbV4bdK2hzA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" />
+                        <div class="max-w-full w-full mt-0 flex flex-col sm:ml-4">
+                            <h5 class="text-[#000] mb-2 sm:mb-3 mt-2 sm:mt-0 text-lg font-bold" >Baby Back Ribs</h5>
+                            <p class="text-[#545454] text-[14px] font-medium">Oven baked salmon on a bed ofcaramelized onions</p>
+                            <div class="flex justify-between items-center mt-7">
+                                <span class="text-[#00598B] text-lg font-bold" >$25.99</span>
+                                <div class="w-8 h-8 bg-[#037ABC] rounded-[50%] flex justify-center items-center" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="26" viewBox="0 0 24 26" fill="none">
+                                        <path d="M12.0001 3.94903V22.051M3.51477 13H20.4853" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                      </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-6 lg:col-span-4">
+                    <div class="w-full bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
+                        <img alt="item_image" class="rounded-lg w-full sm:w-[130px] h-[160px] md:h-auto" src="https://s3-alpha-sig.figma.com/img/d702/ea44/c3bb97292e294c204cad2d45be838488?Expires=1693180800&Signature=M9TrulF7mv1GbebF~XcjS5Yrws4RFBf2MxAR28zgkrfnI8yL-pOkrrwuluo0cd9znWMcK2kwZ-eVvzy~2dT8mHOdlBPTSCsK6Lo6f9L4dzwpNpe1ygg5Bku29G~nxpK2Qg9Oy-nGkCoT7uNZHg~c-IQ64xgvjQ20kk1hpJWL7xO4yjnLBSHOgzyBFbZ6EfkvubbOfFzCUSt4QomsSx7NK6oHq6cfbX-3Zlh3XKNbGmBQ1FdlFs2IY-9kArPqC8fhKElSvKWZXmxrs1HlGAdsCHaRfeD2h4FYU-~9dr7a73vb1JX4y8D5J41zpa-Z1BCxqjseC0zyy5PAbV4bdK2hzA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" />
+                        <div class="max-w-full w-full mt-0 flex flex-col sm:ml-4">
+                            <h5 class="text-[#000] mb-2 sm:mb-3 mt-2 sm:mt-0 text-lg font-bold" >Baby Back Ribs</h5>
+                            <p class="text-[#545454] text-[14px] font-medium">Oven baked salmon on a bed ofcaramelized onions</p>
+                            <div class="flex justify-between items-center mt-7">
+                                <span class="text-[#00598B] text-lg font-bold" >$25.99</span>
+                                <div class="w-8 h-8 bg-[#037ABC] rounded-[50%] flex justify-center items-center" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="26" viewBox="0 0 24 26" fill="none">
+                                        <path d="M12.0001 3.94903V22.051M3.51477 13H20.4853" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                      </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-6 lg:col-span-4">
+                    <div class="w-full bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
+                        <img alt="item_image" class="rounded-lg w-full sm:w-[130px] h-[160px] md:h-auto" src="https://s3-alpha-sig.figma.com/img/d702/ea44/c3bb97292e294c204cad2d45be838488?Expires=1693180800&Signature=M9TrulF7mv1GbebF~XcjS5Yrws4RFBf2MxAR28zgkrfnI8yL-pOkrrwuluo0cd9znWMcK2kwZ-eVvzy~2dT8mHOdlBPTSCsK6Lo6f9L4dzwpNpe1ygg5Bku29G~nxpK2Qg9Oy-nGkCoT7uNZHg~c-IQ64xgvjQ20kk1hpJWL7xO4yjnLBSHOgzyBFbZ6EfkvubbOfFzCUSt4QomsSx7NK6oHq6cfbX-3Zlh3XKNbGmBQ1FdlFs2IY-9kArPqC8fhKElSvKWZXmxrs1HlGAdsCHaRfeD2h4FYU-~9dr7a73vb1JX4y8D5J41zpa-Z1BCxqjseC0zyy5PAbV4bdK2hzA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" />
+                        <div class="max-w-full w-full mt-0 flex flex-col sm:ml-4">
+                            <h5 class="text-[#000] mb-2 sm:mb-3 mt-2 sm:mt-0 text-lg font-bold" >Baby Back Ribs</h5>
+                            <p class="text-[#545454] text-[14px] font-medium">Oven baked salmon on a bed ofcaramelized onions</p>
+                            <div class="flex justify-between items-center mt-7">
+                                <span class="text-[#00598B] text-lg font-bold" >$25.99</span>
+                                <div class="w-8 h-8 bg-[#037ABC] rounded-[50%] flex justify-center items-center" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="26" viewBox="0 0 24 26" fill="none">
+                                        <path d="M12.0001 3.94903V22.051M3.51477 13H20.4853" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                      </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w-full mb-[60px]">
+            <div class="p-5 rounded-lg text-lg bg-[#E8EEF6] mb-8 text-[#0F133C] font-medium">PASTA</div>
+            <div class="grid grid-cols-12 gap-4">
+                <div class="col-span-6 lg:col-span-4">
+                    <div class="w-full bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
+                        <img alt="item_image" class="rounded-lg w-full sm:w-[130px] h-[160px] md:h-auto" src="https://s3-alpha-sig.figma.com/img/d702/ea44/c3bb97292e294c204cad2d45be838488?Expires=1693180800&Signature=M9TrulF7mv1GbebF~XcjS5Yrws4RFBf2MxAR28zgkrfnI8yL-pOkrrwuluo0cd9znWMcK2kwZ-eVvzy~2dT8mHOdlBPTSCsK6Lo6f9L4dzwpNpe1ygg5Bku29G~nxpK2Qg9Oy-nGkCoT7uNZHg~c-IQ64xgvjQ20kk1hpJWL7xO4yjnLBSHOgzyBFbZ6EfkvubbOfFzCUSt4QomsSx7NK6oHq6cfbX-3Zlh3XKNbGmBQ1FdlFs2IY-9kArPqC8fhKElSvKWZXmxrs1HlGAdsCHaRfeD2h4FYU-~9dr7a73vb1JX4y8D5J41zpa-Z1BCxqjseC0zyy5PAbV4bdK2hzA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" />
+                        <div class="max-w-full w-full mt-0 flex flex-col sm:ml-4">
+                            <h5 class="text-[#000] mb-2 sm:mb-3 mt-2 sm:mt-0 text-lg font-bold" >Baby Back Ribs</h5>
+                            <p class="text-[#545454] text-[14px] font-medium">Oven baked salmon on a bed ofcaramelized onions</p>
+                            <div class="flex justify-between items-center mt-7">
+                                <span class="text-[#00598B] text-lg font-bold" >$25.99</span>
+                                <div class="w-8 h-8 bg-[#037ABC] rounded-[50%] flex justify-center items-center" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="26" viewBox="0 0 24 26" fill="none">
+                                        <path d="M12.0001 3.94903V22.051M3.51477 13H20.4853" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                      </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-6 lg:col-span-4">
+                    <div class="w-full bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
+                        <img alt="item_image" class="rounded-lg w-full sm:w-[130px] h-[160px] md:h-auto" src="https://s3-alpha-sig.figma.com/img/d702/ea44/c3bb97292e294c204cad2d45be838488?Expires=1693180800&Signature=M9TrulF7mv1GbebF~XcjS5Yrws4RFBf2MxAR28zgkrfnI8yL-pOkrrwuluo0cd9znWMcK2kwZ-eVvzy~2dT8mHOdlBPTSCsK6Lo6f9L4dzwpNpe1ygg5Bku29G~nxpK2Qg9Oy-nGkCoT7uNZHg~c-IQ64xgvjQ20kk1hpJWL7xO4yjnLBSHOgzyBFbZ6EfkvubbOfFzCUSt4QomsSx7NK6oHq6cfbX-3Zlh3XKNbGmBQ1FdlFs2IY-9kArPqC8fhKElSvKWZXmxrs1HlGAdsCHaRfeD2h4FYU-~9dr7a73vb1JX4y8D5J41zpa-Z1BCxqjseC0zyy5PAbV4bdK2hzA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" />
+                        <div class="max-w-full w-full mt-0 flex flex-col sm:ml-4">
+                            <h5 class="text-[#000] mb-2 sm:mb-3 mt-2 sm:mt-0 text-lg font-bold" >Baby Back Ribs</h5>
+                            <p class="text-[#545454] text-[14px] font-medium">Oven baked salmon on a bed ofcaramelized onions</p>
+                            <div class="flex justify-between items-center mt-7">
+                                <span class="text-[#00598B] text-lg font-bold" >$25.99</span>
+                                <div class="w-8 h-8 bg-[#037ABC] rounded-[50%] flex justify-center items-center" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="26" viewBox="0 0 24 26" fill="none">
+                                        <path d="M12.0001 3.94903V22.051M3.51477 13H20.4853" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                      </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-6 lg:col-span-4">
+                    <div class="w-full bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
+                        <img alt="item_image" class="rounded-lg w-full sm:w-[130px] h-[160px] md:h-auto" src="https://s3-alpha-sig.figma.com/img/d702/ea44/c3bb97292e294c204cad2d45be838488?Expires=1693180800&Signature=M9TrulF7mv1GbebF~XcjS5Yrws4RFBf2MxAR28zgkrfnI8yL-pOkrrwuluo0cd9znWMcK2kwZ-eVvzy~2dT8mHOdlBPTSCsK6Lo6f9L4dzwpNpe1ygg5Bku29G~nxpK2Qg9Oy-nGkCoT7uNZHg~c-IQ64xgvjQ20kk1hpJWL7xO4yjnLBSHOgzyBFbZ6EfkvubbOfFzCUSt4QomsSx7NK6oHq6cfbX-3Zlh3XKNbGmBQ1FdlFs2IY-9kArPqC8fhKElSvKWZXmxrs1HlGAdsCHaRfeD2h4FYU-~9dr7a73vb1JX4y8D5J41zpa-Z1BCxqjseC0zyy5PAbV4bdK2hzA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" />
+                        <div class="max-w-full w-full mt-0 flex flex-col sm:ml-4">
+                            <h5 class="text-[#000] mb-2 sm:mb-3 mt-2 sm:mt-0 text-lg font-bold" >Baby Back Ribs</h5>
+                            <p class="text-[#545454] text-[14px] font-medium">Oven baked salmon on a bed ofcaramelized onions</p>
+                            <div class="flex justify-between items-center mt-7">
+                                <span class="text-[#00598B] text-lg font-bold" >$25.99</span>
+                                <div class="w-8 h-8 bg-[#037ABC] rounded-[50%] flex justify-center items-center" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="26" viewBox="0 0 24 26" fill="none">
+                                        <path d="M12.0001 3.94903V22.051M3.51477 13H20.4853" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                      </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-6 lg:col-span-4">
+                    <div class="w-full bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
+                        <img alt="item_image" class="rounded-lg w-full sm:w-[130px] h-[160px] md:h-auto" src="https://s3-alpha-sig.figma.com/img/d702/ea44/c3bb97292e294c204cad2d45be838488?Expires=1693180800&Signature=M9TrulF7mv1GbebF~XcjS5Yrws4RFBf2MxAR28zgkrfnI8yL-pOkrrwuluo0cd9znWMcK2kwZ-eVvzy~2dT8mHOdlBPTSCsK6Lo6f9L4dzwpNpe1ygg5Bku29G~nxpK2Qg9Oy-nGkCoT7uNZHg~c-IQ64xgvjQ20kk1hpJWL7xO4yjnLBSHOgzyBFbZ6EfkvubbOfFzCUSt4QomsSx7NK6oHq6cfbX-3Zlh3XKNbGmBQ1FdlFs2IY-9kArPqC8fhKElSvKWZXmxrs1HlGAdsCHaRfeD2h4FYU-~9dr7a73vb1JX4y8D5J41zpa-Z1BCxqjseC0zyy5PAbV4bdK2hzA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" />
+                        <div class="max-w-full w-full mt-0 flex flex-col sm:ml-4">
+                            <h5 class="text-[#000] mb-2 sm:mb-3 mt-2 sm:mt-0 text-lg font-bold" >Baby Back Ribs</h5>
+                            <p class="text-[#545454] text-[14px] font-medium">Oven baked salmon on a bed ofcaramelized onions</p>
+                            <div class="flex justify-between items-center mt-7">
+                                <span class="text-[#00598B] text-lg font-bold" >$25.99</span>
+                                <div class="w-8 h-8 bg-[#037ABC] rounded-[50%] flex justify-center items-center" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="26" viewBox="0 0 24 26" fill="none">
+                                        <path d="M12.0001 3.94903V22.051M3.51477 13H20.4853" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                      </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w-full mb-[60px]">
+            <div class="p-5 rounded-lg text-lg bg-[#E8EEF6] mb-8 text-[#0F133C] font-medium">CHICKEN</div>
+            <div class="grid grid-cols-12 gap-4">
+                <div class="col-span-6 lg:col-span-4">
+                    <div class="w-full bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
+                        <img alt="item_image" class="rounded-lg w-full sm:w-[130px] h-[160px] md:h-auto" src="https://s3-alpha-sig.figma.com/img/d702/ea44/c3bb97292e294c204cad2d45be838488?Expires=1693180800&Signature=M9TrulF7mv1GbebF~XcjS5Yrws4RFBf2MxAR28zgkrfnI8yL-pOkrrwuluo0cd9znWMcK2kwZ-eVvzy~2dT8mHOdlBPTSCsK6Lo6f9L4dzwpNpe1ygg5Bku29G~nxpK2Qg9Oy-nGkCoT7uNZHg~c-IQ64xgvjQ20kk1hpJWL7xO4yjnLBSHOgzyBFbZ6EfkvubbOfFzCUSt4QomsSx7NK6oHq6cfbX-3Zlh3XKNbGmBQ1FdlFs2IY-9kArPqC8fhKElSvKWZXmxrs1HlGAdsCHaRfeD2h4FYU-~9dr7a73vb1JX4y8D5J41zpa-Z1BCxqjseC0zyy5PAbV4bdK2hzA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" />
+                        <div class="max-w-full w-full mt-0 flex flex-col sm:ml-4">
+                            <h5 class="text-[#000] mb-2 sm:mb-3 mt-2 sm:mt-0 text-lg font-bold" >Baby Back Ribs</h5>
+                            <p class="text-[#545454] text-[14px] font-medium">Oven baked salmon on a bed ofcaramelized onions</p>
+                            <div class="flex justify-between items-center mt-7">
+                                <span class="text-[#00598B] text-lg font-bold" >$25.99</span>
+                                <div class="w-8 h-8 bg-[#037ABC] rounded-[50%] flex justify-center items-center" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="26" viewBox="0 0 24 26" fill="none">
+                                        <path d="M12.0001 3.94903V22.051M3.51477 13H20.4853" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                      </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-6 lg:col-span-4">
+                    <div class="w-full bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
+                        <img alt="item_image" class="rounded-lg w-full sm:w-[130px] h-[160px] md:h-auto" src="https://s3-alpha-sig.figma.com/img/d702/ea44/c3bb97292e294c204cad2d45be838488?Expires=1693180800&Signature=M9TrulF7mv1GbebF~XcjS5Yrws4RFBf2MxAR28zgkrfnI8yL-pOkrrwuluo0cd9znWMcK2kwZ-eVvzy~2dT8mHOdlBPTSCsK6Lo6f9L4dzwpNpe1ygg5Bku29G~nxpK2Qg9Oy-nGkCoT7uNZHg~c-IQ64xgvjQ20kk1hpJWL7xO4yjnLBSHOgzyBFbZ6EfkvubbOfFzCUSt4QomsSx7NK6oHq6cfbX-3Zlh3XKNbGmBQ1FdlFs2IY-9kArPqC8fhKElSvKWZXmxrs1HlGAdsCHaRfeD2h4FYU-~9dr7a73vb1JX4y8D5J41zpa-Z1BCxqjseC0zyy5PAbV4bdK2hzA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" />
+                        <div class="max-w-full w-full mt-0 flex flex-col sm:ml-4">
+                            <h5 class="text-[#000] mb-2 sm:mb-3 mt-2 sm:mt-0 text-lg font-bold" >Baby Back Ribs</h5>
+                            <p class="text-[#545454] text-[14px] font-medium">Oven baked salmon on a bed ofcaramelized onions</p>
+                            <div class="flex justify-between items-center mt-7">
+                                <span class="text-[#00598B] text-lg font-bold" >$25.99</span>
+                                <div class="w-8 h-8 bg-[#037ABC] rounded-[50%] flex justify-center items-center" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="26" viewBox="0 0 24 26" fill="none">
+                                        <path d="M12.0001 3.94903V22.051M3.51477 13H20.4853" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                      </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-6 lg:col-span-4">
+                    <div class="w-full bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
+                        <img alt="item_image" class="rounded-lg w-full sm:w-[130px] h-[160px] md:h-auto" src="https://s3-alpha-sig.figma.com/img/d702/ea44/c3bb97292e294c204cad2d45be838488?Expires=1693180800&Signature=M9TrulF7mv1GbebF~XcjS5Yrws4RFBf2MxAR28zgkrfnI8yL-pOkrrwuluo0cd9znWMcK2kwZ-eVvzy~2dT8mHOdlBPTSCsK6Lo6f9L4dzwpNpe1ygg5Bku29G~nxpK2Qg9Oy-nGkCoT7uNZHg~c-IQ64xgvjQ20kk1hpJWL7xO4yjnLBSHOgzyBFbZ6EfkvubbOfFzCUSt4QomsSx7NK6oHq6cfbX-3Zlh3XKNbGmBQ1FdlFs2IY-9kArPqC8fhKElSvKWZXmxrs1HlGAdsCHaRfeD2h4FYU-~9dr7a73vb1JX4y8D5J41zpa-Z1BCxqjseC0zyy5PAbV4bdK2hzA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" />
+                        <div class="max-w-full w-full mt-0 flex flex-col sm:ml-4">
+                            <h5 class="text-[#000] mb-2 sm:mb-3 mt-2 sm:mt-0 text-lg font-bold" >Baby Back Ribs</h5>
+                            <p class="text-[#545454] text-[14px] font-medium">Oven baked salmon on a bed ofcaramelized onions</p>
+                            <div class="flex justify-between items-center mt-7">
+                                <span class="text-[#00598B] text-lg font-bold" >$25.99</span>
+                                <div class="w-8 h-8 bg-[#037ABC] rounded-[50%] flex justify-center items-center" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="26" viewBox="0 0 24 26" fill="none">
+                                        <path d="M12.0001 3.94903V22.051M3.51477 13H20.4853" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                      </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-6 lg:col-span-4">
+                    <div class="w-full bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
+                        <img alt="item_image" class="rounded-lg w-full sm:w-[130px] h-[160px] md:h-auto" src="https://s3-alpha-sig.figma.com/img/d702/ea44/c3bb97292e294c204cad2d45be838488?Expires=1693180800&Signature=M9TrulF7mv1GbebF~XcjS5Yrws4RFBf2MxAR28zgkrfnI8yL-pOkrrwuluo0cd9znWMcK2kwZ-eVvzy~2dT8mHOdlBPTSCsK6Lo6f9L4dzwpNpe1ygg5Bku29G~nxpK2Qg9Oy-nGkCoT7uNZHg~c-IQ64xgvjQ20kk1hpJWL7xO4yjnLBSHOgzyBFbZ6EfkvubbOfFzCUSt4QomsSx7NK6oHq6cfbX-3Zlh3XKNbGmBQ1FdlFs2IY-9kArPqC8fhKElSvKWZXmxrs1HlGAdsCHaRfeD2h4FYU-~9dr7a73vb1JX4y8D5J41zpa-Z1BCxqjseC0zyy5PAbV4bdK2hzA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" />
+                        <div class="max-w-full w-full mt-0 flex flex-col sm:ml-4">
+                            <h5 class="text-[#000] mb-2 sm:mb-3 mt-2 sm:mt-0 text-lg font-bold" >Baby Back Ribs</h5>
+                            <p class="text-[#545454] text-[14px] font-medium">Oven baked salmon on a bed ofcaramelized onions</p>
+                            <div class="flex justify-between items-center mt-7">
+                                <span class="text-[#00598B] text-lg font-bold" >$25.99</span>
+                                <div class="w-8 h-8 bg-[#037ABC] rounded-[50%] flex justify-center items-center" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="26" viewBox="0 0 24 26" fill="none">
+                                        <path d="M12.0001 3.94903V22.051M3.51477 13H20.4853" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                      </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="footer" class="w-full bg-black text-center py-6 md:py-8">
+        <span class="text-center text-white text-xs">© 2023 CLIQBUX</span>
+    </section>
+</body>
+</html>
