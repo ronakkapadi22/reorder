@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;500;600;700&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titos</title>
+</head>
+
+<body>
+    <section id="header" class="w-full flex items-center justify-between py-4 px-4 md:px-[26px] lg:px-[60px] h-[80px]">
+        <div id="logo" class="flex items-center cursor-pointer">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20" viewBox="0 0 16 20" fill="#E7286D">
+                <path
+                    d="M13.5884 3.16602C10.5051 0.0826807 5.50509 0.0826807 2.42176 3.16602C-0.661582 6.24935 -0.661582 11.3327 2.42176 14.416L8.00511 19.9993L13.5884 14.3327C16.6717 11.3327 16.6717 6.24935 13.5884 3.16602ZM8.00511 10.416C7.08841 10.416 6.33841 9.666 6.33841 8.7493C6.33841 7.83268 7.08841 7.08268 8.00511 7.08268C8.92171 7.08268 9.67171 7.83268 9.67171 8.7493C9.67171 9.666 8.92171 10.416 8.00511 10.416Z"
+                    fill="#E7286D" />
+            </svg>
+            <p class="ml-4 text-[#333] font-semibold text-base">Titos Bistro</p>
+        </div>
+        <div class="relative hidden md:block">
+            <input placeholder="Search Item"
+                class="xs:min-w-full w-full placeholder:text-[#464646] sm:min-w-[298px] lg:min-w-[466px] border border-[#B8B8B8] placeholder:text-base placeholder:font-[400] outline-none px-3 py-4 rounded-[100px] pl-12"
+                type="text" />
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 absolute top-1/2 -translate-y-1/2 left-4" width="24"
+                height="24" viewBox="0 0 24 24" fill="none">
+                <path
+                    d="M21 21L17.5001 17.5M20 11.5C20 16.1944 16.1944 20 11.5 20C6.80558 20 3 16.1944 3 11.5C3 6.80558 6.80558 3 11.5 3C16.1944 3 20 6.80558 20 11.5Z"
+                    stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </div>
+        <div class="flex items-center">
+            <p class="hidden md:block text-[#333] font-semibold text-base mr-5 lg:mr-12">Sign in/Sign up</p>
+            <svg xmlns="http://www.w3.org/2000/svg" class="block md:hidden cursor-pointer" width="25" height="24"
+                viewBox="0 0 25 24" fill="none">
+                <path
+                    d="M21.995 21L18.4951 17.5M20.995 11.5C20.995 16.1944 17.1894 20 12.495 20C7.80057 20 3.995 16.1944 3.995 11.5C3.995 6.80558 7.80057 3 12.495 3C17.1894 3 20.995 6.80558 20.995 11.5Z"
+                    stroke="#464646" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="block md:hidden mx-6 cursor-pointer" width="27" height="26"
+                viewBox="0 0 27 26" fill="none">
+                <path
+                    d="M22.6616 22.75C22.6616 21.2381 22.6616 20.4822 22.475 19.8671C22.0549 18.4822 20.9711 17.3984 19.5862 16.9783C18.9711 16.7917 18.2152 16.7917 16.7033 16.7917H11.2866C9.77478 16.7917 9.01885 16.7917 8.40374 16.9783C7.0188 17.3984 5.93502 18.4822 5.5149 19.8671C5.32831 20.4822 5.32831 21.2381 5.32831 22.75M18.87 8.125C18.87 10.8174 16.6874 13 13.995 13C11.3026 13 9.11997 10.8174 9.11997 8.125C9.11997 5.43261 11.3026 3.25 13.995 3.25C16.6874 3.25 18.87 5.43261 18.87 8.125Z"
+                    stroke="#464646" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <div class="relative cursor-pointer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="#21A453">
+                    <path
+                        d="M22.9091 7.63636V0H5.09091V7.63636H0V20.3636C0 24.5636 3.43636 28 7.63636 28H20.3636C24.5635 28 27.9999 24.5636 27.9999 20.3636V7.63636H22.9091ZM8.90909 3.81818H19.0909V7.63636H8.90909V3.81818Z"
+                        fill="#21A453" />
+                </svg>
+                <span class="absolute top-1/2 left-1/2 -translate-y-[40%] -translate-x-1/2 text-white">0</span>
+            </div>
+        </div>
+    </section>
+    <section id="breadcrump" class="w-full border-t-[1px] bg-white py-8 px-4 md:px-[26px] lg:px-[60px]">
+        <div class="w-full flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="cursor-pointer" width="24" height="24" viewBox="0 0 24 24"
+                fill="none">
+                <path d="M19 12H5M5 12L12 19M5 12L12 5" stroke="black" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+            <p class="text-[#1D1D1D] text-[20px] font-semibold ml-5">Review Order and Checkout</p>
+        </div>
+    </section>
+    <section id="checkout" class="w-full bg-[#F7F9FE] p-0 md:py-8 lg:py-[60px] md:px-[60px]">
+        <div class="w-full grid grid-cols-12 gap-1 lg:gap-8">
+            <div class="col-span-12 lg:col-span-7">
+                <div class="p-5 rounded-lg text-lg bg-[#E8EEF6] mb-8 text-[#0F133C] font-medium">DELIVERY TO</div>
+                <div class="w-full mt-6 px-6 md:px-0">
+                    <form class="w-full grid grid-cols-12 gap-4">
+                        <div class="col-span-12 md:col-span-6 flex flex-col mb-6">
+                            <span class="text-[#464646] font-semibold">Full Name</span>
+                            <input placeholder="Input Full Name"
+                                class="mt-[6px] px-3 border border-[#B8B8B8] rounded-lg py-4 outline-none placeholder:text-sm placeholder:text-[#7C7F86]"
+                                type="text" />
+                        </div>
+                        <div class="col-span-12 md:col-span-6 flex flex-col mb-6">
+                            <span class="text-[#464646] font-semibold">Phone Number</span>
+                            <input placeholder="Input Phone Number"
+                                class="mt-[6px] px-3 border border-[#B8B8B8] rounded-lg py-4 outline-none placeholder:text-sm placeholder:text-[#7C7F86]"
+                                type="number" />
+                        </div>
+                        <div class="col-span-12 md:col-span-6 flex flex-col mb-6">
+                            <span class="text-[#464646] font-semibold">Address</span>
+                            <input placeholder="Input Address"
+                                class="mt-[6px] px-3 border border-[#B8B8B8] rounded-lg py-4 outline-none placeholder:text-sm placeholder:text-[#7C7F86]"
+                                type="text" />
+                        </div>
+                        <div class="col-span-12 md:col-span-6 flex flex-col mb-6">
+                            <span class="text-[#464646] font-semibold">Apartment, suite, etc</span>
+                            <input placeholder="Input Apartment, suite, etc"
+                                class="mt-[6px] px-3 border border-[#B8B8B8] rounded-lg py-4 outline-none placeholder:text-sm placeholder:text-[#7C7F86]"
+                                type="text" />
+                        </div>
+                        <div class="col-span-12 md:col-span-6 flex flex-col mb-6">
+                            <span class="text-[#464646] font-semibold">City</span>
+                            <select placeholder="Select City"
+                                class="mt-[6px] px-3 border border-[#B8B8B8] rounded-lg py-4 outline-none placeholder:text-sm placeholder:text-[#7C7F86]"
+                                type="select">
+                                <option>Ahmedabad</option>
+                                <option>Gandhinagar</option>
+                            </select>
+                        </div>
+                        <div class="col-span-12 md:col-span-6 flex flex-col mb-6">
+                            <span class="text-[#464646] font-semibold">State/Provice</span>
+                            <select placeholder="Select State/Province"
+                                class="mt-[6px] px-3 border border-[#B8B8B8] rounded-lg py-4 outline-none placeholder:text-sm placeholder:text-[#7C7F86]"
+                                type="select">
+                                <option>Gujarat</option>
+                                <option>Rajasthan</option>
+                            </select>
+                        </div>
+                        <div class="col-span-12 md:col-span-6 flex flex-col mb-6">
+                            <span class="text-[#464646] font-semibold">Country</span>
+                            <select placeholder="Select Country"
+                                class="mt-[6px] px-3 border border-[#B8B8B8] rounded-lg py-4 outline-none placeholder:text-sm placeholder:text-[#7C7F86]"
+                                type="select">
+                                <option>India</option>
+                                <option>Nepal</option>
+                            </select>
+                        </div>
+                        <div class="col-span-12 md:col-span-6 flex flex-col mb-6">
+                            <span class="text-[#464646] font-semibold">ZIP/Postal Code</span>
+                            <select placeholder="Input ZIP/Postal Code"
+                                class="mt-[6px] px-3 border border-[#B8B8B8] rounded-lg py-4 outline-none placeholder:text-sm placeholder:text-[#7C7F86]"
+                                type="select">
+                                <option>362130</option>
+                                <option>380001</option>
+                            </select>
+                        </div>
+                        <div class="col-span-12 flex items-center my-4">
+                            <input type="checkbox" class="accent-[#21A453]" />
+                            <span class="text-sm text-[#2F2F2F] ml-2">My billing and delivery address are the
+                                same</span>
+                        </div>
+                        <div class="col-span-12 flex items-center my-0 mb-6 md:mb-0 md:my-4">
+                            <input type="checkbox" class="accent-[#21A453]" />
+                            <span class="text-sm text-[#2F2F2F] ml-2">Create an account for later use</span>
+                        </div>
+                    </form>
+                </div>
+                <hr class="text-[#EBF0F6] hidden md:block my-10" />
+                <div class="p-5 rounded-lg text-lg bg-[#E8EEF6] mb-8 text-[#0F133C] font-medium">PAYMENT METHOD</div>
+                <div class="px-6 md:px-0">
+                    <div class="mt-6 border rounded-lg border-[#B2BCCA] py-6 px-5">
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <label for="PayPal" class="font-semibold">
+                                    <input type="radio" value="PayPal" placeholder="PayPal"> PayPal
+                                </label>
+                                <span class="ml-4 hidden md:inline text-sm text-[#4F4F4F]">You will be redirected to the
+                                    PayPal website after
+                                    submitting your order</span>
+                            </div>
+                            <div class="border flex justify-center items-center rounded-md px-4 py-2 border-[#B2BCCA]">
+                                <img src="./assets/PayPal.svg" alt="PayPal">
+                            </div>
+                        </div>
+                        <span class="block md:hidden text-sm mt-3 text-[#4F4F4F]">You will be redirected to the PayPal
+                            website after
+                            submitting your order</span>
+                    </div>
+                    <div class="my-6 border rounded-lg border-[#B2BCCA] py-6 px-5">
+                        <div class="md:justify-between md:items-center flex-col md:flex-row flex">
+                            <label for="PayPal" class="font-semibold mb-4 md:mb-0">
+                                <input type="radio" value="PayPal" placeholder="PayPal"> Pay With Card
+                            </label>
+                            <div class="flex md:justify-center items-center">
+                                <div
+                                    class="border flex justify-center items-center h-[30px] w-[46px] ml-[6px] rounded-md p-2 border-[#B2BCCA]">
+                                    <img src="./assets/visa-logo.svg" alt="visa-logo">
+                                </div>
+                                <div
+                                    class="border flex justify-center items-center h-[30px] w-[46px] ml-[6px] rounded-md p-2 border-[#B2BCCA]">
+                                    <img src="./assets/Mastercard.svg" alt="Mastercard">
+                                </div>
+                                <div
+                                    class="border flex justify-center items-center h-[30px] w-[46px] ml-[6px] rounded-md p-2 border-[#B2BCCA]">
+                                    <img src="./assets/Maestro.svg" alt="Maestro">
+                                </div>
+                                <div
+                                    class="border flex justify-center items-center h-[30px] w-[46px] ml-[6px] rounded-md p-2 border-[#B2BCCA]">
+                                    <img src="./assets/Discover.png" alt="Maestro">
+                                </div>
+                            </div>
+                        </div>
+                        <form class="grid grid-cols-12 gap-4 mt-6">
+                            <div class="col-span-12 md:col-span-6 flex flex-col">
+                                <span class="text-[#464646] font-semibold">Card Number</span>
+                                <input placeholder="4242 4242 4242 4242"
+                                    class="mt-[6px] px-3 border border-[#B8B8B8] rounded-lg py-4 outline-none placeholder:text-sm placeholder:text-[#7C7F86]"
+                                    type="number" />
+                            </div>
+                            <div class="col-span-6 md:col-span-3 flex flex-col">
+                                <span class="text-[#464646] font-semibold">Expiration Date</span>
+                                <input placeholder="MM/YY"
+                                    class="mt-[6px] px-3 border border-[#B8B8B8] rounded-lg py-4 outline-none placeholder:text-sm placeholder:text-[#7C7F86]"
+                                    type="number" />
+                            </div>
+                            <div class="col-span-6 md:col-span-3 flex flex-col">
+                                <span class="text-[#464646] font-semibold">CVV</span>
+                                <input placeholder="123"
+                                    class="mt-[6px] px-3 border border-[#B8B8B8] rounded-lg py-4 outline-none placeholder:text-sm placeholder:text-[#7C7F86]"
+                                    type="number" />
+                            </div>
+                        </form>
+                    </div>
+                    <div class="flex items-center">
+                        <img src="./assets/lock.svg" alt="security">
+                        <span class="ml-4 text-sm text-[#4F4F4F]">We protect your payment information using encryption
+                            to provide bank-level security.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-12 lg:col-span-5">
+                <div class="w-full px-6 md:px-0 py-8 lg:py-0">
+                    <div class="w-full bg-white rounded-[24px] px-4 py-6 md:px-6">
+                        <h4 class="font-semibold mb-8 md:mb-12 text-xl md:text-2xl">Order Summary</h4>
+                        <div class="w-full mb-6 justify-between flex">
+                            <div class="flex">
+                                <img class="w-[96px] xl:w-[140px] h-[96px] xl:h-[140px] rounded-xl"
+                                    src="./assets/item.png" alt="item">
+                                <div>
+                                    <div class="ml-3 md:ml-6">
+                                        <p class="text-[12px] md:text-[16px] text-[#000] font-semibold mb-1 md:mb-2">
+                                            Baked Salmon w/ onion glazed</p>
+                                        <p class="text-[12px] md:text-[16px] text-[#545454] font-medium mb-1">Oven baked
+                                            salmon on a bed of
+                                            caramelized onions
+                                        </p>
+                                        <div class="flex justify-between items-center mt-2 md:mt-4">
+                                            <p class="font-bold text-[16px] block md:hidden">$21.99</p>
+                                            <span class="flex justify-center items-center">
+                                                <img src="./assets/minus.svg" alt="minus" />
+                                                <span class="font-semibold md:mx-3 px-2">1</span>
+                                                <img src="./assets/plus.svg" alt="plus" />
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hidden md:block">
+                                <p class="font-bold text-[16px] hidden md:block">$21.99</p>
+                            </div>
+                        </div>
+                        <div class="w-full mb-6 justify-between flex">
+                            <div class="flex">
+                                <img class="w-[96px] xl:w-[140px] h-[96px] xl:h-[140px] rounded-xl"
+                                    src="./assets/item.png" alt="item">
+                                <div>
+                                    <div class="ml-3 md:ml-6">
+                                        <p class="text-[12px] md:text-[16px] text-[#000] font-semibold mb-1 md:mb-2">
+                                            Baked Salmon w/ onion glazed</p>
+                                        <p class="text-[12px] md:text-[16px] text-[#545454] font-medium mb-1">Oven baked
+                                            salmon on a bed of
+                                            caramelized onions
+                                        </p>
+                                        <div class="flex justify-between items-center mt-2 md:mt-4">
+                                            <p class="font-bold text-[16px] block md:hidden">$21.99</p>
+                                            <span class="flex justify-center items-center">
+                                                <img src="./assets/minus.svg" alt="minus" />
+                                                <span class="font-semibold md:mx-3 px-2">1</span>
+                                                <img src="./assets/plus.svg" alt="plus" />
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hidden md:block">
+                                <p class="font-bold text-[16px] hidden md:block">$21.99</p>
+                            </div>
+                        </div>
+                        <hr class="my-6" />
+                        <div class="w-full">
+                            <div class="flex justify-between items-center mb-3">
+                                <p class="text-[14px] text-[#545454] font-medium">Subtotal</p>
+                                <p class="text-[14px] font-bold">$40.98</p>
+                            </div>
+                            <div class="flex justify-between items-center mb-3">
+                                <p class="text-[14px] text-[#545454] font-medium">Delivery fee</p>
+                                <p class="text-[14px] font-bold">$5.00</p>
+                            </div>
+                            <hr class="my-6" />
+                            <div class="flex justify-between items-center mb-3">
+                                <p class="text-[14px] text-[#545454] font-medium">Total</p>
+                                <p class="text-[20px] font-bold">$45.98</p>
+                            </div>
+                            <button id="open-btn"
+                                class="mt-6 p-4 text-white text-[15px] font-bold bg-[#037ABC] w-full rounded-[50px]">
+                                Place Order</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--  Footer  -->
+    <section id="footer" class="w-full bg-black text-center py-6 md:py-8">
+        <span class="text-center text-white text-xs">© 2023 CLIQBUX</span>
+    </section>
+
+    <!--  Order modal  -->
+    <div class="fixed hidden z-10 insert-0 bg-black bg-opacity-80 overflow-y-auto h-full w-full top-0" id="modal">
+        <div
+            class="bg-white absolute rounded-[24px] w-[500px] mx-auto top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 px-4 p-6">
+            <div class="flex justify-center flex-col items-center mb-6">
+                <img src="./assets/check-circle.svg" class="w-[72px] h-[72px] mb-6" alt="success" />
+                <h5 class="text-black text-xl font-bold">Order Placed!</h5>
+                <p class="text-sm mt-2 text-[#545454]">Thank you, Anna Doe!</p>
+            </div>
+            <div class="w-full px-6 py-3 border border-[#EDEEF0] rounded-xl">
+                <div class="flex py-4 items-center border-b justify-between">
+                    <p class="text-sm font-medium">Delivery From</p>
+                    <div class="flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20" viewBox="0 0 16 20"
+                            fill="#E7286D">
+                            <path
+                                d="M13.5884 3.16602C10.5051 0.0826807 5.50509 0.0826807 2.42176 3.16602C-0.661582 6.24935 -0.661582 11.3327 2.42176 14.416L8.00511 19.9993L13.5884 14.3327C16.6717 11.3327 16.6717 6.24935 13.5884 3.16602ZM8.00511 10.416C7.08841 10.416 6.33841 9.666 6.33841 8.7493C6.33841 7.83268 7.08841 7.08268 8.00511 7.08268C8.92171 7.08268 9.67171 7.83268 9.67171 8.7493C9.67171 9.666 8.92171 10.416 8.00511 10.416Z"
+                                fill="#E7286D" />
+                        </svg>
+                        <p class="ml-4 text-[#333] font-semibold text-base">Titos Bistro</p>
+                    </div>
+                </div>
+                <div class="flex py-4 items-center border-b justify-between">
+                    <p class="text-sm font-medium">Delivery To</p>
+                    <p class="ml-4 text-[#333] font-semibold text-base">1234 Address, City, Zip Code</p>
+                </div>
+                <div class="flex py-4 items-center border-b justify-between">
+                    <p class="text-sm font-medium">Order ID</p>
+                    <p class="ml-4 text-[#333] font-semibold text-base">TRN1234567890</p>
+                </div>
+                <div class="flex py-4 items-center border-b justify-between">
+                    <p class="text-sm font-medium">Order Summary</p>
+                    <p class="ml-4 text-[#333] font-semibold text-base">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                            <path d="M6.16992 9L12.1699 15L18.1699 9" stroke="black" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </p>
+                </div>
+                <div class="flex py-4 items-center border-b justify-between">
+                    <p class="text-sm font-medium">Total</p>
+                    <p class="ml-4 text-[#333] font-semibold text-base">$45.98</p>
+                </div>
+                <div class="flex py-4 items-center justify-center">
+                    <p class="ml-4 text-[#037ABC] cursor-pointer font-semibold text-base">Order Details</p>
+                </div>
+            </div>
+            <div class="w-full px-6">
+                <button id="redirect"
+                    class="my-6 p-4 cursor-pointer text-white text-[15px] font-bold bg-[#037ABC] w-full rounded-[50px]">Continue
+                    Shopping</button>
+                <p class="text-center text-sm font-medium">Need Help?<span
+                        class="ml-2 cursor-pointer text-sm font-bold text-[#037ABC]">Contact Us</span></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Store modal  -->
+    <div class="fixed hidden z-10 insert-0 bg-black bg-opacity-80 overflow-y-auto h-full w-full top-0" id="store-modal">
+        <div
+            class="bg-white absolute rounded-[24px] w-[500px] mx-auto top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 p-6">
+            <div class="w-full flex items-center mb-6">
+                <img id="close-btn" class="p-1 cursor-pointer rounded-[50%] border-2" src="./assets/close.svg" />
+                <h4 class="font-bold text-black text-xl ml-4">Select Store</h4>
+            </div>
+            <div class="w-full h-[436px] overflow-y-auto">
+                <div class="w-full hover:bg-[#F2F6FC] hover:border-[#F2F6FC] flex items-center justify-between px-5 border rounded-xl cursor-pointer py-2">
+                    <div class="flex flex-col">
+                        <div id="logo" class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20" viewBox="0 0 16 20"
+                                fill="#E7286D">
+                                <path
+                                    d="M13.5884 3.16602C10.5051 0.0826807 5.50509 0.0826807 2.42176 3.16602C-0.661582 6.24935 -0.661582 11.3327 2.42176 14.416L8.00511 19.9993L13.5884 14.3327C16.6717 11.3327 16.6717 6.24935 13.5884 3.16602ZM8.00511 10.416C7.08841 10.416 6.33841 9.666 6.33841 8.7493C6.33841 7.83268 7.08841 7.08268 8.00511 7.08268C8.92171 7.08268 9.67171 7.83268 9.67171 8.7493C9.67171 9.666 8.92171 10.416 8.00511 10.416Z"
+                                    fill="#E7286D" />
+                            </svg>
+                            <p class="ml-4 text-[#333] font-semibold text-base">Titos Bistro</p>
+                        </div>
+                        <p class="ml-8 mt-[6px] text-[#545454] text-[13px] font-medium">Store details here</p>
+                    </div>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                            <path d="M9.5 18L15.5 12L9.5 6" stroke="#037ABC" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="w-full hover:bg-[#F2F6FC] hover:border-[#F2F6FC] mt-6 flex items-center justify-between px-5 border rounded-xl cursor-pointer py-2">
+                    <div class="flex flex-col">
+                        <div id="logo" class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20" viewBox="0 0 16 20"
+                                fill="#E7286D">
+                                <path
+                                    d="M13.5884 3.16602C10.5051 0.0826807 5.50509 0.0826807 2.42176 3.16602C-0.661582 6.24935 -0.661582 11.3327 2.42176 14.416L8.00511 19.9993L13.5884 14.3327C16.6717 11.3327 16.6717 6.24935 13.5884 3.16602ZM8.00511 10.416C7.08841 10.416 6.33841 9.666 6.33841 8.7493C6.33841 7.83268 7.08841 7.08268 8.00511 7.08268C8.92171 7.08268 9.67171 7.83268 9.67171 8.7493C9.67171 9.666 8.92171 10.416 8.00511 10.416Z"
+                                    fill="#E7286D" />
+                            </svg>
+                            <p class="ml-4 text-[#333] font-semibold text-base">Titos Bistro</p>
+                        </div>
+                        <p class="ml-8 mt-[6px] text-[#545454] text-[13px] font-medium">Store details here</p>
+                    </div>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                            <path d="M9.5 18L15.5 12L9.5 6" stroke="#037ABC" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="w-full hover:bg-[#F2F6FC] hover:border-[#F2F6FC] mt-6 flex items-center justify-between px-5 border rounded-xl cursor-pointer py-2">
+                    <div class="flex flex-col">
+                        <div id="logo" class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20" viewBox="0 0 16 20"
+                                fill="#E7286D">
+                                <path
+                                    d="M13.5884 3.16602C10.5051 0.0826807 5.50509 0.0826807 2.42176 3.16602C-0.661582 6.24935 -0.661582 11.3327 2.42176 14.416L8.00511 19.9993L13.5884 14.3327C16.6717 11.3327 16.6717 6.24935 13.5884 3.16602ZM8.00511 10.416C7.08841 10.416 6.33841 9.666 6.33841 8.7493C6.33841 7.83268 7.08841 7.08268 8.00511 7.08268C8.92171 7.08268 9.67171 7.83268 9.67171 8.7493C9.67171 9.666 8.92171 10.416 8.00511 10.416Z"
+                                    fill="#E7286D" />
+                            </svg>
+                            <p class="ml-4 text-[#333] font-semibold text-base">Titos Bistro</p>
+                        </div>
+                        <p class="ml-8 mt-[6px] text-[#545454] text-[13px] font-medium">Store details here</p>
+                    </div>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                            <path d="M9.5 18L15.5 12L9.5 6" stroke="#037ABC" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="w-full hover:bg-[#F2F6FC] hover:border-[#F2F6FC] mt-6 flex items-center justify-between px-5 border rounded-xl cursor-pointer py-2">
+                    <div class="flex flex-col">
+                        <div id="logo" class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20" viewBox="0 0 16 20"
+                                fill="#E7286D">
+                                <path
+                                    d="M13.5884 3.16602C10.5051 0.0826807 5.50509 0.0826807 2.42176 3.16602C-0.661582 6.24935 -0.661582 11.3327 2.42176 14.416L8.00511 19.9993L13.5884 14.3327C16.6717 11.3327 16.6717 6.24935 13.5884 3.16602ZM8.00511 10.416C7.08841 10.416 6.33841 9.666 6.33841 8.7493C6.33841 7.83268 7.08841 7.08268 8.00511 7.08268C8.92171 7.08268 9.67171 7.83268 9.67171 8.7493C9.67171 9.666 8.92171 10.416 8.00511 10.416Z"
+                                    fill="#E7286D" />
+                            </svg>
+                            <p class="ml-4 text-[#333] font-semibold text-base">Titos Bistro</p>
+                        </div>
+                        <p class="ml-8 mt-[6px] text-[#545454] text-[13px] font-medium">Store details here</p>
+                    </div>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                            <path d="M9.5 18L15.5 12L9.5 6" stroke="#037ABC" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="w-full hover:bg-[#F2F6FC] hover:border-[#F2F6FC] mt-6 flex items-center justify-between px-5 border rounded-xl cursor-pointer py-2">
+                    <div class="flex flex-col">
+                        <div id="logo" class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20" viewBox="0 0 16 20"
+                                fill="#E7286D">
+                                <path
+                                    d="M13.5884 3.16602C10.5051 0.0826807 5.50509 0.0826807 2.42176 3.16602C-0.661582 6.24935 -0.661582 11.3327 2.42176 14.416L8.00511 19.9993L13.5884 14.3327C16.6717 11.3327 16.6717 6.24935 13.5884 3.16602ZM8.00511 10.416C7.08841 10.416 6.33841 9.666 6.33841 8.7493C6.33841 7.83268 7.08841 7.08268 8.00511 7.08268C8.92171 7.08268 9.67171 7.83268 9.67171 8.7493C9.67171 9.666 8.92171 10.416 8.00511 10.416Z"
+                                    fill="#E7286D" />
+                            </svg>
+                            <p class="ml-4 text-[#333] font-semibold text-base">Titos Bistro</p>
+                        </div>
+                        <p class="ml-8 mt-[6px] text-[#545454] text-[13px] font-medium">Store details here</p>
+                    </div>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                            <path d="M9.5 18L15.5 12L9.5 6" stroke="#037ABC" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="w-full hover:bg-[#F2F6FC] hover:border-[#F2F6FC] mt-6 flex items-center justify-between px-5 border rounded-xl cursor-pointer py-2">
+                    <div class="flex flex-col">
+                        <div id="logo" class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20" viewBox="0 0 16 20"
+                                fill="#E7286D">
+                                <path
+                                    d="M13.5884 3.16602C10.5051 0.0826807 5.50509 0.0826807 2.42176 3.16602C-0.661582 6.24935 -0.661582 11.3327 2.42176 14.416L8.00511 19.9993L13.5884 14.3327C16.6717 11.3327 16.6717 6.24935 13.5884 3.16602ZM8.00511 10.416C7.08841 10.416 6.33841 9.666 6.33841 8.7493C6.33841 7.83268 7.08841 7.08268 8.00511 7.08268C8.92171 7.08268 9.67171 7.83268 9.67171 8.7493C9.67171 9.666 8.92171 10.416 8.00511 10.416Z"
+                                    fill="#E7286D" />
+                            </svg>
+                            <p class="ml-4 text-[#333] font-semibold text-base">Titos Bistro</p>
+                        </div>
+                        <p class="ml-8 mt-[6px] text-[#545454] text-[13px] font-medium">Store details here</p>
+                    </div>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                            <path d="M9.5 18L15.5 12L9.5 6" stroke="#037ABC" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="w-full hover:bg-[#F2F6FC] hover:border-[#F2F6FC] mt-6 flex items-center justify-between px-5 border rounded-xl cursor-pointer py-2">
+                    <div class="flex flex-col">
+                        <div id="logo" class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20" viewBox="0 0 16 20"
+                                fill="#E7286D">
+                                <path
+                                    d="M13.5884 3.16602C10.5051 0.0826807 5.50509 0.0826807 2.42176 3.16602C-0.661582 6.24935 -0.661582 11.3327 2.42176 14.416L8.00511 19.9993L13.5884 14.3327C16.6717 11.3327 16.6717 6.24935 13.5884 3.16602ZM8.00511 10.416C7.08841 10.416 6.33841 9.666 6.33841 8.7493C6.33841 7.83268 7.08841 7.08268 8.00511 7.08268C8.92171 7.08268 9.67171 7.83268 9.67171 8.7493C9.67171 9.666 8.92171 10.416 8.00511 10.416Z"
+                                    fill="#E7286D" />
+                            </svg>
+                            <p class="ml-4 text-[#333] font-semibold text-base">Titos Bistro</p>
+                        </div>
+                        <p class="ml-8 mt-[6px] text-[#545454] text-[13px] font-medium">Store details here</p>
+                    </div>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                            <path d="M9.5 18L15.5 12L9.5 6" stroke="#037ABC" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="w-full hover:bg-[#F2F6FC] hover:border-[#F2F6FC] mt-6 flex items-center justify-between px-5 border rounded-xl cursor-pointer py-2">
+                    <div class="flex flex-col">
+                        <div id="logo" class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20" viewBox="0 0 16 20"
+                                fill="#E7286D">
+                                <path
+                                    d="M13.5884 3.16602C10.5051 0.0826807 5.50509 0.0826807 2.42176 3.16602C-0.661582 6.24935 -0.661582 11.3327 2.42176 14.416L8.00511 19.9993L13.5884 14.3327C16.6717 11.3327 16.6717 6.24935 13.5884 3.16602ZM8.00511 10.416C7.08841 10.416 6.33841 9.666 6.33841 8.7493C6.33841 7.83268 7.08841 7.08268 8.00511 7.08268C8.92171 7.08268 9.67171 7.83268 9.67171 8.7493C9.67171 9.666 8.92171 10.416 8.00511 10.416Z"
+                                    fill="#E7286D" />
+                            </svg>
+                            <p class="ml-4 text-[#333] font-semibold text-base">Titos Bistro</p>
+                        </div>
+                        <p class="ml-8 mt-[6px] text-[#545454] text-[13px] font-medium">Store details here</p>
+                    </div>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                            <path d="M9.5 18L15.5 12L9.5 6" stroke="#037ABC" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./javascript/checkout.js"></script>
+</body>
+
+</html>

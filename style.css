@@ -3,3 +3,30 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    font-family: 'Inter', sans-serif;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.swiper-button-next:after{
+    font-size: 22px!important;
+}
+
+.swiper-button-next{
+    right: 0!important;
+    width: 60px!important;
+    background-color: white;
+}
+.swiper-button-prev{
+    left: 0!important;
+    width: 60px!important;
+    background-color: white;
+}
+
+.swiper-button-prev:after{
+    font-size: 22px!important;
+}
