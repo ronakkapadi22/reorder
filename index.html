@@ -24,11 +24,11 @@
                     d="M13.5884 3.16602C10.5051 0.0826807 5.50509 0.0826807 2.42176 3.16602C-0.661582 6.24935 -0.661582 11.3327 2.42176 14.416L8.00511 19.9993L13.5884 14.3327C16.6717 11.3327 16.6717 6.24935 13.5884 3.16602ZM8.00511 10.416C7.08841 10.416 6.33841 9.666 6.33841 8.7493C6.33841 7.83268 7.08841 7.08268 8.00511 7.08268C8.92171 7.08268 9.67171 7.83268 9.67171 8.7493C9.67171 9.666 8.92171 10.416 8.00511 10.416Z"
                     fill="#E7286D" />
             </svg>
-            <p class="ml-4 text-[#333] font-semibold text-base">Titos Bistro</p>
+            <p class="ml-4 text-[#333] font-medium text-[15px]">Titos Bistro</p>
         </div>
         <div class="relative hidden md:block">
             <input placeholder="Search Item"
-                class="xs:min-w-full w-full placeholder:text-[#464646] sm:min-w-[298px] lg:min-w-[466px] border border-[#B8B8B8] placeholder:text-base placeholder:font-[400] outline-none px-3 py-4 rounded-[100px] pl-12"
+                class="xs:min-w-full w-full placeholder:text-[#464646] sm:min-w-[298px] lg:min-w-[466px] border border-[#B8B8B8] placeholder:text-base placeholder:font-[400] text-[#464646] outline-none px-3 py-4 rounded-[100px] pl-12"
                 type="text" />
             <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 absolute top-1/2 -translate-y-1/2 left-4" width="24"
                 height="24" viewBox="0 0 24 24" fill="none">
@@ -38,7 +38,7 @@
             </svg>
         </div>
         <div class="flex items-center">
-            <p class="hidden md:block text-[#333] font-semibold text-base mr-5 lg:mr-12">Sign in/Sign up</p>
+            <p class="hidden md:block text-[#333] font-medium text-[16px] mr-5 lg:mr-12">Sign in/Sign up</p>
             <svg xmlns="http://www.w3.org/2000/svg" class="block md:hidden cursor-pointer" width="25" height="24"
                 viewBox="0 0 25 24" fill="none">
                 <path
@@ -63,21 +63,21 @@
     </section>
     <section id="banner" class="w-full">
         <img alt="banner" class="w-full"
-            src="https://s3-alpha-sig.figma.com/img/761d/dea3/c7f0a38625b6bd3f06f4e5886c46071a?Expires=1693180800&Signature=WHn7IMb2GsF1Rf9m67Su~AC5wejt5bzGNE9FuTpBD1C-pd0j8~nve-XcknHoAnf03gjy~X21HvOA~cbdLsg4Q8Vgy-PysT0nXCRS9BwUJvvBH~mEqpZQC~FKnguD5hcwGAB9ufauW712~q8x9qgsvHFMsAd9WR84FtGJ~Lu-Vr7bkNjv4UOC0W-3u3Forv3O68EZlwZCoZKx3euYqTVTpgiFbuHHtlXCnTb0ocDKdDlL59wry0SmOC~7vgV1XopCg8PuYICAS5DcmEmuBSZ7-sCUrjQacnRcfI9-VfDB3He4DRViL5MBBIOS6zd5kSjQ-KOL5nC6S~6JV2aosDFKEw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" />
+            src="./assets/banner.png" />
     </section>
     <section id="location"
         class="w-full flex flex-col md:flex-row justify-between items-center py-6 px-4 md:px-6 lg:px-[60px] lg:py-8">
         <div class="w-full md:w-4/5">
-            <h1 class="font-semibold text-[#181B37] text-2xl lg:text-4xl mb-3 lg:mb-6">Titos Bistro</h1>
-            <p class="text-md text-[#545454]">Titos bistro description Lorem ipsum dolor sit amet, consectetur
+            <h1 class="font-bold text-[#181B37] text-[24px] lg:text-[32px] mb-3 lg:mb-6">Titos Bistro</h1>
+            <p class="text-[12px] md:text-[13px] font-medium text-[#545454]">Titos bistro description Lorem ipsum dolor sit amet, consectetur
                 adipiscing elit. Aliquam est leo, dapibus in imperdiet non, porta non odio. Maecenas mollis, augue ut
                 egestas congue, justo lorem fermentum libero, vitae euismod augue urna at dui.</p>
         </div>
-        <div class="w-full md:w-1/5">
+        <!-- <div class="w-full md:w-1/5">
             <p class="font-bold text-left mt-5 md:m-0 md:text-right text-sm text-[#037ABC]">
                 View Location
             </p>
-        </div>
+        </div> -->
     </section>
 
     <!-- Slider main container -->
@@ -85,40 +85,40 @@
         <div class="swiper-wrapper flex items-center py-1">
             <div class="swiper-slide text-center">
                 <span id="all"
-                    class="px-5 py-2 cursor-pointer border-2 border-white hover:border-2 hover:border-[#037ABC] hover:text-[#037ABC] hover:rounded-[80px]">ALL</span>
+                    class="px-5 py-2 cursor-pointer font-[700] text-[15px] border-2 border-[#037ABC] text-[#037ABC] rounded-[80px]">ALL</span>
             </div>
             <div class="swiper-slide text-center">
                 <span onclick="triggerElem('entree')"
-                    class="px-5 py-2 cursor-pointer border-2 border-white hover:border-2 hover:border-[#037ABC] hover:text-[#037ABC] hover:rounded-[80px]">ENTRÉE</span>
+                    class="px-5 py-2 cursor-pointer font-[700] text-[15px] border-2 border-white hover:border-2 hover:border-[#037ABC] hover:text-[#037ABC] hover:rounded-[80px]">ENTRÉE</span>
             </div>
             <div class="swiper-slide text-center">
                 <span onclick="triggerElem('dessert')"
-                    class="px-5 py-2 cursor-pointer border-2 border-white hover:border-2 hover:border-[#037ABC] hover:text-[#037ABC] hover:rounded-[80px]">DESSERT</span>
+                    class="px-5 py-2 cursor-pointer font-[700] text-[15px] border-2 border-white hover:border-2 hover:border-[#037ABC] hover:text-[#037ABC] hover:rounded-[80px]">DESSERT</span>
             </div>
             <div class="swiper-slide text-center">
                 <span onclick="triggerElem('pizza')"
-                    class="px-5 py-2 cursor-pointer border-2 border-white hover:border-2 hover:border-[#037ABC] hover:text-[#037ABC] hover:rounded-[80px]">PIZZA</span>
+                    class="px-5 py-2 cursor-pointer font-[700] text-[15px] border-2 border-white hover:border-2 hover:border-[#037ABC] hover:text-[#037ABC] hover:rounded-[80px]">PIZZA</span>
             </div>
             <div class="swiper-slide text-center">
                 <span onclick="triggerElem('tater_tots')"
-                    class="px-5 py-2 cursor-pointer border-2 border-white hover:border-2 hover:border-[#037ABC] hover:text-[#037ABC] hover:rounded-[80px]">TATER
+                    class="px-5 py-2 cursor-pointer font-[700] text-[15px] border-2 border-white hover:border-2 hover:border-[#037ABC] hover:text-[#037ABC] hover:rounded-[80px]">TATER
                     TOTS </span>
             </div>
             <div class="swiper-slide text-center">
                 <span onclick="triggerElem('starters')"
-                    class="px-5 py-2 cursor-pointer border-2 border-white hover:border-2 hover:border-[#037ABC] hover:text-[#037ABC] hover:rounded-[80px]">STARTERS</span>
+                    class="px-5 py-2 cursor-pointer font-[700] text-[15px] border-2 border-white hover:border-2 hover:border-[#037ABC] hover:text-[#037ABC] hover:rounded-[80px]">STARTERS</span>
             </div>
             <div class="swiper-slide text-center">
                 <span onclick="triggerElem('soups')"
-                    class="px-5 py-2 cursor-pointer border-2 border-white hover:border-2 hover:border-[#037ABC] hover:text-[#037ABC] hover:rounded-[80px]">SOUPS</span>
+                    class="px-5 py-2 cursor-pointer font-[700] text-[15px] border-2 border-white hover:border-2 hover:border-[#037ABC] hover:text-[#037ABC] hover:rounded-[80px]">SOUPS</span>
             </div>
             <div class="swiper-slide text-center">
                 <span onclick="triggerElem('pasta')"
-                    class="px-5 py-2 cursor-pointer border-2 border-white hover:border-2 hover:border-[#037ABC] hover:text-[#037ABC] hover:rounded-[80px]">PASTA</span>
+                    class="px-5 py-2 cursor-pointer font-[700] text-[15px] border-2 border-white hover:border-2 hover:border-[#037ABC] hover:text-[#037ABC] hover:rounded-[80px]">PASTA</span>
             </div>
             <div class="swiper-slide text-center">
                 <span onclick="triggerElem('chicken')"
-                    class="px-5 py-2 cursor-pointer border-2 border-white hover:border-2 hover:border-[#037ABC] hover:text-[#037ABC] hover:rounded-[80px]">CHICKEN</span>
+                    class="px-5 py-2 cursor-pointer font-[700] text-[15px] border-2 border-white hover:border-2 hover:border-[#037ABC] hover:text-[#037ABC] hover:rounded-[80px]">CHICKEN</span>
             </div>
         </div>
         <div class="swiper-button-next">
@@ -128,7 +128,7 @@
 
     <section id="items" class="px-4 md:px-6 lg:px-[60px] py-12 bg-[#F7F9FE]">
         <div class="w-full mb-[60px]">
-            <div id="entree" class="p-5 flex items-center justify-between rounded-lg text-lg bg-[#E8EEF6] mb-8 text-[#0F133C] font-medium">
+            <div id="entree" class="p-5 flex items-center justify-between rounded-lg text-[20px] bg-[#E8EEF6] mb-8 text-[#0F133C] font-semibold">
                 <p>ENTRÉE</p>
                 <a href="/chicken.html" class="cursor-pointer hover:underline hover:decoration-1">See All</a>
             </div>
@@ -137,7 +137,7 @@
                     <div id="open-btn"
                         class="w-full cursor-pointer bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
                         <img alt="item_image" class="rounded-lg w-full sm:w-[130px] h-[160px] md:h-auto"
-                            src="https://s3-alpha-sig.figma.com/img/d702/ea44/c3bb97292e294c204cad2d45be838488?Expires=1693180800&Signature=M9TrulF7mv1GbebF~XcjS5Yrws4RFBf2MxAR28zgkrfnI8yL-pOkrrwuluo0cd9znWMcK2kwZ-eVvzy~2dT8mHOdlBPTSCsK6Lo6f9L4dzwpNpe1ygg5Bku29G~nxpK2Qg9Oy-nGkCoT7uNZHg~c-IQ64xgvjQ20kk1hpJWL7xO4yjnLBSHOgzyBFbZ6EfkvubbOfFzCUSt4QomsSx7NK6oHq6cfbX-3Zlh3XKNbGmBQ1FdlFs2IY-9kArPqC8fhKElSvKWZXmxrs1HlGAdsCHaRfeD2h4FYU-~9dr7a73vb1JX4y8D5J41zpa-Z1BCxqjseC0zyy5PAbV4bdK2hzA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" />
+                            src="./assets/product.jpeg" />
                         <div class="max-w-full w-full mt-0 flex flex-col sm:ml-4">
                             <h5 class="text-[#000] mb-2 sm:mb-3 mt-2 sm:mt-0 text-lg font-bold">Baby Back Ribs</h5>
                             <p class="text-[#545454] text-[14px] font-medium">Oven baked salmon on a bed ofcaramelized
@@ -159,7 +159,7 @@
                     <div
                         class="w-full bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
                         <img alt="item_image" class="rounded-lg w-full sm:w-[130px] h-[160px] md:h-auto"
-                            src="https://s3-alpha-sig.figma.com/img/d702/ea44/c3bb97292e294c204cad2d45be838488?Expires=1693180800&Signature=M9TrulF7mv1GbebF~XcjS5Yrws4RFBf2MxAR28zgkrfnI8yL-pOkrrwuluo0cd9znWMcK2kwZ-eVvzy~2dT8mHOdlBPTSCsK6Lo6f9L4dzwpNpe1ygg5Bku29G~nxpK2Qg9Oy-nGkCoT7uNZHg~c-IQ64xgvjQ20kk1hpJWL7xO4yjnLBSHOgzyBFbZ6EfkvubbOfFzCUSt4QomsSx7NK6oHq6cfbX-3Zlh3XKNbGmBQ1FdlFs2IY-9kArPqC8fhKElSvKWZXmxrs1HlGAdsCHaRfeD2h4FYU-~9dr7a73vb1JX4y8D5J41zpa-Z1BCxqjseC0zyy5PAbV4bdK2hzA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" />
+                            src="./assets/product.jpeg" />
                         <div class="max-w-full w-full mt-0 flex flex-col sm:ml-4">
                             <h5 class="text-[#000] mb-2 sm:mb-3 mt-2 sm:mt-0 text-lg font-bold">Baby Back Ribs</h5>
                             <p class="text-[#545454] text-[14px] font-medium">Oven baked salmon on a bed ofcaramelized
@@ -181,7 +181,7 @@
                     <div
                         class="w-full bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
                         <img alt="item_image" class="rounded-lg w-full sm:w-[130px] h-[160px] md:h-auto"
-                            src="https://s3-alpha-sig.figma.com/img/d702/ea44/c3bb97292e294c204cad2d45be838488?Expires=1693180800&Signature=M9TrulF7mv1GbebF~XcjS5Yrws4RFBf2MxAR28zgkrfnI8yL-pOkrrwuluo0cd9znWMcK2kwZ-eVvzy~2dT8mHOdlBPTSCsK6Lo6f9L4dzwpNpe1ygg5Bku29G~nxpK2Qg9Oy-nGkCoT7uNZHg~c-IQ64xgvjQ20kk1hpJWL7xO4yjnLBSHOgzyBFbZ6EfkvubbOfFzCUSt4QomsSx7NK6oHq6cfbX-3Zlh3XKNbGmBQ1FdlFs2IY-9kArPqC8fhKElSvKWZXmxrs1HlGAdsCHaRfeD2h4FYU-~9dr7a73vb1JX4y8D5J41zpa-Z1BCxqjseC0zyy5PAbV4bdK2hzA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" />
+                            src="./assets/product.jpeg" />
                         <div class="max-w-full w-full mt-0 flex flex-col sm:ml-4">
                             <h5 class="text-[#000] mb-2 sm:mb-3 mt-2 sm:mt-0 text-lg font-bold">Baby Back Ribs</h5>
                             <p class="text-[#545454] text-[14px] font-medium">Oven baked salmon on a bed ofcaramelized
@@ -203,7 +203,7 @@
                     <div
                         class="w-full bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
                         <img alt="item_image" class="rounded-lg w-full sm:w-[130px] h-[160px] md:h-auto"
-                            src="https://s3-alpha-sig.figma.com/img/d702/ea44/c3bb97292e294c204cad2d45be838488?Expires=1693180800&Signature=M9TrulF7mv1GbebF~XcjS5Yrws4RFBf2MxAR28zgkrfnI8yL-pOkrrwuluo0cd9znWMcK2kwZ-eVvzy~2dT8mHOdlBPTSCsK6Lo6f9L4dzwpNpe1ygg5Bku29G~nxpK2Qg9Oy-nGkCoT7uNZHg~c-IQ64xgvjQ20kk1hpJWL7xO4yjnLBSHOgzyBFbZ6EfkvubbOfFzCUSt4QomsSx7NK6oHq6cfbX-3Zlh3XKNbGmBQ1FdlFs2IY-9kArPqC8fhKElSvKWZXmxrs1HlGAdsCHaRfeD2h4FYU-~9dr7a73vb1JX4y8D5J41zpa-Z1BCxqjseC0zyy5PAbV4bdK2hzA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" />
+                            src="./assets/product.jpeg" />
                         <div class="max-w-full w-full mt-0 flex flex-col sm:ml-4">
                             <h5 class="text-[#000] mb-2 sm:mb-3 mt-2 sm:mt-0 text-lg font-bold">Baby Back Ribs</h5>
                             <p class="text-[#545454] text-[14px] font-medium">Oven baked salmon on a bed ofcaramelized
@@ -224,7 +224,7 @@
             </div>
         </div>
         <div class="w-full mb-[60px]">
-            <div id="dessert" class="p-5 flex items-center justify-between rounded-lg text-lg bg-[#E8EEF6] mb-8 text-[#0F133C] font-medium">
+            <div id="dessert" class="p-5 flex items-center justify-between rounded-lg text-[20px] bg-[#E8EEF6] mb-8 text-[#0F133C] font-semibold">
                 <p>DESSERT</p>
                 <a href="/chicken.html" class="cursor-pointer hover:underline hover:decoration-1">See All</a>
             </div>
@@ -233,7 +233,7 @@
                     <div
                         class="w-full bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
                         <img alt="item_image" class="rounded-lg w-full sm:w-[130px] h-[160px] md:h-auto"
-                            src="https://s3-alpha-sig.figma.com/img/d702/ea44/c3bb97292e294c204cad2d45be838488?Expires=1693180800&Signature=M9TrulF7mv1GbebF~XcjS5Yrws4RFBf2MxAR28zgkrfnI8yL-pOkrrwuluo0cd9znWMcK2kwZ-eVvzy~2dT8mHOdlBPTSCsK6Lo6f9L4dzwpNpe1ygg5Bku29G~nxpK2Qg9Oy-nGkCoT7uNZHg~c-IQ64xgvjQ20kk1hpJWL7xO4yjnLBSHOgzyBFbZ6EfkvubbOfFzCUSt4QomsSx7NK6oHq6cfbX-3Zlh3XKNbGmBQ1FdlFs2IY-9kArPqC8fhKElSvKWZXmxrs1HlGAdsCHaRfeD2h4FYU-~9dr7a73vb1JX4y8D5J41zpa-Z1BCxqjseC0zyy5PAbV4bdK2hzA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" />
+                            src="./assets/product.jpeg" />
                         <div class="max-w-full w-full mt-0 flex flex-col sm:ml-4">
                             <h5 class="text-[#000] mb-2 sm:mb-3 mt-2 sm:mt-0 text-lg font-bold">Baby Back Ribs</h5>
                             <p class="text-[#545454] text-[14px] font-medium">Oven baked salmon on a bed ofcaramelized
@@ -255,7 +255,7 @@
                     <div
                         class="w-full bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
                         <img alt="item_image" class="rounded-lg w-full sm:w-[130px] h-[160px] md:h-auto"
-                            src="https://s3-alpha-sig.figma.com/img/d702/ea44/c3bb97292e294c204cad2d45be838488?Expires=1693180800&Signature=M9TrulF7mv1GbebF~XcjS5Yrws4RFBf2MxAR28zgkrfnI8yL-pOkrrwuluo0cd9znWMcK2kwZ-eVvzy~2dT8mHOdlBPTSCsK6Lo6f9L4dzwpNpe1ygg5Bku29G~nxpK2Qg9Oy-nGkCoT7uNZHg~c-IQ64xgvjQ20kk1hpJWL7xO4yjnLBSHOgzyBFbZ6EfkvubbOfFzCUSt4QomsSx7NK6oHq6cfbX-3Zlh3XKNbGmBQ1FdlFs2IY-9kArPqC8fhKElSvKWZXmxrs1HlGAdsCHaRfeD2h4FYU-~9dr7a73vb1JX4y8D5J41zpa-Z1BCxqjseC0zyy5PAbV4bdK2hzA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" />
+                            src="./assets/product.jpeg" />
                         <div class="max-w-full w-full mt-0 flex flex-col sm:ml-4">
                             <h5 class="text-[#000] mb-2 sm:mb-3 mt-2 sm:mt-0 text-lg font-bold">Baby Back Ribs</h5>
                             <p class="text-[#545454] text-[14px] font-medium">Oven baked salmon on a bed ofcaramelized
@@ -277,7 +277,7 @@
                     <div
                         class="w-full bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
                         <img alt="item_image" class="rounded-lg w-full sm:w-[130px] h-[160px] md:h-auto"
-                            src="https://s3-alpha-sig.figma.com/img/d702/ea44/c3bb97292e294c204cad2d45be838488?Expires=1693180800&Signature=M9TrulF7mv1GbebF~XcjS5Yrws4RFBf2MxAR28zgkrfnI8yL-pOkrrwuluo0cd9znWMcK2kwZ-eVvzy~2dT8mHOdlBPTSCsK6Lo6f9L4dzwpNpe1ygg5Bku29G~nxpK2Qg9Oy-nGkCoT7uNZHg~c-IQ64xgvjQ20kk1hpJWL7xO4yjnLBSHOgzyBFbZ6EfkvubbOfFzCUSt4QomsSx7NK6oHq6cfbX-3Zlh3XKNbGmBQ1FdlFs2IY-9kArPqC8fhKElSvKWZXmxrs1HlGAdsCHaRfeD2h4FYU-~9dr7a73vb1JX4y8D5J41zpa-Z1BCxqjseC0zyy5PAbV4bdK2hzA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" />
+                            src="./assets/product.jpeg" />
                         <div class="max-w-full w-full mt-0 flex flex-col sm:ml-4">
                             <h5 class="text-[#000] mb-2 sm:mb-3 mt-2 sm:mt-0 text-lg font-bold">Baby Back Ribs</h5>
                             <p class="text-[#545454] text-[14px] font-medium">Oven baked salmon on a bed ofcaramelized
@@ -299,7 +299,7 @@
                     <div
                         class="w-full bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
                         <img alt="item_image" class="rounded-lg w-full sm:w-[130px] h-[160px] md:h-auto"
-                            src="https://s3-alpha-sig.figma.com/img/d702/ea44/c3bb97292e294c204cad2d45be838488?Expires=1693180800&Signature=M9TrulF7mv1GbebF~XcjS5Yrws4RFBf2MxAR28zgkrfnI8yL-pOkrrwuluo0cd9znWMcK2kwZ-eVvzy~2dT8mHOdlBPTSCsK6Lo6f9L4dzwpNpe1ygg5Bku29G~nxpK2Qg9Oy-nGkCoT7uNZHg~c-IQ64xgvjQ20kk1hpJWL7xO4yjnLBSHOgzyBFbZ6EfkvubbOfFzCUSt4QomsSx7NK6oHq6cfbX-3Zlh3XKNbGmBQ1FdlFs2IY-9kArPqC8fhKElSvKWZXmxrs1HlGAdsCHaRfeD2h4FYU-~9dr7a73vb1JX4y8D5J41zpa-Z1BCxqjseC0zyy5PAbV4bdK2hzA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" />
+                            src="./assets/product.jpeg" />
                         <div class="max-w-full w-full mt-0 flex flex-col sm:ml-4">
                             <h5 class="text-[#000] mb-2 sm:mb-3 mt-2 sm:mt-0 text-lg font-bold">Baby Back Ribs</h5>
                             <p class="text-[#545454] text-[14px] font-medium">Oven baked salmon on a bed ofcaramelized
@@ -320,7 +320,7 @@
             </div>
         </div>
         <div class="w-full mb-[60px]">
-            <div id="pizza" class="flex items-center justify-between p-5 rounded-lg text-lg bg-[#E8EEF6] mb-8 text-[#0F133C] font-medium">
+            <div id="pizza" class="p-5 flex items-center justify-between rounded-lg text-[20px] bg-[#E8EEF6] mb-8 text-[#0F133C] font-semibold">
                 <p>PIZZA</p>
                 <a href="/chicken.html" class="cursor-pointer hover:underline hover:decoration-1">See All</a>
             </div>
@@ -329,7 +329,7 @@
                     <div
                         class="w-full bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
                         <img alt="item_image" class="rounded-lg w-full sm:w-[130px] h-[160px] md:h-auto"
-                            src="https://s3-alpha-sig.figma.com/img/d702/ea44/c3bb97292e294c204cad2d45be838488?Expires=1693180800&Signature=M9TrulF7mv1GbebF~XcjS5Yrws4RFBf2MxAR28zgkrfnI8yL-pOkrrwuluo0cd9znWMcK2kwZ-eVvzy~2dT8mHOdlBPTSCsK6Lo6f9L4dzwpNpe1ygg5Bku29G~nxpK2Qg9Oy-nGkCoT7uNZHg~c-IQ64xgvjQ20kk1hpJWL7xO4yjnLBSHOgzyBFbZ6EfkvubbOfFzCUSt4QomsSx7NK6oHq6cfbX-3Zlh3XKNbGmBQ1FdlFs2IY-9kArPqC8fhKElSvKWZXmxrs1HlGAdsCHaRfeD2h4FYU-~9dr7a73vb1JX4y8D5J41zpa-Z1BCxqjseC0zyy5PAbV4bdK2hzA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" />
+                            src="./assets/product.jpeg" />
                         <div class="max-w-full w-full mt-0 flex flex-col sm:ml-4">
                             <h5 class="text-[#000] mb-2 sm:mb-3 mt-2 sm:mt-0 text-lg font-bold">Baby Back Ribs</h5>
                             <p class="text-[#545454] text-[14px] font-medium">Oven baked salmon on a bed ofcaramelized
@@ -351,7 +351,7 @@
                     <div
                         class="w-full bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
                         <img alt="item_image" class="rounded-lg w-full sm:w-[130px] h-[160px] md:h-auto"
-                            src="https://s3-alpha-sig.figma.com/img/d702/ea44/c3bb97292e294c204cad2d45be838488?Expires=1693180800&Signature=M9TrulF7mv1GbebF~XcjS5Yrws4RFBf2MxAR28zgkrfnI8yL-pOkrrwuluo0cd9znWMcK2kwZ-eVvzy~2dT8mHOdlBPTSCsK6Lo6f9L4dzwpNpe1ygg5Bku29G~nxpK2Qg9Oy-nGkCoT7uNZHg~c-IQ64xgvjQ20kk1hpJWL7xO4yjnLBSHOgzyBFbZ6EfkvubbOfFzCUSt4QomsSx7NK6oHq6cfbX-3Zlh3XKNbGmBQ1FdlFs2IY-9kArPqC8fhKElSvKWZXmxrs1HlGAdsCHaRfeD2h4FYU-~9dr7a73vb1JX4y8D5J41zpa-Z1BCxqjseC0zyy5PAbV4bdK2hzA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" />
+                            src="./assets/product.jpeg" />
                         <div class="max-w-full w-full mt-0 flex flex-col sm:ml-4">
                             <h5 class="text-[#000] mb-2 sm:mb-3 mt-2 sm:mt-0 text-lg font-bold">Baby Back Ribs</h5>
                             <p class="text-[#545454] text-[14px] font-medium">Oven baked salmon on a bed ofcaramelized
@@ -373,7 +373,7 @@
                     <div
                         class="w-full bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
                         <img alt="item_image" class="rounded-lg w-full sm:w-[130px] h-[160px] md:h-auto"
-                            src="https://s3-alpha-sig.figma.com/img/d702/ea44/c3bb97292e294c204cad2d45be838488?Expires=1693180800&Signature=M9TrulF7mv1GbebF~XcjS5Yrws4RFBf2MxAR28zgkrfnI8yL-pOkrrwuluo0cd9znWMcK2kwZ-eVvzy~2dT8mHOdlBPTSCsK6Lo6f9L4dzwpNpe1ygg5Bku29G~nxpK2Qg9Oy-nGkCoT7uNZHg~c-IQ64xgvjQ20kk1hpJWL7xO4yjnLBSHOgzyBFbZ6EfkvubbOfFzCUSt4QomsSx7NK6oHq6cfbX-3Zlh3XKNbGmBQ1FdlFs2IY-9kArPqC8fhKElSvKWZXmxrs1HlGAdsCHaRfeD2h4FYU-~9dr7a73vb1JX4y8D5J41zpa-Z1BCxqjseC0zyy5PAbV4bdK2hzA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" />
+                            src="./assets/product.jpeg" />
                         <div class="max-w-full w-full mt-0 flex flex-col sm:ml-4">
                             <h5 class="text-[#000] mb-2 sm:mb-3 mt-2 sm:mt-0 text-lg font-bold">Baby Back Ribs</h5>
                             <p class="text-[#545454] text-[14px] font-medium">Oven baked salmon on a bed ofcaramelized
@@ -395,7 +395,7 @@
                     <div
                         class="w-full bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
                         <img alt="item_image" class="rounded-lg w-full sm:w-[130px] h-[160px] md:h-auto"
-                            src="https://s3-alpha-sig.figma.com/img/d702/ea44/c3bb97292e294c204cad2d45be838488?Expires=1693180800&Signature=M9TrulF7mv1GbebF~XcjS5Yrws4RFBf2MxAR28zgkrfnI8yL-pOkrrwuluo0cd9znWMcK2kwZ-eVvzy~2dT8mHOdlBPTSCsK6Lo6f9L4dzwpNpe1ygg5Bku29G~nxpK2Qg9Oy-nGkCoT7uNZHg~c-IQ64xgvjQ20kk1hpJWL7xO4yjnLBSHOgzyBFbZ6EfkvubbOfFzCUSt4QomsSx7NK6oHq6cfbX-3Zlh3XKNbGmBQ1FdlFs2IY-9kArPqC8fhKElSvKWZXmxrs1HlGAdsCHaRfeD2h4FYU-~9dr7a73vb1JX4y8D5J41zpa-Z1BCxqjseC0zyy5PAbV4bdK2hzA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" />
+                            src="./assets/product.jpeg" />
                         <div class="max-w-full w-full mt-0 flex flex-col sm:ml-4">
                             <h5 class="text-[#000] mb-2 sm:mb-3 mt-2 sm:mt-0 text-lg font-bold">Baby Back Ribs</h5>
                             <p class="text-[#545454] text-[14px] font-medium">Oven baked salmon on a bed ofcaramelized
@@ -416,7 +416,7 @@
             </div>
         </div>
         <div class="w-full mb-[60px]">
-            <div id="tater_tots" class="p-5 flex items-center justify-between rounded-lg text-lg bg-[#E8EEF6] mb-8 text-[#0F133C] font-medium">
+            <div id="tater_tots" class="p-5 flex items-center justify-between rounded-lg text-[20px] bg-[#E8EEF6] mb-8 text-[#0F133C] font-semibold">
                 <p>TATER TOTS</p>
                 <a href="/chicken.html" class="cursor-pointer hover:underline hover:decoration-1">See All</a>
             </div>
@@ -425,7 +425,7 @@
                     <div
                         class="w-full bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
                         <img alt="item_image" class="rounded-lg w-full sm:w-[130px] h-[160px] md:h-auto"
-                            src="https://s3-alpha-sig.figma.com/img/d702/ea44/c3bb97292e294c204cad2d45be838488?Expires=1693180800&Signature=M9TrulF7mv1GbebF~XcjS5Yrws4RFBf2MxAR28zgkrfnI8yL-pOkrrwuluo0cd9znWMcK2kwZ-eVvzy~2dT8mHOdlBPTSCsK6Lo6f9L4dzwpNpe1ygg5Bku29G~nxpK2Qg9Oy-nGkCoT7uNZHg~c-IQ64xgvjQ20kk1hpJWL7xO4yjnLBSHOgzyBFbZ6EfkvubbOfFzCUSt4QomsSx7NK6oHq6cfbX-3Zlh3XKNbGmBQ1FdlFs2IY-9kArPqC8fhKElSvKWZXmxrs1HlGAdsCHaRfeD2h4FYU-~9dr7a73vb1JX4y8D5J41zpa-Z1BCxqjseC0zyy5PAbV4bdK2hzA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" />
+                            src="./assets/product.jpeg" />
                         <div class="max-w-full w-full mt-0 flex flex-col sm:ml-4">
                             <h5 class="text-[#000] mb-2 sm:mb-3 mt-2 sm:mt-0 text-lg font-bold">Baby Back Ribs</h5>
                             <p class="text-[#545454] text-[14px] font-medium">Oven baked salmon on a bed ofcaramelized
@@ -447,7 +447,7 @@
                     <div
                         class="w-full bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
                         <img alt="item_image" class="rounded-lg w-full sm:w-[130px] h-[160px] md:h-auto"
-                            src="https://s3-alpha-sig.figma.com/img/d702/ea44/c3bb97292e294c204cad2d45be838488?Expires=1693180800&Signature=M9TrulF7mv1GbebF~XcjS5Yrws4RFBf2MxAR28zgkrfnI8yL-pOkrrwuluo0cd9znWMcK2kwZ-eVvzy~2dT8mHOdlBPTSCsK6Lo6f9L4dzwpNpe1ygg5Bku29G~nxpK2Qg9Oy-nGkCoT7uNZHg~c-IQ64xgvjQ20kk1hpJWL7xO4yjnLBSHOgzyBFbZ6EfkvubbOfFzCUSt4QomsSx7NK6oHq6cfbX-3Zlh3XKNbGmBQ1FdlFs2IY-9kArPqC8fhKElSvKWZXmxrs1HlGAdsCHaRfeD2h4FYU-~9dr7a73vb1JX4y8D5J41zpa-Z1BCxqjseC0zyy5PAbV4bdK2hzA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" />
+                            src="./assets/product.jpeg" />
                         <div class="max-w-full w-full mt-0 flex flex-col sm:ml-4">
                             <h5 class="text-[#000] mb-2 sm:mb-3 mt-2 sm:mt-0 text-lg font-bold">Baby Back Ribs</h5>
                             <p class="text-[#545454] text-[14px] font-medium">Oven baked salmon on a bed ofcaramelized
@@ -469,7 +469,7 @@
                     <div
                         class="w-full bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
                         <img alt="item_image" class="rounded-lg w-full sm:w-[130px] h-[160px] md:h-auto"
-                            src="https://s3-alpha-sig.figma.com/img/d702/ea44/c3bb97292e294c204cad2d45be838488?Expires=1693180800&Signature=M9TrulF7mv1GbebF~XcjS5Yrws4RFBf2MxAR28zgkrfnI8yL-pOkrrwuluo0cd9znWMcK2kwZ-eVvzy~2dT8mHOdlBPTSCsK6Lo6f9L4dzwpNpe1ygg5Bku29G~nxpK2Qg9Oy-nGkCoT7uNZHg~c-IQ64xgvjQ20kk1hpJWL7xO4yjnLBSHOgzyBFbZ6EfkvubbOfFzCUSt4QomsSx7NK6oHq6cfbX-3Zlh3XKNbGmBQ1FdlFs2IY-9kArPqC8fhKElSvKWZXmxrs1HlGAdsCHaRfeD2h4FYU-~9dr7a73vb1JX4y8D5J41zpa-Z1BCxqjseC0zyy5PAbV4bdK2hzA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" />
+                            src="./assets/product.jpeg" />
                         <div class="max-w-full w-full mt-0 flex flex-col sm:ml-4">
                             <h5 class="text-[#000] mb-2 sm:mb-3 mt-2 sm:mt-0 text-lg font-bold">Baby Back Ribs</h5>
                             <p class="text-[#545454] text-[14px] font-medium">Oven baked salmon on a bed ofcaramelized
@@ -491,7 +491,7 @@
                     <div
                         class="w-full bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
                         <img alt="item_image" class="rounded-lg w-full sm:w-[130px] h-[160px] md:h-auto"
-                            src="https://s3-alpha-sig.figma.com/img/d702/ea44/c3bb97292e294c204cad2d45be838488?Expires=1693180800&Signature=M9TrulF7mv1GbebF~XcjS5Yrws4RFBf2MxAR28zgkrfnI8yL-pOkrrwuluo0cd9znWMcK2kwZ-eVvzy~2dT8mHOdlBPTSCsK6Lo6f9L4dzwpNpe1ygg5Bku29G~nxpK2Qg9Oy-nGkCoT7uNZHg~c-IQ64xgvjQ20kk1hpJWL7xO4yjnLBSHOgzyBFbZ6EfkvubbOfFzCUSt4QomsSx7NK6oHq6cfbX-3Zlh3XKNbGmBQ1FdlFs2IY-9kArPqC8fhKElSvKWZXmxrs1HlGAdsCHaRfeD2h4FYU-~9dr7a73vb1JX4y8D5J41zpa-Z1BCxqjseC0zyy5PAbV4bdK2hzA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" />
+                            src="./assets/product.jpeg" />
                         <div class="max-w-full w-full mt-0 flex flex-col sm:ml-4">
                             <h5 class="text-[#000] mb-2 sm:mb-3 mt-2 sm:mt-0 text-lg font-bold">Baby Back Ribs</h5>
                             <p class="text-[#545454] text-[14px] font-medium">Oven baked salmon on a bed ofcaramelized
@@ -512,7 +512,7 @@
             </div>
         </div>
         <div class="w-full mb-[60px]">
-            <div id="starters" class="p-5 flex items-center justify-between rounded-lg text-lg bg-[#E8EEF6] mb-8 text-[#0F133C] font-medium">
+            <div id="starters" class="p-5 flex items-center justify-between rounded-lg text-[20px] bg-[#E8EEF6] mb-8 text-[#0F133C] font-semibold">
                 <p>STARTERS</p>
                 <a href="/chicken.html" class="cursor-pointer hover:underline hover:decoration-1">See All</a>
             </div>
@@ -521,7 +521,7 @@
                     <div
                         class="w-full bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
                         <img alt="item_image" class="rounded-lg w-full sm:w-[130px] h-[160px] md:h-auto"
-                            src="https://s3-alpha-sig.figma.com/img/d702/ea44/c3bb97292e294c204cad2d45be838488?Expires=1693180800&Signature=M9TrulF7mv1GbebF~XcjS5Yrws4RFBf2MxAR28zgkrfnI8yL-pOkrrwuluo0cd9znWMcK2kwZ-eVvzy~2dT8mHOdlBPTSCsK6Lo6f9L4dzwpNpe1ygg5Bku29G~nxpK2Qg9Oy-nGkCoT7uNZHg~c-IQ64xgvjQ20kk1hpJWL7xO4yjnLBSHOgzyBFbZ6EfkvubbOfFzCUSt4QomsSx7NK6oHq6cfbX-3Zlh3XKNbGmBQ1FdlFs2IY-9kArPqC8fhKElSvKWZXmxrs1HlGAdsCHaRfeD2h4FYU-~9dr7a73vb1JX4y8D5J41zpa-Z1BCxqjseC0zyy5PAbV4bdK2hzA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" />
+                            src="./assets/product.jpeg" />
                         <div class="max-w-full w-full mt-0 flex flex-col sm:ml-4">
                             <h5 class="text-[#000] mb-2 sm:mb-3 mt-2 sm:mt-0 text-lg font-bold">Baby Back Ribs</h5>
                             <p class="text-[#545454] text-[14px] font-medium">Oven baked salmon on a bed ofcaramelized
@@ -543,7 +543,7 @@
                     <div
                         class="w-full bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
                         <img alt="item_image" class="rounded-lg w-full sm:w-[130px] h-[160px] md:h-auto"
-                            src="https://s3-alpha-sig.figma.com/img/d702/ea44/c3bb97292e294c204cad2d45be838488?Expires=1693180800&Signature=M9TrulF7mv1GbebF~XcjS5Yrws4RFBf2MxAR28zgkrfnI8yL-pOkrrwuluo0cd9znWMcK2kwZ-eVvzy~2dT8mHOdlBPTSCsK6Lo6f9L4dzwpNpe1ygg5Bku29G~nxpK2Qg9Oy-nGkCoT7uNZHg~c-IQ64xgvjQ20kk1hpJWL7xO4yjnLBSHOgzyBFbZ6EfkvubbOfFzCUSt4QomsSx7NK6oHq6cfbX-3Zlh3XKNbGmBQ1FdlFs2IY-9kArPqC8fhKElSvKWZXmxrs1HlGAdsCHaRfeD2h4FYU-~9dr7a73vb1JX4y8D5J41zpa-Z1BCxqjseC0zyy5PAbV4bdK2hzA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" />
+                            src="./assets/product.jpeg" />
                         <div class="max-w-full w-full mt-0 flex flex-col sm:ml-4">
                             <h5 class="text-[#000] mb-2 sm:mb-3 mt-2 sm:mt-0 text-lg font-bold">Baby Back Ribs</h5>
                             <p class="text-[#545454] text-[14px] font-medium">Oven baked salmon on a bed ofcaramelized
@@ -565,7 +565,7 @@
                     <div
                         class="w-full bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
                         <img alt="item_image" class="rounded-lg w-full sm:w-[130px] h-[160px] md:h-auto"
-                            src="https://s3-alpha-sig.figma.com/img/d702/ea44/c3bb97292e294c204cad2d45be838488?Expires=1693180800&Signature=M9TrulF7mv1GbebF~XcjS5Yrws4RFBf2MxAR28zgkrfnI8yL-pOkrrwuluo0cd9znWMcK2kwZ-eVvzy~2dT8mHOdlBPTSCsK6Lo6f9L4dzwpNpe1ygg5Bku29G~nxpK2Qg9Oy-nGkCoT7uNZHg~c-IQ64xgvjQ20kk1hpJWL7xO4yjnLBSHOgzyBFbZ6EfkvubbOfFzCUSt4QomsSx7NK6oHq6cfbX-3Zlh3XKNbGmBQ1FdlFs2IY-9kArPqC8fhKElSvKWZXmxrs1HlGAdsCHaRfeD2h4FYU-~9dr7a73vb1JX4y8D5J41zpa-Z1BCxqjseC0zyy5PAbV4bdK2hzA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" />
+                            src="./assets/product.jpeg" />
                         <div class="max-w-full w-full mt-0 flex flex-col sm:ml-4">
                             <h5 class="text-[#000] mb-2 sm:mb-3 mt-2 sm:mt-0 text-lg font-bold">Baby Back Ribs</h5>
                             <p class="text-[#545454] text-[14px] font-medium">Oven baked salmon on a bed ofcaramelized
@@ -587,7 +587,7 @@
                     <div
                         class="w-full bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
                         <img alt="item_image" class="rounded-lg w-full sm:w-[130px] h-[160px] md:h-auto"
-                            src="https://s3-alpha-sig.figma.com/img/d702/ea44/c3bb97292e294c204cad2d45be838488?Expires=1693180800&Signature=M9TrulF7mv1GbebF~XcjS5Yrws4RFBf2MxAR28zgkrfnI8yL-pOkrrwuluo0cd9znWMcK2kwZ-eVvzy~2dT8mHOdlBPTSCsK6Lo6f9L4dzwpNpe1ygg5Bku29G~nxpK2Qg9Oy-nGkCoT7uNZHg~c-IQ64xgvjQ20kk1hpJWL7xO4yjnLBSHOgzyBFbZ6EfkvubbOfFzCUSt4QomsSx7NK6oHq6cfbX-3Zlh3XKNbGmBQ1FdlFs2IY-9kArPqC8fhKElSvKWZXmxrs1HlGAdsCHaRfeD2h4FYU-~9dr7a73vb1JX4y8D5J41zpa-Z1BCxqjseC0zyy5PAbV4bdK2hzA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" />
+                            src="./assets/product.jpeg" />
                         <div class="max-w-full w-full mt-0 flex flex-col sm:ml-4">
                             <h5 class="text-[#000] mb-2 sm:mb-3 mt-2 sm:mt-0 text-lg font-bold">Baby Back Ribs</h5>
                             <p class="text-[#545454] text-[14px] font-medium">Oven baked salmon on a bed ofcaramelized
@@ -608,7 +608,7 @@
             </div>
         </div>
         <div class="w-full mb-[60px]">
-            <div id="pasta" class="p-5 flex items-center justify-between rounded-lg text-lg bg-[#E8EEF6] mb-8 text-[#0F133C] font-medium">
+            <div id="pasta" class="p-5 flex items-center justify-between rounded-lg text-[20px] bg-[#E8EEF6] mb-8 text-[#0F133C] font-semibold">
                 <p>PASTA</p>
                 <a href="/chicken.html" class="cursor-pointer hover:underline hover:decoration-1">See All</a>
             </div>
@@ -617,7 +617,7 @@
                     <div
                         class="w-full bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
                         <img alt="item_image" class="rounded-lg w-full sm:w-[130px] h-[160px] md:h-auto"
-                            src="https://s3-alpha-sig.figma.com/img/d702/ea44/c3bb97292e294c204cad2d45be838488?Expires=1693180800&Signature=M9TrulF7mv1GbebF~XcjS5Yrws4RFBf2MxAR28zgkrfnI8yL-pOkrrwuluo0cd9znWMcK2kwZ-eVvzy~2dT8mHOdlBPTSCsK6Lo6f9L4dzwpNpe1ygg5Bku29G~nxpK2Qg9Oy-nGkCoT7uNZHg~c-IQ64xgvjQ20kk1hpJWL7xO4yjnLBSHOgzyBFbZ6EfkvubbOfFzCUSt4QomsSx7NK6oHq6cfbX-3Zlh3XKNbGmBQ1FdlFs2IY-9kArPqC8fhKElSvKWZXmxrs1HlGAdsCHaRfeD2h4FYU-~9dr7a73vb1JX4y8D5J41zpa-Z1BCxqjseC0zyy5PAbV4bdK2hzA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" />
+                            src="./assets/product.jpeg" />
                         <div class="max-w-full w-full mt-0 flex flex-col sm:ml-4">
                             <h5 class="text-[#000] mb-2 sm:mb-3 mt-2 sm:mt-0 text-lg font-bold">Baby Back Ribs</h5>
                             <p class="text-[#545454] text-[14px] font-medium">Oven baked salmon on a bed ofcaramelized
@@ -639,7 +639,7 @@
                     <div
                         class="w-full bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
                         <img alt="item_image" class="rounded-lg w-full sm:w-[130px] h-[160px] md:h-auto"
-                            src="https://s3-alpha-sig.figma.com/img/d702/ea44/c3bb97292e294c204cad2d45be838488?Expires=1693180800&Signature=M9TrulF7mv1GbebF~XcjS5Yrws4RFBf2MxAR28zgkrfnI8yL-pOkrrwuluo0cd9znWMcK2kwZ-eVvzy~2dT8mHOdlBPTSCsK6Lo6f9L4dzwpNpe1ygg5Bku29G~nxpK2Qg9Oy-nGkCoT7uNZHg~c-IQ64xgvjQ20kk1hpJWL7xO4yjnLBSHOgzyBFbZ6EfkvubbOfFzCUSt4QomsSx7NK6oHq6cfbX-3Zlh3XKNbGmBQ1FdlFs2IY-9kArPqC8fhKElSvKWZXmxrs1HlGAdsCHaRfeD2h4FYU-~9dr7a73vb1JX4y8D5J41zpa-Z1BCxqjseC0zyy5PAbV4bdK2hzA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" />
+                            src="./assets/product.jpeg" />
                         <div class="max-w-full w-full mt-0 flex flex-col sm:ml-4">
                             <h5 class="text-[#000] mb-2 sm:mb-3 mt-2 sm:mt-0 text-lg font-bold">Baby Back Ribs</h5>
                             <p class="text-[#545454] text-[14px] font-medium">Oven baked salmon on a bed ofcaramelized
@@ -661,7 +661,7 @@
                     <div
                         class="w-full bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
                         <img alt="item_image" class="rounded-lg w-full sm:w-[130px] h-[160px] md:h-auto"
-                            src="https://s3-alpha-sig.figma.com/img/d702/ea44/c3bb97292e294c204cad2d45be838488?Expires=1693180800&Signature=M9TrulF7mv1GbebF~XcjS5Yrws4RFBf2MxAR28zgkrfnI8yL-pOkrrwuluo0cd9znWMcK2kwZ-eVvzy~2dT8mHOdlBPTSCsK6Lo6f9L4dzwpNpe1ygg5Bku29G~nxpK2Qg9Oy-nGkCoT7uNZHg~c-IQ64xgvjQ20kk1hpJWL7xO4yjnLBSHOgzyBFbZ6EfkvubbOfFzCUSt4QomsSx7NK6oHq6cfbX-3Zlh3XKNbGmBQ1FdlFs2IY-9kArPqC8fhKElSvKWZXmxrs1HlGAdsCHaRfeD2h4FYU-~9dr7a73vb1JX4y8D5J41zpa-Z1BCxqjseC0zyy5PAbV4bdK2hzA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" />
+                            src="./assets/product.jpeg" />
                         <div class="max-w-full w-full mt-0 flex flex-col sm:ml-4">
                             <h5 class="text-[#000] mb-2 sm:mb-3 mt-2 sm:mt-0 text-lg font-bold">Baby Back Ribs</h5>
                             <p class="text-[#545454] text-[14px] font-medium">Oven baked salmon on a bed ofcaramelized
@@ -683,7 +683,7 @@
                     <div
                         class="w-full bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
                         <img alt="item_image" class="rounded-lg w-full sm:w-[130px] h-[160px] md:h-auto"
-                            src="https://s3-alpha-sig.figma.com/img/d702/ea44/c3bb97292e294c204cad2d45be838488?Expires=1693180800&Signature=M9TrulF7mv1GbebF~XcjS5Yrws4RFBf2MxAR28zgkrfnI8yL-pOkrrwuluo0cd9znWMcK2kwZ-eVvzy~2dT8mHOdlBPTSCsK6Lo6f9L4dzwpNpe1ygg5Bku29G~nxpK2Qg9Oy-nGkCoT7uNZHg~c-IQ64xgvjQ20kk1hpJWL7xO4yjnLBSHOgzyBFbZ6EfkvubbOfFzCUSt4QomsSx7NK6oHq6cfbX-3Zlh3XKNbGmBQ1FdlFs2IY-9kArPqC8fhKElSvKWZXmxrs1HlGAdsCHaRfeD2h4FYU-~9dr7a73vb1JX4y8D5J41zpa-Z1BCxqjseC0zyy5PAbV4bdK2hzA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" />
+                            src="./assets/product.jpeg" />
                         <div class="max-w-full w-full mt-0 flex flex-col sm:ml-4">
                             <h5 class="text-[#000] mb-2 sm:mb-3 mt-2 sm:mt-0 text-lg font-bold">Baby Back Ribs</h5>
                             <p class="text-[#545454] text-[14px] font-medium">Oven baked salmon on a bed ofcaramelized
@@ -704,7 +704,7 @@
             </div>
         </div>
         <div class="w-full mb-[60px]">
-            <div id="chicken" class="p-5 rounded-lg flex items-center justify-between text-lg bg-[#E8EEF6] mb-8 text-[#0F133C] font-medium">
+            <div id="chicken" class="p-5 flex items-center justify-between rounded-lg text-[20px] bg-[#E8EEF6] mb-8 text-[#0F133C] font-semibold">
                 <p>CHICKEN</p>
                 <a href="/chicken.html" class="cursor-pointer hover:underline hover:decoration-1">See All</a>
             </div>
@@ -713,7 +713,7 @@
                     <div
                         class="w-full bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
                         <img alt="item_image" class="rounded-lg w-full sm:w-[130px] h-[160px] md:h-auto"
-                            src="https://s3-alpha-sig.figma.com/img/d702/ea44/c3bb97292e294c204cad2d45be838488?Expires=1693180800&Signature=M9TrulF7mv1GbebF~XcjS5Yrws4RFBf2MxAR28zgkrfnI8yL-pOkrrwuluo0cd9znWMcK2kwZ-eVvzy~2dT8mHOdlBPTSCsK6Lo6f9L4dzwpNpe1ygg5Bku29G~nxpK2Qg9Oy-nGkCoT7uNZHg~c-IQ64xgvjQ20kk1hpJWL7xO4yjnLBSHOgzyBFbZ6EfkvubbOfFzCUSt4QomsSx7NK6oHq6cfbX-3Zlh3XKNbGmBQ1FdlFs2IY-9kArPqC8fhKElSvKWZXmxrs1HlGAdsCHaRfeD2h4FYU-~9dr7a73vb1JX4y8D5J41zpa-Z1BCxqjseC0zyy5PAbV4bdK2hzA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" />
+                            src="./assets/product.jpeg" />
                         <div class="max-w-full w-full mt-0 flex flex-col sm:ml-4">
                             <h5 class="text-[#000] mb-2 sm:mb-3 mt-2 sm:mt-0 text-lg font-bold">Baby Back Ribs</h5>
                             <p class="text-[#545454] text-[14px] font-medium">Oven baked salmon on a bed ofcaramelized
@@ -735,7 +735,7 @@
                     <div
                         class="w-full bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
                         <img alt="item_image" class="rounded-lg w-full sm:w-[130px] h-[160px] md:h-auto"
-                            src="https://s3-alpha-sig.figma.com/img/d702/ea44/c3bb97292e294c204cad2d45be838488?Expires=1693180800&Signature=M9TrulF7mv1GbebF~XcjS5Yrws4RFBf2MxAR28zgkrfnI8yL-pOkrrwuluo0cd9znWMcK2kwZ-eVvzy~2dT8mHOdlBPTSCsK6Lo6f9L4dzwpNpe1ygg5Bku29G~nxpK2Qg9Oy-nGkCoT7uNZHg~c-IQ64xgvjQ20kk1hpJWL7xO4yjnLBSHOgzyBFbZ6EfkvubbOfFzCUSt4QomsSx7NK6oHq6cfbX-3Zlh3XKNbGmBQ1FdlFs2IY-9kArPqC8fhKElSvKWZXmxrs1HlGAdsCHaRfeD2h4FYU-~9dr7a73vb1JX4y8D5J41zpa-Z1BCxqjseC0zyy5PAbV4bdK2hzA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" />
+                            src="./assets/product.jpeg" />
                         <div class="max-w-full w-full mt-0 flex flex-col sm:ml-4">
                             <h5 class="text-[#000] mb-2 sm:mb-3 mt-2 sm:mt-0 text-lg font-bold">Baby Back Ribs</h5>
                             <p class="text-[#545454] text-[14px] font-medium">Oven baked salmon on a bed ofcaramelized
@@ -757,7 +757,7 @@
                     <div
                         class="w-full bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
                         <img alt="item_image" class="rounded-lg w-full sm:w-[130px] h-[160px] md:h-auto"
-                            src="https://s3-alpha-sig.figma.com/img/d702/ea44/c3bb97292e294c204cad2d45be838488?Expires=1693180800&Signature=M9TrulF7mv1GbebF~XcjS5Yrws4RFBf2MxAR28zgkrfnI8yL-pOkrrwuluo0cd9znWMcK2kwZ-eVvzy~2dT8mHOdlBPTSCsK6Lo6f9L4dzwpNpe1ygg5Bku29G~nxpK2Qg9Oy-nGkCoT7uNZHg~c-IQ64xgvjQ20kk1hpJWL7xO4yjnLBSHOgzyBFbZ6EfkvubbOfFzCUSt4QomsSx7NK6oHq6cfbX-3Zlh3XKNbGmBQ1FdlFs2IY-9kArPqC8fhKElSvKWZXmxrs1HlGAdsCHaRfeD2h4FYU-~9dr7a73vb1JX4y8D5J41zpa-Z1BCxqjseC0zyy5PAbV4bdK2hzA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" />
+                            src="./assets/product.jpeg" />
                         <div class="max-w-full w-full mt-0 flex flex-col sm:ml-4">
                             <h5 class="text-[#000] mb-2 sm:mb-3 mt-2 sm:mt-0 text-lg font-bold">Baby Back Ribs</h5>
                             <p class="text-[#545454] text-[14px] font-medium">Oven baked salmon on a bed ofcaramelized
@@ -779,7 +779,7 @@
                     <div
                         class="w-full bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
                         <img alt="item_image" class="rounded-lg w-full sm:w-[130px] h-[160px] md:h-auto"
-                            src="https://s3-alpha-sig.figma.com/img/d702/ea44/c3bb97292e294c204cad2d45be838488?Expires=1693180800&Signature=M9TrulF7mv1GbebF~XcjS5Yrws4RFBf2MxAR28zgkrfnI8yL-pOkrrwuluo0cd9znWMcK2kwZ-eVvzy~2dT8mHOdlBPTSCsK6Lo6f9L4dzwpNpe1ygg5Bku29G~nxpK2Qg9Oy-nGkCoT7uNZHg~c-IQ64xgvjQ20kk1hpJWL7xO4yjnLBSHOgzyBFbZ6EfkvubbOfFzCUSt4QomsSx7NK6oHq6cfbX-3Zlh3XKNbGmBQ1FdlFs2IY-9kArPqC8fhKElSvKWZXmxrs1HlGAdsCHaRfeD2h4FYU-~9dr7a73vb1JX4y8D5J41zpa-Z1BCxqjseC0zyy5PAbV4bdK2hzA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" />
+                            src="./assets/product.jpeg" />
                         <div class="max-w-full w-full mt-0 flex flex-col sm:ml-4">
                             <h5 class="text-[#000] mb-2 sm:mb-3 mt-2 sm:mt-0 text-lg font-bold">Baby Back Ribs</h5>
                             <p class="text-[#545454] text-[14px] font-medium">Oven baked salmon on a bed ofcaramelized
@@ -1124,7 +1124,6 @@
         });
 
         function triggerElem(id) {
-            console.log('id', id)
             const element = document.getElementById(id)
             if (element) {
                 element.scrollIntoView({ behavior: 'smooth' })
