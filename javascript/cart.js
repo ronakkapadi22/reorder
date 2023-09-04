@@ -1,6 +1,6 @@
 const cartSection = document.getElementById('cart_item')
 const modal = document.getElementById('modal');
-const btn = document.getElementById('open-btn');
+const btn = document.querySelector('.open-btn');
 const button = document.getElementById('close');
 const logo = document.getElementById('logo')
 const closeButton = document.getElementById('close-btn')
@@ -18,20 +18,19 @@ window.addEventListener('scroll', (e) => {
     }
 })
 
-        btn.onclick = function () {
+console.log('btn', btn)
+
+
+
+        btn.addEventListener('click', () => {
+            console.log('click');
             modal.style.display = 'block';
-        };
+        })
 
-        button.onclick = function () {
+        button.addEventListener('click', () => {
+            console.log('unclick');
             modal.style.display = 'none';
-        };
-
-        window.onclick = function (event) {
-            console.log('event.target', event.target)
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
+        })
 
         logo.addEventListener('click', () => {
             storeModal.style.display = 'block';

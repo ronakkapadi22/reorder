@@ -84,12 +84,12 @@
     <section class="swiper mySwiper w-full bg-white border-t border-b border-[#EFEFF7] px-[60px] py-8">
         <div class="swiper-wrapper flex items-center py-1">
             <div class="swiper-slide text-center">
-                <span id="all"
-                    class="px-5 py-2 cursor-pointer font-[700] text-[15px] border-2 border-[#037ABC] text-[#037ABC] rounded-[80px]">ALL</span>
+                <a id="all"
+                    class="px-5 py-2 cursor-pointer font-[700] text-[15px] border-2 border-[#037ABC] text-[#037ABC] rounded-[80px]">ALL</a>
             </div>
             <div class="swiper-slide text-center">
-                <span onclick="triggerElem('entree')"
-                    class="px-5 py-2 cursor-pointer font-[700] text-[15px] border-2 border-white hover:border-2 hover:border-[#037ABC] hover:text-[#037ABC] hover:rounded-[80px]">ENTRÉE</span>
+                <a onclick="triggerElem('entree')"
+                    class="px-5 py-2 cursor-pointer font-[700] text-[15px] border-2 border-white hover:border-2 hover:border-[#037ABC] hover:text-[#037ABC] hover:rounded-[80px]">ENTRÉE</a>
             </div>
             <div class="swiper-slide text-center">
                 <span onclick="triggerElem('dessert')"
@@ -1114,13 +1114,31 @@
         //  Initialize Swiper
         let swiper = new Swiper(".mySwiper", {
             spaceBetween: 20,
-            slidesPerView: 6,
+            slidesPerView: 2,
             freeMode: true,
             watchSlidesProgress: true,
             navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
             },
+            breakpoints: {
+                640: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 4,
+                    spaceBetween: 40,
+                },
+                1024: {
+                    slidesPerView: 5,
+                    spaceBetween: 50,
+                },
+                1440: {
+                    slidesPerView: 8,
+                    spaceBetween: 10,
+                }
+            }
         });
 
         function triggerElem(id) {
