@@ -117,8 +117,8 @@
                 CHICKEN</div>
             <div class="grid grid-cols-12 gap-4">
                 <div class="col-span-6 lg:col-span-4">
-                    <div
-                        class="open-btn w-full cursor-pointer bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
+                    <div onclick="handleOpen()"
+                        class="w-full cursor-pointer bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
                         <img alt="item_image" class="rounded-lg w-full sm:w-[130px] h-[160px] md:h-auto"
                             src="./assets/product.jpeg" />
                         <div class="max-w-full w-full mt-0 flex flex-col sm:ml-4">
@@ -139,7 +139,7 @@
                     </div>
                 </div>
                 <div class="col-span-6 lg:col-span-4">
-                    <div
+                    <div onclick="handleOpen()"
                         class="open-btn w-full cursor-pointer bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
                         <img alt="item_image" class="rounded-lg w-full sm:w-[130px] h-[160px] md:h-auto"
                             src="./assets/product.jpeg" />
@@ -178,11 +178,11 @@
         </div>
     </section>
 
-       <!---Modal -->
-       <div class="fixed hidden z-10 insert-0 bg-black bg-opacity-80 overflow-y-auto h-full w-full top-0" id="modal">
+    <!---Modal -->
+    <div class="fixed hidden z-10 insert-0 bg-black bg-opacity-80 overflow-y-auto h-full w-full top-0" id="modal">
         <div
             class="bg-white absolute rounded-[24px] w-[98%] sm:w-[520px] mx-auto top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 p-6">
-            <div class="w-full flex items-center mb-6">
+            <div onclick="handleClose()" class="w-full flex items-center mb-6">
                 <img id="close" class="p-1 cursor-pointer rounded-[50%] border-2" src="./assets/close.svg" />
             </div>
             <div class="w-full flex items-center">
@@ -470,7 +470,7 @@
             </div>
         </div>
     </div>
-    
+
     <script src="./javascript/cart.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script>
@@ -503,6 +503,19 @@
                 }
             }
         });
+
+        function handleOpen() {
+            const modal = document.getElementById('modal');
+            console.log('click');
+            modal.style.display = 'block';
+        }
+
+        function handleClose() {
+            const modal = document.getElementById('modal');
+            console.log('unclick');
+            modal.style.display = 'none';
+        }
+
     </script>
 </body>
 

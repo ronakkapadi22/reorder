@@ -51,13 +51,13 @@
                     d="M22.6616 22.75C22.6616 21.2381 22.6616 20.4822 22.475 19.8671C22.0549 18.4822 20.9711 17.3984 19.5862 16.9783C18.9711 16.7917 18.2152 16.7917 16.7033 16.7917H11.2866C9.77478 16.7917 9.01885 16.7917 8.40374 16.9783C7.0188 17.3984 5.93502 18.4822 5.5149 19.8671C5.32831 20.4822 5.32831 21.2381 5.32831 22.75M18.87 8.125C18.87 10.8174 16.6874 13 13.995 13C11.3026 13 9.11997 10.8174 9.11997 8.125C9.11997 5.43261 11.3026 3.25 13.995 3.25C16.6874 3.25 18.87 5.43261 18.87 8.125Z"
                     stroke="#464646" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
-            <div class="relative cursor-pointer">
+            <div onclick="handleOpenCart()" class="relative cursor-pointer">
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="#21A453">
                     <path
                         d="M22.9091 7.63636V0H5.09091V7.63636H0V20.3636C0 24.5636 3.43636 28 7.63636 28H20.3636C24.5635 28 27.9999 24.5636 27.9999 20.3636V7.63636H22.9091ZM8.90909 3.81818H19.0909V7.63636H8.90909V3.81818Z"
                         fill="#21A453" />
                 </svg>
-                <span class="absolute top-1/2 left-1/2 -translate-y-[40%] -translate-x-1/2 text-white">0</span>
+                <span id="cart_count" class="absolute top-1/2 left-1/2 -translate-y-[40%] -translate-x-1/2 text-white">0</span>
             </div>
         </div>
     </section>
@@ -134,8 +134,8 @@
             </div>
             <div class="grid grid-cols-12 gap-4">
                 <div class="col-span-6 lg:col-span-4">
-                    <div id="open-btn"
-                        class="w-full cursor-pointer bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
+                    <div onclick="handleOpen()"
+                        class="open-btn w-full cursor-pointer bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
                         <img alt="item_image" class="rounded-lg w-full sm:w-[130px] h-[160px] md:h-auto"
                             src="./assets/product.jpeg" />
                         <div class="max-w-full w-full mt-0 flex flex-col sm:ml-4">
@@ -156,8 +156,8 @@
                     </div>
                 </div>
                 <div class="col-span-6 lg:col-span-4">
-                    <div
-                        class="w-full bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
+                    <div onclick="handleOpen()"
+                        class="open-btn w-full cursor-pointer bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
                         <img alt="item_image" class="rounded-lg w-full sm:w-[130px] h-[160px] md:h-auto"
                             src="./assets/product.jpeg" />
                         <div class="max-w-full w-full mt-0 flex flex-col sm:ml-4">
@@ -178,8 +178,8 @@
                     </div>
                 </div>
                 <div class="col-span-6 lg:col-span-4">
-                    <div
-                        class="w-full bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
+                    <div onclick="handleOpen()"
+                        class="open-btn w-full cursor-pointer bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
                         <img alt="item_image" class="rounded-lg w-full sm:w-[130px] h-[160px] md:h-auto"
                             src="./assets/product.jpeg" />
                         <div class="max-w-full w-full mt-0 flex flex-col sm:ml-4">
@@ -200,8 +200,8 @@
                     </div>
                 </div>
                 <div class="col-span-6 lg:col-span-4">
-                    <div
-                        class="w-full bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
+                    <div onclick="handleOpen()"
+                        class="open-btn w-full cursor-pointer bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
                         <img alt="item_image" class="rounded-lg w-full sm:w-[130px] h-[160px] md:h-auto"
                             src="./assets/product.jpeg" />
                         <div class="max-w-full w-full mt-0 flex flex-col sm:ml-4">
@@ -230,8 +230,8 @@
             </div>
             <div class="grid grid-cols-12 gap-4">
                 <div class="col-span-6 lg:col-span-4">
-                    <div
-                        class="w-full bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
+                    <div onclick="handleOpen()"
+                        class="open-btn w-full cursor-pointer bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
                         <img alt="item_image" class="rounded-lg w-full sm:w-[130px] h-[160px] md:h-auto"
                             src="./assets/product.jpeg" />
                         <div class="max-w-full w-full mt-0 flex flex-col sm:ml-4">
@@ -252,8 +252,8 @@
                     </div>
                 </div>
                 <div class="col-span-6 lg:col-span-4">
-                    <div
-                        class="w-full bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
+                    <div onclick="handleOpen()"
+                        class="open-btn w-full cursor-pointer bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
                         <img alt="item_image" class="rounded-lg w-full sm:w-[130px] h-[160px] md:h-auto"
                             src="./assets/product.jpeg" />
                         <div class="max-w-full w-full mt-0 flex flex-col sm:ml-4">
@@ -274,8 +274,8 @@
                     </div>
                 </div>
                 <div class="col-span-6 lg:col-span-4">
-                    <div
-                        class="w-full bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
+                    <div onclick="handleOpen()"
+                        class="open-btn w-full cursor-pointer bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
                         <img alt="item_image" class="rounded-lg w-full sm:w-[130px] h-[160px] md:h-auto"
                             src="./assets/product.jpeg" />
                         <div class="max-w-full w-full mt-0 flex flex-col sm:ml-4">
@@ -296,8 +296,8 @@
                     </div>
                 </div>
                 <div class="col-span-6 lg:col-span-4">
-                    <div
-                        class="w-full bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
+                    <div onclick="handleOpen()"
+                        class="open-btn w-full cursor-pointer bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
                         <img alt="item_image" class="rounded-lg w-full sm:w-[130px] h-[160px] md:h-auto"
                             src="./assets/product.jpeg" />
                         <div class="max-w-full w-full mt-0 flex flex-col sm:ml-4">
@@ -326,8 +326,8 @@
             </div>
             <div class="grid grid-cols-12 gap-4">
                 <div class="col-span-6 lg:col-span-4">
-                    <div
-                        class="w-full bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
+                    <div onclick="handleOpen()"
+                        class="open-btn w-full cursor-pointer bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
                         <img alt="item_image" class="rounded-lg w-full sm:w-[130px] h-[160px] md:h-auto"
                             src="./assets/product.jpeg" />
                         <div class="max-w-full w-full mt-0 flex flex-col sm:ml-4">
@@ -348,8 +348,8 @@
                     </div>
                 </div>
                 <div class="col-span-6 lg:col-span-4">
-                    <div
-                        class="w-full bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
+                    <div onclick="handleOpen()"
+                        class="open-btn w-full cursor-pointer bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
                         <img alt="item_image" class="rounded-lg w-full sm:w-[130px] h-[160px] md:h-auto"
                             src="./assets/product.jpeg" />
                         <div class="max-w-full w-full mt-0 flex flex-col sm:ml-4">
@@ -370,8 +370,8 @@
                     </div>
                 </div>
                 <div class="col-span-6 lg:col-span-4">
-                    <div
-                        class="w-full bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
+                    <div onclick="handleOpen()"
+                        class="open-btn w-full cursor-pointer bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
                         <img alt="item_image" class="rounded-lg w-full sm:w-[130px] h-[160px] md:h-auto"
                             src="./assets/product.jpeg" />
                         <div class="max-w-full w-full mt-0 flex flex-col sm:ml-4">
@@ -392,8 +392,8 @@
                     </div>
                 </div>
                 <div class="col-span-6 lg:col-span-4">
-                    <div
-                        class="w-full bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
+                    <div onclick="handleOpen()"
+                        class="open-btn w-full cursor-pointer bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
                         <img alt="item_image" class="rounded-lg w-full sm:w-[130px] h-[160px] md:h-auto"
                             src="./assets/product.jpeg" />
                         <div class="max-w-full w-full mt-0 flex flex-col sm:ml-4">
@@ -422,8 +422,8 @@
             </div>
             <div class="grid grid-cols-12 gap-4">
                 <div class="col-span-6 lg:col-span-4">
-                    <div
-                        class="w-full bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
+                    <div onclick="handleOpen()"
+                        class="open-btn w-full cursor-pointer bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
                         <img alt="item_image" class="rounded-lg w-full sm:w-[130px] h-[160px] md:h-auto"
                             src="./assets/product.jpeg" />
                         <div class="max-w-full w-full mt-0 flex flex-col sm:ml-4">
@@ -444,8 +444,8 @@
                     </div>
                 </div>
                 <div class="col-span-6 lg:col-span-4">
-                    <div
-                        class="w-full bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
+                    <div onclick="handleOpen()"
+                        class="open-btn w-full cursor-pointer bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
                         <img alt="item_image" class="rounded-lg w-full sm:w-[130px] h-[160px] md:h-auto"
                             src="./assets/product.jpeg" />
                         <div class="max-w-full w-full mt-0 flex flex-col sm:ml-4">
@@ -466,8 +466,8 @@
                     </div>
                 </div>
                 <div class="col-span-6 lg:col-span-4">
-                    <div
-                        class="w-full bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
+                    <div onclick="handleOpen()"
+                        class="open-btn w-full cursor-pointer bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
                         <img alt="item_image" class="rounded-lg w-full sm:w-[130px] h-[160px] md:h-auto"
                             src="./assets/product.jpeg" />
                         <div class="max-w-full w-full mt-0 flex flex-col sm:ml-4">
@@ -488,8 +488,8 @@
                     </div>
                 </div>
                 <div class="col-span-6 lg:col-span-4">
-                    <div
-                        class="w-full bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
+                    <div onclick="handleOpen()"
+                        class="open-btn w-full cursor-pointer bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
                         <img alt="item_image" class="rounded-lg w-full sm:w-[130px] h-[160px] md:h-auto"
                             src="./assets/product.jpeg" />
                         <div class="max-w-full w-full mt-0 flex flex-col sm:ml-4">
@@ -518,8 +518,8 @@
             </div>
             <div class="grid grid-cols-12 gap-4">
                 <div class="col-span-6 lg:col-span-4">
-                    <div
-                        class="w-full bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
+                    <div onclick="handleOpen()"
+                        class="open-btn w-full cursor-pointer bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
                         <img alt="item_image" class="rounded-lg w-full sm:w-[130px] h-[160px] md:h-auto"
                             src="./assets/product.jpeg" />
                         <div class="max-w-full w-full mt-0 flex flex-col sm:ml-4">
@@ -540,8 +540,8 @@
                     </div>
                 </div>
                 <div class="col-span-6 lg:col-span-4">
-                    <div
-                        class="w-full bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
+                    <div onclick="handleOpen()"
+                        class="open-btn w-full cursor-pointer bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
                         <img alt="item_image" class="rounded-lg w-full sm:w-[130px] h-[160px] md:h-auto"
                             src="./assets/product.jpeg" />
                         <div class="max-w-full w-full mt-0 flex flex-col sm:ml-4">
@@ -562,8 +562,8 @@
                     </div>
                 </div>
                 <div class="col-span-6 lg:col-span-4">
-                    <div
-                        class="w-full bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
+                    <div onclick="handleOpen()"
+                        class="open-btn w-full cursor-pointer bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
                         <img alt="item_image" class="rounded-lg w-full sm:w-[130px] h-[160px] md:h-auto"
                             src="./assets/product.jpeg" />
                         <div class="max-w-full w-full mt-0 flex flex-col sm:ml-4">
@@ -584,8 +584,8 @@
                     </div>
                 </div>
                 <div class="col-span-6 lg:col-span-4">
-                    <div
-                        class="w-full bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
+                    <div onclick="handleOpen()"
+                        class="open-btn w-full cursor-pointer bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
                         <img alt="item_image" class="rounded-lg w-full sm:w-[130px] h-[160px] md:h-auto"
                             src="./assets/product.jpeg" />
                         <div class="max-w-full w-full mt-0 flex flex-col sm:ml-4">
@@ -614,8 +614,8 @@
             </div>
             <div class="grid grid-cols-12 gap-4">
                 <div class="col-span-6 lg:col-span-4">
-                    <div
-                        class="w-full bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
+                    <div onclick="handleOpen()"
+                        class="open-btn w-full cursor-pointer bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
                         <img alt="item_image" class="rounded-lg w-full sm:w-[130px] h-[160px] md:h-auto"
                             src="./assets/product.jpeg" />
                         <div class="max-w-full w-full mt-0 flex flex-col sm:ml-4">
@@ -636,8 +636,8 @@
                     </div>
                 </div>
                 <div class="col-span-6 lg:col-span-4">
-                    <div
-                        class="w-full bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
+                    <div onclick="handleOpen()"
+                        class="open-btn w-full cursor-pointer bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
                         <img alt="item_image" class="rounded-lg w-full sm:w-[130px] h-[160px] md:h-auto"
                             src="./assets/product.jpeg" />
                         <div class="max-w-full w-full mt-0 flex flex-col sm:ml-4">
@@ -658,8 +658,8 @@
                     </div>
                 </div>
                 <div class="col-span-6 lg:col-span-4">
-                    <div
-                        class="w-full bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
+                    <div onclick="handleOpen()"
+                        class="open-btn w-full cursor-pointer bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
                         <img alt="item_image" class="rounded-lg w-full sm:w-[130px] h-[160px] md:h-auto"
                             src="./assets/product.jpeg" />
                         <div class="max-w-full w-full mt-0 flex flex-col sm:ml-4">
@@ -680,8 +680,8 @@
                     </div>
                 </div>
                 <div class="col-span-6 lg:col-span-4">
-                    <div
-                        class="w-full bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
+                    <div onclick="handleOpen()"
+                        class="open-btn w-full cursor-pointer bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
                         <img alt="item_image" class="rounded-lg w-full sm:w-[130px] h-[160px] md:h-auto"
                             src="./assets/product.jpeg" />
                         <div class="max-w-full w-full mt-0 flex flex-col sm:ml-4">
@@ -710,8 +710,8 @@
             </div>
             <div class="grid grid-cols-12 gap-4">
                 <div class="col-span-6 lg:col-span-4">
-                    <div
-                        class="w-full bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
+                    <div onclick="handleOpen()"
+                        class="open-btn w-full cursor-pointer bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
                         <img alt="item_image" class="rounded-lg w-full sm:w-[130px] h-[160px] md:h-auto"
                             src="./assets/product.jpeg" />
                         <div class="max-w-full w-full mt-0 flex flex-col sm:ml-4">
@@ -732,8 +732,8 @@
                     </div>
                 </div>
                 <div class="col-span-6 lg:col-span-4">
-                    <div
-                        class="w-full bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
+                    <div onclick="handleOpen()"
+                        class="open-btn w-full cursor-pointer bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
                         <img alt="item_image" class="rounded-lg w-full sm:w-[130px] h-[160px] md:h-auto"
                             src="./assets/product.jpeg" />
                         <div class="max-w-full w-full mt-0 flex flex-col sm:ml-4">
@@ -754,8 +754,8 @@
                     </div>
                 </div>
                 <div class="col-span-6 lg:col-span-4">
-                    <div
-                        class="w-full bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
+                    <div onclick="handleOpen()"
+                        class="open-btn w-full cursor-pointer bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
                         <img alt="item_image" class="rounded-lg w-full sm:w-[130px] h-[160px] md:h-auto"
                             src="./assets/product.jpeg" />
                         <div class="max-w-full w-full mt-0 flex flex-col sm:ml-4">
@@ -776,8 +776,8 @@
                     </div>
                 </div>
                 <div class="col-span-6 lg:col-span-4">
-                    <div
-                        class="w-full bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
+                    <div onclick="handleOpen()"
+                        class="open-btn w-full cursor-pointer bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
                         <img alt="item_image" class="rounded-lg w-full sm:w-[130px] h-[160px] md:h-auto"
                             src="./assets/product.jpeg" />
                         <div class="max-w-full w-full mt-0 flex flex-col sm:ml-4">
@@ -808,10 +808,10 @@
         <div class="w-full flex flex-col sm:flex-row justify-between items-center">
             <p class="text-ld md:text-xl text-black font-semibold mb-4 sm:mb-0 flex items-center">Your Cart <span
                     class="ml-5 text-sm text-[#484848] font-medium">Start adding items to your cart</span></p>
-            <button
+            <button onclick="handleOpenCart()"
                 class="flex min-w-full sm:min-w-[340px] lg:min-w-[400px] justify-between items-center px-6 py-4 rounded-[100px] text-white text-base font-semibold bg-[#037ABC]">
-                <span>View Cart (0 items)</span>
-                <span>$0.00</span>
+                <span id="count" >View Cart (0 items)</span>
+                <span id="price">$0.00</span>
             </button>
         </div>
     </section>
@@ -820,7 +820,7 @@
     <div class="fixed hidden z-10 insert-0 bg-black bg-opacity-80 overflow-y-auto h-full w-full top-0" id="modal">
         <div
             class="bg-white absolute rounded-[24px] w-[98%] sm:w-[520px] mx-auto top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 p-6">
-            <div class="w-full flex items-center mb-6">
+            <div  onclick="handleClose()" class="w-full flex items-center mb-6">
                 <img id="close" class="p-1 cursor-pointer rounded-[50%] border-2" src="./assets/close.svg" />
             </div>
             <div class="w-full flex items-center">
@@ -910,12 +910,12 @@
             <div class="w-full py-3 px-5 bg-white block left-0 fixed bottom-0 rounded-b-[24px]">
                 <div class="w-full flex flex-col sm:flex-row justify-between items-center">
                     <span class="flex justify-center items-center my-4 md:my-0">
-                        <img src="./assets/minus.svg" class="cursor-pointer w-10" alt="minus" />
-                        <span class="text-2xl font-semibold md:mx-3 px-6">1</span>
-                        <img src="./assets/plus.svg" class="cursor-pointer w-10" alt="plus" />
+                        <img onclick="handleDecrease()" src="./assets/minus.svg" class="cursor-pointer w-10" alt="minus" />
+                        <span id="quantity" class="text-2xl font-semibold md:mx-3 px-6">1</span>
+                        <img onclick="handleIncrease()" src="./assets/plus.svg" class="cursor-pointer w-10" alt="plus" />
                     </span>
-                    <button
-                        class="flex min-w-full sm:min-w-[280px] justify-between items-center px-6 py-4 rounded-[100px] text-white text-base font-semibold bg-[#037ABC]">
+                    <span onclick="handleAddToCart()"
+                        class="cursor-pointer flex min-w-full sm:min-w-[280px] justify-between items-center px-6 py-4 rounded-[100px] text-white text-base font-semibold bg-[#037ABC]">
                         <span class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="mr-2" width="30"
                                 height="30" viewBox="0 0 30 30" fill="#fff">
                                 <path
@@ -923,7 +923,7 @@
                                     fill="#fff" />
                             </svg> Add to Cart</span>
                         <span>$0.00</span>
-                    </button>
+                        </span>
                 </div>
             </div>
         </div>
@@ -1108,6 +1108,19 @@
             </div>
         </div>
     </div>
+
+    <!-- Cart -->
+    <div class="fixed hidden z-10 insert-0 bg-black bg-opacity-80 overflow-y-auto h-full w-full top-0" id="cart_modal">
+        <div
+            class="bg-white absolute rounded-[24px] w-[98%] sm:w-[520px] mx-auto top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 p-6">
+            <div onclick="handleCloseCart()" class="w-full flex items-center mb-6">
+                <img id="close" class="p-1 cursor-pointer rounded-[50%] border-2" src="./assets/close.svg" />
+            </div>
+            WIP
+        </div>
+    </div>
+
+
     <script src="./javascript/cart.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script>
@@ -1148,8 +1161,51 @@
             }
         }
 
+        function handleOpen() {
+            const modal = document.getElementById('modal');
+            console.log('click');
+            modal.style.display = 'block';
+        }
+
+        function handleClose() {
+            const modal = document.getElementById('modal');
+            console.log('unclick');
+            modal.style.display = 'none';
+        }
+
+        function handleIncrease(){
+            const Quantity = document.getElementById('quantity')
+            Quantity.innerHTML = Number(Quantity.innerHTML) + 1
+        }
+
+        function handleDecrease(){
+            const Quantity = document.getElementById('quantity')
+            if(Number(Quantity.innerHTML) !== 0){
+                Quantity.innerHTML = Number(Quantity.innerHTML) - 1
+            }
+        }
+
+        function handleOpenCart(){
+            const CheckoutPopup = document.getElementById('cart_modal')
+            CheckoutPopup.style.display = 'block'; 
+        }
+
+        function handleCloseCart(){
+            const CheckoutPopup = document.getElementById('cart_modal')
+            CheckoutPopup.style.display = 'none'; 
+        }
+
+        function handleAddToCart(){
+            const cartIcon = document.getElementById("cart_count")
+            const Count = document.getElementById("count")
+            const Price = document.getElementById("price")
+            cartIcon.innerHTML = Number(cartIcon.innerHTML) + 1
+            Count.innerHTML = `View Cart (${Number(cartIcon.innerHTML) + 1} items)`
+            Price.innerHTML = `$${(25 * Number(cartIcon.innerHTML) + 1).toFixed(2)}`
+            handleClose()
+        }
+
     </script>
-    <!-- <script src="./javascript/navigate.js"></script> -->
 </body>
 
 </html>

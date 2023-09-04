@@ -18,20 +18,6 @@ window.addEventListener('scroll', (e) => {
     }
 })
 
-console.log('btn', btn)
-
-
-
-        btn.addEventListener('click', () => {
-            console.log('click');
-            modal.style.display = 'block';
-        })
-
-        button.addEventListener('click', () => {
-            console.log('unclick');
-            modal.style.display = 'none';
-        })
-
         logo.addEventListener('click', () => {
             storeModal.style.display = 'block';
             window.onclick = function (event) {
