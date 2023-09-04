@@ -8,28 +8,27 @@
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
     <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;500;600;700&display=swap"
         rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Titos</title>
 </head>
 
-<body class="bg-[#F7F9FE]">
-    <section id="header"
-        class="w-full bg-white flex items-center justify-between py-4 px-4 md:px-[26px] lg:px-[60px] h-[80px]">
+<body>
+    <section id="header" class="w-full flex items-center justify-between py-4 px-4 md:px-[26px] lg:px-[60px] h-[80px]">
         <div id="logo" class="flex items-center cursor-pointer">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20" viewBox="0 0 16 20" fill="#E7286D">
                 <path
                     d="M13.5884 3.16602C10.5051 0.0826807 5.50509 0.0826807 2.42176 3.16602C-0.661582 6.24935 -0.661582 11.3327 2.42176 14.416L8.00511 19.9993L13.5884 14.3327C16.6717 11.3327 16.6717 6.24935 13.5884 3.16602ZM8.00511 10.416C7.08841 10.416 6.33841 9.666 6.33841 8.7493C6.33841 7.83268 7.08841 7.08268 8.00511 7.08268C8.92171 7.08268 9.67171 7.83268 9.67171 8.7493C9.67171 9.666 8.92171 10.416 8.00511 10.416Z"
                     fill="#E7286D" />
             </svg>
-            <p class="ml-4 text-[#333] font-semibold text-base">Titos Bistro</p>
+            <p class="ml-4 text-[#333] font-medium text-[15px]">Titos Bistro</p>
         </div>
         <div class="relative hidden md:block">
             <input placeholder="Search Item"
-                class="xs:min-w-full w-full placeholder:text-[#464646] sm:min-w-[298px] lg:min-w-[466px] border border-[#B8B8B8] placeholder:text-base placeholder:font-[400] outline-none px-3 py-4 rounded-[100px] pl-12"
+                class="xs:min-w-full w-full placeholder:text-[#464646] sm:min-w-[298px] lg:min-w-[466px] border border-[#B8B8B8] placeholder:text-base placeholder:font-[400] text-[#464646] outline-none px-3 py-4 rounded-[100px] pl-12"
                 type="text" />
             <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 absolute top-1/2 -translate-y-1/2 left-4" width="24"
                 height="24" viewBox="0 0 24 24" fill="none">
@@ -39,7 +38,7 @@
             </svg>
         </div>
         <div class="flex items-center">
-            <p class="hidden md:block text-[#333] font-semibold text-base mr-5 lg:mr-12">Sign in/Sign up</p>
+            <p class="hidden md:block text-[#333] font-medium text-[16px] mr-5 lg:mr-12">Sign in/Sign up</p>
             <svg xmlns="http://www.w3.org/2000/svg" class="block md:hidden cursor-pointer" width="25" height="24"
                 viewBox="0 0 25 24" fill="none">
                 <path
@@ -52,28 +51,28 @@
                     d="M22.6616 22.75C22.6616 21.2381 22.6616 20.4822 22.475 19.8671C22.0549 18.4822 20.9711 17.3984 19.5862 16.9783C18.9711 16.7917 18.2152 16.7917 16.7033 16.7917H11.2866C9.77478 16.7917 9.01885 16.7917 8.40374 16.9783C7.0188 17.3984 5.93502 18.4822 5.5149 19.8671C5.32831 20.4822 5.32831 21.2381 5.32831 22.75M18.87 8.125C18.87 10.8174 16.6874 13 13.995 13C11.3026 13 9.11997 10.8174 9.11997 8.125C9.11997 5.43261 11.3026 3.25 13.995 3.25C16.6874 3.25 18.87 5.43261 18.87 8.125Z"
                     stroke="#464646" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
-            <div class="relative cursor-pointer">
+            <div onclick="handleOpenCart()" class="relative cursor-pointer">
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="#21A453">
                     <path
                         d="M22.9091 7.63636V0H5.09091V7.63636H0V20.3636C0 24.5636 3.43636 28 7.63636 28H20.3636C24.5635 28 27.9999 24.5636 27.9999 20.3636V7.63636H22.9091ZM8.90909 3.81818H19.0909V7.63636H8.90909V3.81818Z"
                         fill="#21A453" />
                 </svg>
-                <span class="absolute top-1/2 left-1/2 -translate-y-[40%] -translate-x-1/2 text-white">0</span>
+                <span id="cart_count"
+                    class="absolute top-1/2 left-1/2 -translate-y-[40%] -translate-x-1/2 text-white">0</span>
             </div>
         </div>
     </section>
 
-
     <!-- Slider main container -->
-    <section class="swiper mySwiper w-full bg-white border-t border-b border-[#EFEFF7] px-[60px] py-8">
+    <!-- <section class="swiper mySwiper w-full bg-white border-t border-b border-[#EFEFF7] px-[60px] py-8">
         <div class="swiper-wrapper flex items-center py-1">
             <div class="swiper-slide text-center">
-                <span id="all"
-                    class="px-5 py-2 cursor-pointer font-[700] text-[15px] border-2 border-white hover:border-2 hover:border-[#037ABC] hover:text-[#037ABC] hover:rounded-[80px]">ALL</span>
+                <a id="all"
+                    class="px-5 py-2 cursor-pointer font-[700] text-[15px] border-2 border-[#037ABC] text-[#037ABC] rounded-[80px]">ALL</a>
             </div>
             <div class="swiper-slide text-center">
-                <span onclick="triggerElem('entree')"
-                    class="px-5 py-2 cursor-pointer font-[700] text-[15px] border-2 border-white hover:border-2 hover:border-[#037ABC] hover:text-[#037ABC] hover:rounded-[80px]">ENTRÉE</span>
+                <a onclick="triggerElem('entree')"
+                    class="px-5 py-2 cursor-pointer font-[700] text-[15px] border-2 border-white hover:border-2 hover:border-[#037ABC] hover:text-[#037ABC] hover:rounded-[80px]">ENTRÉE</a>
             </div>
             <div class="swiper-slide text-center">
                 <span onclick="triggerElem('dessert')"
@@ -102,78 +101,122 @@
             </div>
             <div class="swiper-slide text-center">
                 <span onclick="triggerElem('chicken')"
-                    class="px-5 py-2 border-[#037ABC] text-[#037ABC] cursor-pointer font-[700] text-[15px] border-2 hover:border-2 hover:border-[#037ABC] hover:text-[#037ABC] rounded-[80px]">CHICKEN</span>
+                    class="px-5 py-2 cursor-pointer font-[700] text-[15px] border-2 border-white hover:border-2 hover:border-[#037ABC] hover:text-[#037ABC] hover:rounded-[80px]">CHICKEN</span>
             </div>
         </div>
         <div class="swiper-button-next">
         </div>
         <div class="swiper-button-prev"></div>
-    </section>
+    </section> -->
 
-    <section id="items" class="px-4 mb-[132px] sm:mb-0 md:px-6 lg:px-[60px] py-12 bg-[#F7F9FE]">
-        <div class="w-full mb-[60px]">
-            <div id="chicken"
-                class="p-5 flex items-center justify-between rounded-lg text-[20px] bg-[#E8EEF6] mb-8 text-[#0F133C] font-semibold">
-                CHICKEN</div>
-            <div class="grid grid-cols-12 gap-4">
-                <div class="col-span-6 lg:col-span-4">
-                    <div onclick="handleOpen()"
-                        class="w-full cursor-pointer bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
-                        <img alt="item_image" class="rounded-lg w-full sm:w-[130px] h-[160px] md:h-auto"
-                            src="./assets/product.jpeg" />
-                        <div class="max-w-full w-full mt-0 flex flex-col sm:ml-4">
-                            <h5 class="text-[#000] mb-2 sm:mb-3 mt-2 sm:mt-0 text-lg font-bold">Baby Back Ribs</h5>
-                            <p class="text-[#545454] text-[14px] font-medium">Oven baked salmon on a bed ofcaramelized
-                                onions</p>
-                            <div class="flex justify-between items-center mt-7">
-                                <span class="text-[#00598B] text-lg font-bold">$25.99</span>
-                                <div class="w-8 h-8 bg-[#037ABC] rounded-[50%] flex justify-center items-center">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="26" viewBox="0 0 24 26"
-                                        fill="none">
-                                        <path d="M12.0001 3.94903V22.051M3.51477 13H20.4853" stroke="white"
-                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                </div>
+    <section id="items" class="px-4 md:px-6 lg:px-[60px] h-[calc(100vh - 92px)] py-12 bg-[#F7F9FE]">
+        <div id="chicken"
+            class="p-5 flex items-center justify-between rounded-lg text-[20px] bg-[#E8EEF6] mb-8 text-[#0F133C] font-semibold">
+            <p>CHICKEN</p>
+            <a href="/chicken.html" class="cursor-pointer hover:underline hover:decoration-1">See All</a>
+        </div>
+        <div class="grid grid-cols-12 gap-4">
+            <div class="col-span-6 lg:col-span-4">
+                <div onclick="handleOpen()"
+                    class="open-btn w-full cursor-pointer bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
+                    <img alt="item_image" class="rounded-lg w-full sm:w-[130px] h-[160px] md:h-auto"
+                        src="./assets/product.jpeg" />
+                    <div class="max-w-full w-full mt-0 flex flex-col sm:ml-4">
+                        <h5 class="text-[#000] mb-2 sm:mb-3 mt-2 sm:mt-0 text-lg font-bold">Baby Back Ribs</h5>
+                        <p class="text-[#545454] text-[14px] font-medium">Oven baked salmon on a bed ofcaramelized
+                            onions</p>
+                        <div class="flex justify-between items-center mt-7">
+                            <span class="text-[#00598B] text-lg font-bold">$25.99</span>
+                            <div class="w-8 h-8 bg-[#037ABC] rounded-[50%] flex justify-center items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="26" viewBox="0 0 24 26"
+                                    fill="none">
+                                    <path d="M12.0001 3.94903V22.051M3.51477 13H20.4853" stroke="white" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-span-6 lg:col-span-4">
-                    <div onclick="handleOpen()"
-                        class="open-btn w-full cursor-pointer bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
-                        <img alt="item_image" class="rounded-lg w-full sm:w-[130px] h-[160px] md:h-auto"
-                            src="./assets/product.jpeg" />
-                        <div class="max-w-full w-full mt-0 flex flex-col sm:ml-4">
-                            <h5 class="text-[#000] mb-2 sm:mb-3 mt-2 sm:mt-0 text-lg font-bold">Baby Back Ribs</h5>
-                            <p class="text-[#545454] text-[14px] font-medium">Oven baked salmon on a bed ofcaramelized
-                                onions</p>
-                            <div class="flex justify-between items-center mt-7">
-                                <span class="text-[#00598B] text-lg font-bold">$25.99</span>
-                                <div class="w-8 h-8 bg-[#037ABC] rounded-[50%] flex justify-center items-center">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="26" viewBox="0 0 24 26"
-                                        fill="none">
-                                        <path d="M12.0001 3.94903V22.051M3.51477 13H20.4853" stroke="white"
-                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                </div>
+            </div>
+            <div class="col-span-6 lg:col-span-4">
+                <div onclick="handleOpen()"
+                    class="open-btn w-full cursor-pointer bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
+                    <img alt="item_image" class="rounded-lg w-full sm:w-[130px] h-[160px] md:h-auto"
+                        src="./assets/product.jpeg" />
+                    <div class="max-w-full w-full mt-0 flex flex-col sm:ml-4">
+                        <h5 class="text-[#000] mb-2 sm:mb-3 mt-2 sm:mt-0 text-lg font-bold">Baby Back Ribs</h5>
+                        <p class="text-[#545454] text-[14px] font-medium">Oven baked salmon on a bed ofcaramelized
+                            onions</p>
+                        <div class="flex justify-between items-center mt-7">
+                            <span class="text-[#00598B] text-lg font-bold">$25.99</span>
+                            <div class="w-8 h-8 bg-[#037ABC] rounded-[50%] flex justify-center items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="26" viewBox="0 0 24 26"
+                                    fill="none">
+                                    <path d="M12.0001 3.94903V22.051M3.51477 13H20.4853" stroke="white" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-6 lg:col-span-4">
+                <div onclick="handleOpen()"
+                    class="open-btn w-full cursor-pointer bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
+                    <img alt="item_image" class="rounded-lg w-full sm:w-[130px] h-[160px] md:h-auto"
+                        src="./assets/product.jpeg" />
+                    <div class="max-w-full w-full mt-0 flex flex-col sm:ml-4">
+                        <h5 class="text-[#000] mb-2 sm:mb-3 mt-2 sm:mt-0 text-lg font-bold">Baby Back Ribs</h5>
+                        <p class="text-[#545454] text-[14px] font-medium">Oven baked salmon on a bed ofcaramelized
+                            onions</p>
+                        <div class="flex justify-between items-center mt-7">
+                            <span class="text-[#00598B] text-lg font-bold">$25.99</span>
+                            <div class="w-8 h-8 bg-[#037ABC] rounded-[50%] flex justify-center items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="26" viewBox="0 0 24 26"
+                                    fill="none">
+                                    <path d="M12.0001 3.94903V22.051M3.51477 13H20.4853" stroke="white" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-6 lg:col-span-4">
+                <div onclick="handleOpen()"
+                    class="open-btn w-full cursor-pointer bg-white flex flex-col sm:flex-row items-center border border-[#E2E2E2] rounded-xl p-3">
+                    <img alt="item_image" class="rounded-lg w-full sm:w-[130px] h-[160px] md:h-auto"
+                        src="./assets/product.jpeg" />
+                    <div class="max-w-full w-full mt-0 flex flex-col sm:ml-4">
+                        <h5 class="text-[#000] mb-2 sm:mb-3 mt-2 sm:mt-0 text-lg font-bold">Baby Back Ribs</h5>
+                        <p class="text-[#545454] text-[14px] font-medium">Oven baked salmon on a bed ofcaramelized
+                            onions</p>
+                        <div class="flex justify-between items-center mt-7">
+                            <span class="text-[#00598B] text-lg font-bold">$25.99</span>
+                            <div class="w-8 h-8 bg-[#037ABC] rounded-[50%] flex justify-center items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="26" viewBox="0 0 24 26"
+                                    fill="none">
+                                    <path d="M12.0001 3.94903V22.051M3.51477 13H20.4853" stroke="white" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        </div>
     </section>
 
-    <!-- Cart Module -->
     <section id="cart_item"
-        class="w-full bg-white py-[18px] px-6 block lg:px-[60px] fixed bottom-0 shadow-[0_-4px_20px_0px_rgba(0,0,0,0.15)]">
+        class="w-full bg-white py-[18px] px-6 lg:px-[60px] fixed bottom-0 shadow-[0_-4px_20px_0px_rgba(0,0,0,0.15)]">
         <div class="w-full flex flex-col sm:flex-row justify-between items-center">
             <p class="text-ld md:text-xl text-black font-semibold mb-4 sm:mb-0 flex items-center">Your Cart <span
                     class="ml-5 text-sm text-[#484848] font-medium">Start adding items to your cart</span></p>
-            <button
+            <button onclick="handleOpenCart()"
                 class="flex min-w-full sm:min-w-[340px] lg:min-w-[400px] justify-between items-center px-6 py-4 rounded-[100px] text-white text-base font-semibold bg-[#037ABC]">
-                <span>View Cart (0 items)</span>
-                <span>$0.00</span>
+                <span id="count">View Cart (0 items)</span>
+                <span id="price">$0.00</span>
             </button>
         </div>
     </section>
@@ -272,12 +315,14 @@
             <div class="w-full py-3 px-5 bg-white block left-0 fixed bottom-0 rounded-b-[24px]">
                 <div class="w-full flex flex-col sm:flex-row justify-between items-center">
                     <span class="flex justify-center items-center my-4 md:my-0">
-                        <img src="./assets/minus.svg" class="cursor-pointer w-10" alt="minus" />
-                        <span class="text-2xl font-semibold md:mx-3 px-6">1</span>
-                        <img src="./assets/plus.svg" class="cursor-pointer w-10" alt="plus" />
+                        <img onclick="handleDecrease()" src="./assets/minus.svg" class="cursor-pointer w-10"
+                            alt="minus" />
+                        <span id="quantity" class="text-2xl font-semibold md:mx-3 px-6">1</span>
+                        <img onclick="handleIncrease()" src="./assets/plus.svg" class="cursor-pointer w-10"
+                            alt="plus" />
                     </span>
-                    <button
-                        class="flex min-w-full sm:min-w-[280px] justify-between items-center px-6 py-4 rounded-[100px] text-white text-base font-semibold bg-[#037ABC]">
+                    <span onclick="handleAddToCart()"
+                        class="cursor-pointer flex min-w-full sm:min-w-[280px] justify-between items-center px-6 py-4 rounded-[100px] text-white text-base font-semibold bg-[#037ABC]">
                         <span class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="mr-2" width="30"
                                 height="30" viewBox="0 0 30 30" fill="#fff">
                                 <path
@@ -285,7 +330,7 @@
                                     fill="#fff" />
                             </svg> Add to Cart</span>
                         <span>$0.00</span>
-                    </button>
+                    </span>
                 </div>
             </div>
         </div>
@@ -471,6 +516,95 @@
         </div>
     </div>
 
+    <!-- Cart -->
+    <div class="fixed hidden z-10 insert-0 bg-black bg-opacity-80 overflow-y-auto h-full w-full top-0" id="cart_modal">
+        <div
+            class="bg-white absolute rounded-[24px] w-[98%] sm:w-[520px] mx-auto top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 p-6">
+            <div onclick="handleCloseCart()" class="w-full flex items-center mb-6">
+                <img id="close" class="p-1 cursor-pointer rounded-[50%] border-2" src="./assets/close.svg" />
+                <p class="text-[16px] font-[600] ml-6">Cart</p>
+            </div>
+            <div class="w-full h-auto md:h-[436px] mb-[100px] overflow-auto">
+                <div class="w-full mb-6 justify-between flex">
+                    <div class="flex">
+                        <img class="w-[96px] xl:w-[140px] h-[96px] xl:h-[140px] rounded-xl" src="./assets/item.png"
+                            alt="item">
+                        <div class="w-[200px] md:w-[240px]">
+                            <div class="ml-3 md:ml-6">
+                                <p
+                                    class="text-[12px] md:text-[16px] text-ellipsis overflow-hidden text-[#000] font-semibold mb-1 md:mb-2">
+                                    Baked Salmon w/ onion glazed</p>
+                                <p class="text-[12px] md:text-[16px] text-[#545454] truncate  font-medium mb-1">Oven
+                                    baked
+                                    salmon on a bed of
+                                    caramelized onions
+                                </p>
+                                <div class="flex justify-between items-center mt-2 md:mt-4">
+                                    <p class="font-bold text-[16px] block md:hidden">$21.99</p>
+                                    <span class="flex justify-center items-center">
+                                        <img src="./assets/minus.svg" alt="minus" />
+                                        <span class="font-semibold md:mx-3 px-2">1</span>
+                                        <img src="./assets/plus.svg" alt="plus" />
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden md:block">
+                        <p class="font-bold text-[16px] hidden md:block">$21.99</p>
+                    </div>
+                </div>
+                <div class="w-full mb-6 justify-between flex">
+                    <div class="flex">
+                        <img class="w-[96px] xl:w-[140px] h-[96px] xl:h-[140px] rounded-xl" src="./assets/item.png"
+                            alt="item">
+                        <div class="w-[200px] md:w-[240px]">
+                            <div class="ml-3 md:ml-6">
+                                <p
+                                    class="text-[12px] md:text-[16px] text-ellipsis overflow-hidden text-[#000] font-semibold mb-1 md:mb-2">
+                                    Baked Salmon w/ onion glazed</p>
+                                <p class="text-[12px] md:text-[16px] text-[#545454] truncate  font-medium mb-1">Oven
+                                    baked
+                                    salmon on a bed of
+                                    caramelized onions
+                                </p>
+                                <div class="flex justify-between items-center mt-2 md:mt-4">
+                                    <p class="font-bold text-[16px] block md:hidden">$21.99</p>
+                                    <span class="flex justify-center items-center">
+                                        <img src="./assets/minus.svg" alt="minus" />
+                                        <span class="font-semibold md:mx-3 px-2">1</span>
+                                        <img src="./assets/plus.svg" alt="plus" />
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden md:block">
+                        <p class="font-bold text-[16px] hidden md:block">$21.99</p>
+                    </div>
+                </div>
+                <hr class="text-[#ECECEC]" />
+                <div class="w-full mt-6 mb-[52px] flex items-center justify-between">
+                    <p class="text-[#545454] text-[14px] font-[500]">Subtotal</p>
+                    <p class="text-[#212529] text-[14px] font-[700]">$40.98</p>
+                </div>
+                <div
+                    class="fixed rounded-b-[26px] shadow-[0_-4px_20px_0px_rgba(0,0,0,0.15)] left-0 pb-[14.5px] rounded- pt-5 px-6 bottom-0 bg-white w-full">
+                    <div class="w-full flex items-center justify-between">
+                        <p class="text-[#545454] text-[14px] font-[500]">Total</p>
+                        <p class="text-[#212529] text-[20px] font-[700]">$40.98</p>
+                    </div>
+                    <div class="w-full mt-[14.5px]">
+                        <button onclick="handleCheckout()"
+                            class="w-full rounded-[100px] bg-[#037ABC] text-white p-4">Review Order and
+                            Checkout</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <script src="./javascript/cart.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script>
@@ -504,6 +638,13 @@
             }
         });
 
+        function triggerElem(id) {
+            const element = document.getElementById(id)
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' })
+            }
+        }
+
         function handleOpen() {
             const modal = document.getElementById('modal');
             console.log('click');
@@ -514,6 +655,43 @@
             const modal = document.getElementById('modal');
             console.log('unclick');
             modal.style.display = 'none';
+        }
+
+        function handleIncrease() {
+            const Quantity = document.getElementById('quantity')
+            Quantity.innerHTML = Number(Quantity.innerHTML) + 1
+        }
+
+        function handleDecrease() {
+            const Quantity = document.getElementById('quantity')
+            if (Number(Quantity.innerHTML) !== 0) {
+                Quantity.innerHTML = Number(Quantity.innerHTML) - 1
+            }
+        }
+
+        function handleOpenCart() {
+            const CheckoutPopup = document.getElementById('cart_modal')
+            CheckoutPopup.style.display = 'block';
+        }
+
+        function handleCloseCart() {
+            const CheckoutPopup = document.getElementById('cart_modal')
+            CheckoutPopup.style.display = 'none';
+        }
+
+        function handleAddToCart() {
+            const cartIcon = document.getElementById("cart_count")
+            const Count = document.getElementById("count")
+            const Price = document.getElementById("price")
+            cartIcon.innerHTML = Number(cartIcon.innerHTML) + 1
+            Count.innerHTML = `View Cart (${Number(cartIcon.innerHTML) + 1} items)`
+            Price.innerHTML = `$${(25 * Number(cartIcon.innerHTML) + 1).toFixed(2)}`
+            handleClose()
+        }
+
+        function handleCheckout() {
+            handleCloseCart()
+            window.location.pathname = '/checkout.html'
         }
 
     </script>
