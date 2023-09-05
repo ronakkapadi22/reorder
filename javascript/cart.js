@@ -1,11 +1,4 @@
 const cartSection = document.getElementById('cart_item')
-const modal = document.getElementById('modal');
-const btn = document.querySelector('.open-btn');
-const button = document.getElementById('close');
-const logo = document.getElementById('logo')
-const closeButton = document.getElementById('close-btn')
-const storeModal = document.getElementById('store-modal')
-
 
 window.addEventListener('scroll', (e) => {
     const cartSectionList = cartSection.classList
@@ -16,17 +9,19 @@ window.addEventListener('scroll', (e) => {
         cartSectionList.add('block')
         cartSectionList.remove('hidden')
     }
-})
 
-        logo.addEventListener('click', () => {
-            storeModal.style.display = 'block';
-            window.onclick = function (event) {
-                if (event.target == storeModal) {
-                    modal.style.display = "none";
-                }
-            }
-        })
-        
-        closeButton.addEventListener('click', () => {
-            storeModal.style.display = 'none';
-        })
+    const element = document.querySelector('#location');
+	const position = element.getBoundingClientRect();
+
+	// checking whether fully visible
+	if(position.top >= 0 && position.bottom <= window.innerHeight) {
+		console.log('Fully Visible');
+	}else if(position.top < window.innerHeight && position.bottom >= 0){
+        console.log('Partially Visible');
+    }else {
+        const Category = document.getElementById('category')
+        Category.style.position = 'sticky' 
+        Category.style.top = 0 
+    }
+
+})

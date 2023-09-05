@@ -18,7 +18,7 @@
 
 <body>
     <section id="header" class="w-full flex items-center justify-between py-4 px-4 md:px-[26px] lg:px-[60px] h-[80px]">
-        <div id="logo" class="flex items-center cursor-pointer">
+        <div onclick="handleOpenStore()" class="flex items-center cursor-pointer">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20" viewBox="0 0 16 20" fill="#E7286D">
                 <path
                     d="M13.5884 3.16602C10.5051 0.0826807 5.50509 0.0826807 2.42176 3.16602C-0.661582 6.24935 -0.661582 11.3327 2.42176 14.416L8.00511 19.9993L13.5884 14.3327C16.6717 11.3327 16.6717 6.24935 13.5884 3.16602ZM8.00511 10.416C7.08841 10.416 6.33841 9.666 6.33841 8.7493C6.33841 7.83268 7.08841 7.08268 8.00511 7.08268C8.92171 7.08268 9.67171 7.83268 9.67171 8.7493C9.67171 9.666 8.92171 10.416 8.00511 10.416Z"
@@ -38,19 +38,20 @@
             </svg>
         </div>
         <div class="flex items-center">
-            <p class="hidden md:block text-[#333] font-medium text-[16px] mr-5 lg:mr-12">Sign in/Sign up</p>
+            <a href="./login.html" class=" cursor-pointer hidden md:block text-[#333] font-medium text-[16px] mr-5 lg:mr-12">Sign in/Sign up</a>
             <svg xmlns="http://www.w3.org/2000/svg" class="block md:hidden cursor-pointer" width="25" height="24"
                 viewBox="0 0 25 24" fill="none">
                 <path
                     d="M21.995 21L18.4951 17.5M20.995 11.5C20.995 16.1944 17.1894 20 12.495 20C7.80057 20 3.995 16.1944 3.995 11.5C3.995 6.80558 7.80057 3 12.495 3C17.1894 3 20.995 6.80558 20.995 11.5Z"
                     stroke="#464646" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" class="block md:hidden mx-6 cursor-pointer" width="27" height="26"
-                viewBox="0 0 27 26" fill="none">
-                <path
-                    d="M22.6616 22.75C22.6616 21.2381 22.6616 20.4822 22.475 19.8671C22.0549 18.4822 20.9711 17.3984 19.5862 16.9783C18.9711 16.7917 18.2152 16.7917 16.7033 16.7917H11.2866C9.77478 16.7917 9.01885 16.7917 8.40374 16.9783C7.0188 17.3984 5.93502 18.4822 5.5149 19.8671C5.32831 20.4822 5.32831 21.2381 5.32831 22.75M18.87 8.125C18.87 10.8174 16.6874 13 13.995 13C11.3026 13 9.11997 10.8174 9.11997 8.125C9.11997 5.43261 11.3026 3.25 13.995 3.25C16.6874 3.25 18.87 5.43261 18.87 8.125Z"
-                    stroke="#464646" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
+            <a href="./login.html" class="block md:hidden mx-6 cursor-pointer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="26" viewBox="0 0 27 26" fill="none">
+                    <path
+                        d="M22.6616 22.75C22.6616 21.2381 22.6616 20.4822 22.475 19.8671C22.0549 18.4822 20.9711 17.3984 19.5862 16.9783C18.9711 16.7917 18.2152 16.7917 16.7033 16.7917H11.2866C9.77478 16.7917 9.01885 16.7917 8.40374 16.9783C7.0188 17.3984 5.93502 18.4822 5.5149 19.8671C5.32831 20.4822 5.32831 21.2381 5.32831 22.75M18.87 8.125C18.87 10.8174 16.6874 13 13.995 13C11.3026 13 9.11997 10.8174 9.11997 8.125C9.11997 5.43261 11.3026 3.25 13.995 3.25C16.6874 3.25 18.87 5.43261 18.87 8.125Z"
+                        stroke="#464646" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </a>
             <div onclick="handleOpenCart()" class="relative cursor-pointer">
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="#21A453">
                     <path
@@ -113,7 +114,6 @@
         <div id="chicken"
             class="p-5 flex items-center justify-between rounded-lg text-[20px] bg-[#E8EEF6] mb-8 text-[#0F133C] font-semibold">
             <p>CHICKEN</p>
-            <a href="/chicken.html" class="cursor-pointer hover:underline hover:decoration-1">See All</a>
         </div>
         <div class="grid grid-cols-12 gap-4">
             <div class="col-span-6 lg:col-span-4">
@@ -329,7 +329,7 @@
                                     d="M22.9091 7.63636V0H5.09091V7.63636H0V20.3636C0 24.5636 3.43636 28 7.63636 28H20.3636C24.5635 28 27.9999 24.5636 27.9999 20.3636V7.63636H22.9091ZM8.90909 3.81818H19.0909V7.63636H8.90909V3.81818Z"
                                     fill="#fff" />
                             </svg> Add to Cart</span>
-                        <span>$0.00</span>
+                        <span>$<span id="product_price" >21.99</span></span>
                     </span>
                 </div>
             </div>
@@ -340,11 +340,11 @@
         <div
             class="bg-white absolute rounded-[24px] w-[500px] mx-auto top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 p-6">
             <div class="w-full flex items-center mb-6">
-                <img id="close-btn" class="p-1 cursor-pointer rounded-[50%] border-2" src="./assets/close.svg" />
+                <img onclick="handleCloseStore()" class="p-1 cursor-pointer rounded-[50%] border-2" src="./assets/close.svg" />
                 <h4 class="font-bold text-black text-xl ml-4">Select Store</h4>
             </div>
             <div class="w-full h-[436px] overflow-y-auto">
-                <div
+                <div onclick="handleCloseStore()"
                     class="w-full hover:bg-[#F2F6FC] hover:border-[#F2F6FC] flex items-center justify-between px-5 border rounded-xl cursor-pointer py-2">
                     <div class="flex flex-col">
                         <div id="logo" class="flex items-center">
@@ -365,7 +365,7 @@
                         </svg>
                     </div>
                 </div>
-                <div
+                <div onclick="handleCloseStore()"
                     class="w-full hover:bg-[#F2F6FC] hover:border-[#F2F6FC] mt-6 flex items-center justify-between px-5 border rounded-xl cursor-pointer py-2">
                     <div class="flex flex-col">
                         <div id="logo" class="flex items-center">
@@ -386,7 +386,7 @@
                         </svg>
                     </div>
                 </div>
-                <div
+                <div onclick="handleCloseStore()"
                     class="w-full hover:bg-[#F2F6FC] hover:border-[#F2F6FC] mt-6 flex items-center justify-between px-5 border rounded-xl cursor-pointer py-2">
                     <div class="flex flex-col">
                         <div id="logo" class="flex items-center">
@@ -407,7 +407,7 @@
                         </svg>
                     </div>
                 </div>
-                <div
+                <div onclick="handleCloseStore()"
                     class="w-full hover:bg-[#F2F6FC] hover:border-[#F2F6FC] mt-6 flex items-center justify-between px-5 border rounded-xl cursor-pointer py-2">
                     <div class="flex flex-col">
                         <div id="logo" class="flex items-center">
@@ -428,7 +428,7 @@
                         </svg>
                     </div>
                 </div>
-                <div
+                <div onclick="handleCloseStore()"
                     class="w-full hover:bg-[#F2F6FC] hover:border-[#F2F6FC] mt-6 flex items-center justify-between px-5 border rounded-xl cursor-pointer py-2">
                     <div class="flex flex-col">
                         <div id="logo" class="flex items-center">
@@ -449,7 +449,7 @@
                         </svg>
                     </div>
                 </div>
-                <div
+                <div onclick="handleCloseStore()"
                     class="w-full hover:bg-[#F2F6FC] hover:border-[#F2F6FC] mt-6 flex items-center justify-between px-5 border rounded-xl cursor-pointer py-2">
                     <div class="flex flex-col">
                         <div id="logo" class="flex items-center">
@@ -470,7 +470,7 @@
                         </svg>
                     </div>
                 </div>
-                <div
+                <div onclick="handleCloseStore()"
                     class="w-full hover:bg-[#F2F6FC] hover:border-[#F2F6FC] mt-6 flex items-center justify-between px-5 border rounded-xl cursor-pointer py-2">
                     <div class="flex flex-col">
                         <div id="logo" class="flex items-center">
@@ -491,7 +491,7 @@
                         </svg>
                     </div>
                 </div>
-                <div
+                <div onclick="handleCloseStore()"
                     class="w-full hover:bg-[#F2F6FC] hover:border-[#F2F6FC] mt-6 flex items-center justify-between px-5 border rounded-xl cursor-pointer py-2">
                     <div class="flex flex-col">
                         <div id="logo" class="flex items-center">
@@ -647,25 +647,27 @@
 
         function handleOpen() {
             const modal = document.getElementById('modal');
-            console.log('click');
             modal.style.display = 'block';
         }
 
         function handleClose() {
             const modal = document.getElementById('modal');
-            console.log('unclick');
             modal.style.display = 'none';
         }
 
         function handleIncrease() {
             const Quantity = document.getElementById('quantity')
+            const Price = document.getElementById('product_price')
             Quantity.innerHTML = Number(Quantity.innerHTML) + 1
+            Price.innerHTML = Number(Quantity.innerHTML * 21.99).toFixed(2)
         }
 
         function handleDecrease() {
             const Quantity = document.getElementById('quantity')
-            if (Number(Quantity.innerHTML) !== 0) {
+            const Price = document.getElementById('product_price')
+            if (Number(Quantity.innerHTML) !== 1) {
                 Quantity.innerHTML = Number(Quantity.innerHTML) - 1
+                Price.innerHTML = Number(Quantity.innerHTML * 21.99).toFixed(2)
             }
         }
 
@@ -692,6 +694,16 @@
         function handleCheckout() {
             handleCloseCart()
             window.location.pathname = '/checkout.html'
+        }
+
+        function handleOpenStore(){
+            const StoreModal = document.getElementById('store-modal')
+            StoreModal.style.display = 'block';
+        }
+
+        function handleCloseStore(){
+            const StoreModal = document.getElementById('store-modal')
+            StoreModal.style.display = 'none';
         }
 
     </script>
