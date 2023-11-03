@@ -1,47 +1,50 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    font-family: 'Inter';
+body {
+  font-family: "Inter";
 }
 
 @layer utilities {
-    @variants responsive {
-      /* Hide scrollbar for Chrome, Safari and Opera */
-      .no-scrollbar::-webkit-scrollbar {
-          display: none;
-      }
+  @variants responsive {
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
 
-      /* Hide scrollbar for IE, Edge and Firefox */
-      .no-scrollbar {
-          -ms-overflow-style: none;  /* IE and Edge */
-          scrollbar-width: none;  /* Firefox */
-      }
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .no-scrollbar {
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
     }
   }
-
-body::-webkit-scrollbar {
-    display: none;
 }
 
-.swiper-button-next:after{
-    font-size: 22px!important;
+::-webkit-scrollbar,
+.main-slider::-webkit-scrollbar {
+  display: none;
 }
 
-.swiper-button-next{
-    right: 0!important;
-    width: 60px!important;
-    background-color: white;
-}
-.swiper-button-prev{
-    left: 0!important;
-    width: 60px!important;
-    background-color: white;
+.swiper-button-next:after {
+  font-size: 22px !important;
+  color: #333;
 }
 
-.swiper-button-prev:after{
-    font-size: 22px!important;
+.swiper-button-next {
+  right: 0 !important;
+  width: 60px !important;
+  background-color: white;
+}
+.swiper-button-prev {
+  left: 0 !important;
+  width: 60px !important;
+  background-color: white;
+}
+
+.swiper-button-prev:after {
+  font-size: 22px !important;
+  color: #333;
 }
